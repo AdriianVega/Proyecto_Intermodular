@@ -1,1 +1,1 @@
-# Proyecto_Intermodular
+Repositorio para el proyecto intermodular
