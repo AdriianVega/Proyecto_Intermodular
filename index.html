@@ -3,50 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>GobleNews - Inicio</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Logo y nombre">
+        <video autoplay muted loop id="video-header">
+            <source src="video/tierra-video.mp4" type="video/mp4">
+        </video>
+        
 
-        <form action="">
-            <label for="search">Buscar</label>
-            <input type="text" id="search" name="search">
-            
-            <button>Suscribirse</button>
-        </form>
+        <div id="logo-nombre">      
+            <img src="img/logo_tierra.png" alt="Logo ">
+            <h3>GobleNews</h3>
+        </div>
+        
+        <div id="texto-header">
+            <h1>La nueva inteligencia</h1>
+            <h3>Periodismo técnico en la era post-humana</h3>
+        </div>
+        
     </header>
     <main>
-        <section>
-            <button aria-label="Menú">☰</button>
-            
-            <img src="" alt="Noticia Destacada">
-            <h1>Noticia Destacada</h1>
-            <p>Descripción</p>
+        <section id="noticia-destacada">
+            <article>
+                <div>
+                    <p>🇨🇿 REPÚBLICA CHECA</p>
+
+                    <h1>Una vivienda queda reducida a cenizas tras un devastador incendio nocturno</h1>
+
+                    <h5>Novedad - Hace 2 horas</h5>
+                </div>
+
+                <img src="" alt="Video noticia destacada">
+            </article>
         </section>
+
         <section>
-            <article>
-                <img src="" alt="">
-                <h2>Título de la noticia</h2>
-                <p>Noticia</p>
+            <img src="" alt="Publicidad">
+            <p>Publicidad</p>
+        </section>
+
+        <section>
+            <article id="noticia1">
+                <h3>Descubren un túnel subterráneo bajo una vivienda en Nápoles que podría tener origen romano</h3>
+                <p>🇳🇵 NEPAL</p>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h2>Título de la noticia</h2>
-                <p>Noticia</p>
+            <article id="noticia2">
+                <h3>Una casa ecológica logra funcionar durante un año entero sin conexión a la red eléctrica</h3>
+                <p>🇸🇪 SUECIA</p>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h2>Título de la noticia</h2>
-                <p>Noticia</p>
+            <article id="noticia3">
+                <h3>Autoridades investigan una misteriosa explosión que dañó gravemente una vivienda residencial</h3>
+                <p>🇯🇵 JAPÓN</p>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h2>Título de la noticia</h2>
-                <p>Noticia</p>
+            <article id="noticia4">
+                <h3>Una vivienda histórica es restaurada tras décadas de abandono y se convierte en centro cultural</h3>
+                <p>🇲🇦 MARRUECOS</p>
             </article>
         </section>
 
@@ -57,34 +73,63 @@
     </main>
 
     <footer>
+
+        <img src="" alt="Logo GobleNews">
+
         <div>
-            <img src="" alt="Gmail">
-            <p>Gmail</p>
+            <div>
+                <p>Países</p>
+            
+                <ul>
+                    <li>Ámerica</li>
+                    <li>Europa</li>
+                    <li>Asia</li>
+                    <li>África</li>
+                    <li>Oceanía</li>
+                </ul>
+            </div>
+            
+            <div>
+                <p>Categoría</p>
+            
+                <ul>
+                    <li>Política</li>
+                    <li>Economía</li>
+                    <li>Tecnología</li>
+                    <li>Deportes</li>
+                    <li>Cultura</li>
+                </ul>
+            </div>
+            
+            <div>
+                <p>Sobre Nosotros</p>
+            
+                <ul>
+                    <li>Gmail</li>
+                    <li>Teléfono</li>
+                </ul>
+            </div>
+            
+            <div>
+                <p>Últimas Noticias</p>
+            </div>
+            
+            <div>
+                <p>Cookies</p>
+            </div>
         </div>
 
-        <div>
-            <img src="" alt="Teléfono">
-            <p>Teléfono</p>
-        </div>
+        <hr>
 
         <div>
-            <img src="" alt="Sobre las cookies">
-            <p>Sobre las cookies</p>
-        </div>
+            <p>© 2026 GobleNews. Todos los derechos reservados.</p>
 
-        <div>
-            <img src="" alt="Sobre nosotros">
-            <p>Sobre nosotros</p>
-        </div>
-
-        <div>
-            Síguenos
-
-            <img src="" alt="Youtube">
-            <img src="" alt="Instagram">
-            <img src="" alt="Facebook">
-            <img src="" alt="Twitter">
-            <img src="" alt="LinkedIn">
+            <div id="redes">
+                <img src="" alt="Icono Instagram">
+                <img src="" alt="Icono Facebook">
+                <img src="" alt="Icono LinkedIn">
+                <img src="" alt="Icono Twitter">
+            </div>
         </div>
     </footer>
 </body>

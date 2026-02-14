@@ -1,0 +1,10 @@
+{
+    "chat.agent.enabled": false,
+    "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css" 
+    }
+]
+}
