@@ -7,70 +7,108 @@
     <title>GobleNews - Inicio</title>
 </head>
 <body>
-    <header>
-        <video autoplay muted loop id="video-header">
-            <source src="video/tierra-video.mp4" type="video/mp4">
-        </video>
-        
+    <div class="page-scroll">
+        <header>
+            <video autoplay muted loop id="video-header">
+                <source src="video/tierra-video.mp4" type="video/mp4">
+            </video>
 
-        <a id="logo-nombre" href="#">      
-            <img src="img/logo_tierra.png" alt="Logo ">
-            <h3>GobleNews</h3>
-        </a>
-        
-        <div id="texto-header">
-            <h1>La nueva inteligencia</h1>
-            <h3>Periodismo técnico en la era post-humana</h3>
-        </div>
-        
-    </header>
-    <main>
-        <section id="noticia-destacada">
-            <article>
-                <div>
-                    <p>🇨🇿 REPÚBLICA CHECA</p>
+            <script>
+                const videoHeader = document.getElementById('video-header');
+                videoHeader.playbackRate = 0.7; 
+            </script>
+            
 
-                    <h1>Una vivienda queda reducida a cenizas tras un devastador incendio nocturno</h1>
+            <a id="logo-nombre" href="index.html">      
+                <img src="img/logo_tierra.png" alt="Logo ">
+                <h3>GobleNews</h3>
+            </a>
+            
+            <div id="texto-header">
+                <h1>La nueva inteligencia</h1>
+                <h3>Periodismo técnico en la era post-humana</h3>
+            </div>
+            
+        </header>
+        <main id="scroll-container">
+            <section id="seccion-destacada">
+                <article id="noticia-destacada">
+                    <div>
+                        <p><span>🇨🇿</span>REPÚBLICA CHECA</p>
 
-                    <h5>Novedad - Hace 2 horas</h5>
-                </div>
+                        <h1>Una vivienda queda reducida a cenizas tras un devastador incendio nocturno</h1>
 
-                <img src="" alt="Video noticia destacada">
-            </article>
-        </section>
+                        <h5>Novedad - Hace 2 horas</h5>
+                    </div>
 
-        <section>
-            <img src="" alt="Publicidad">
-            <p>Publicidad</p>
-        </section>
+                    <div class="media-container">
+                        <img src="img/incendio-imagen.png" alt="Incendio" class="media-layer image-layer">
+                        <video loop muted playsinline class="media-layer video-layer" id="video-incendio">
+                            <source src="video/incendio-video.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="mute-btn" aria-pressed="true">🔇</button>
+                    </div>
 
-        <section>
-            <article id="noticia1">
-                <h3>Descubren un túnel subterráneo bajo una vivienda en Nápoles que podría tener origen romano</h3>
-                <p>🇳🇵 NEPAL</p>
-            </article>
+                    <script>
+                        document.querySelectorAll('#noticia-destacada').forEach(card => {
+                            const video = card.querySelector('.video-layer');
 
-            <article id="noticia2">
-                <h3>Una casa ecológica logra funcionar durante un año entero sin conexión a la red eléctrica</h3>
-                <p>🇸🇪 SUECIA</p>
-            </article>
+                            card.addEventListener('mouseenter', () => {
+                                video.currentTime = 0;
+                                video.play();
+                            });
 
-            <article id="noticia3">
-                <h3>Autoridades investigan una misteriosa explosión que dañó gravemente una vivienda residencial</h3>
-                <p>🇯🇵 JAPÓN</p>
-            </article>
+                            card.addEventListener('mouseleave', () => {
+                                video.pause();
+                                video.currentTime = 0;
+                            });
+                        });
 
-            <article id="noticia4">
-                <h3>Una vivienda histórica es restaurada tras décadas de abandono y se convierte en centro cultural</h3>
-                <p>🇲🇦 MARRUECOS</p>
-            </article>
-        </section>
+                        const video = document.getElementById('video-incendio');
+                        const btn = document.querySelector('.mute-btn');
 
-        <section>
-            <img src="" alt="Publicidad">
-            <p>Publicidad</p>
-        </section>
-    </main>
+                        btn.addEventListener('click', () => {
+                            video.muted = !video.muted;
+                            btn.textContent = video.muted ? '🔇' : '🔊';
+                            btn.setAttribute('aria-pressed', String(video.muted));
+                        });
+                    </script>
+                </article>
+            </section>
+
+            <section>
+                <img src="" alt="Publicidad">
+                <p>Publicidad</p>
+            </section>
+
+            <section>
+                <article id="noticia1">
+                    <h3>Descubren un túnel subterráneo bajo una vivienda en Nápoles que podría tener origen romano</h3>
+                    <p><span>🇳🇵</span> NEPAL</p>
+                </article>
+
+                <article id="noticia2">
+                    <h3>Una casa ecológica logra funcionar durante un año entero sin conexión a la red eléctrica</h3>
+                    <p><span>🇸🇪</span> SUECIA</p>
+                </article>
+
+                <article id="noticia3">
+                    <h3>Autoridades investigan una misteriosa explosión que dañó gravemente una vivienda residencial</h3>
+                    <p>🇯🇵 JAPÓN</p>
+                </article>
+
+                <article id="noticia4">
+                    <h3>Una vivienda histórica es restaurada tras décadas de abandono y se convierte en centro cultural</h3>
+                    <p>🇲🇦 MARRUECOS</p>
+                </article>
+            </section>
+
+            <section>
+                <img src="" alt="Publicidad">
+                <p>Publicidad</p>
+            </section>
+        </main>
+    </div>
 
     <footer>
 

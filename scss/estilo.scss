@@ -3,9 +3,17 @@
 $fuente-principal: 'Inter', sans-serif;
 $fuente-secundaria: 'Suez One', serif;
 
-$neon-cyan: #00FFFF;
-$neon-dim: #00CCCC;
+$color-neon-cyan: #00FFFF;
+$color-neon-dim: #00CCCC;
+$color-semitransparente: rgba(255, 255, 255, 0.5);
 
+$gradiente-noticia-destacada: radial-gradient(circle at center, #D65108 40%, #070617 100%);
+
+$color-fondo-tarjeta-oscuro: rgba(0, 0, 0, 0.6);
+$color-fondo-tarjeta-claro: rgba(255, 255, 255, 0.1);
+
+
+$color-borde-tarjeta: rgba(255, 255, 255, 0.1);
 $color-fondo: #0C0A30;
 
 @mixin transition($property, $duration, $timing: ease-in-out) {
@@ -25,18 +33,18 @@ $color-fondo: #0C0A30;
 @keyframes efecto-neon {
     0%, 100% {
         text-shadow:
-                0 0 3px $neon-dim,
-                0 0 3px $neon-dim,
-                0 0 5px $neon-dim,
-                0 0 10px $neon-cyan,
-                0 0 20px $neon-cyan;
+                0 0 3px $color-neon-dim,
+                0 0 3px $color-neon-dim,
+                0 0 5px $color-neon-dim,
+                0 0 10px $color-neon-cyan,
+                0 0 20px $color-neon-cyan;
     }
     50% {
         text-shadow:
-                0 0 20px $neon-dim,
-                0 0 40px $neon-dim,
-                0 0 40px $neon-cyan,
-                0 0 40px $neon-cyan;
+                0 0 20px $color-neon-dim,
+                0 0 40px $color-neon-dim,
+                0 0 40px $color-neon-cyan,
+                0 0 40px $color-neon-cyan;
     }
 }
 
@@ -53,8 +61,23 @@ html, body {
 body {
     font-family: $fuente-principal;
     background-color: $color-fondo;
-
     min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+
+    .page-scroll {
+        height: 100vh;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .page-scroll > header,
+    .page-scroll > main {
+        min-height: 100vh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 
     header {
         display: flex;
@@ -109,6 +132,118 @@ body {
         img {
             width: 75px;
             height: 75px;
+        }
+    }
+    main {
+        height: auto;
+        overflow: visible;
+
+        #seccion-destacada {
+            min-height: 100vh;
+            background: $gradiente-noticia-destacada;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            padding: 50px;
+
+            #noticia-destacada {
+                display: flex;
+
+                background-color: $color-fondo-tarjeta-oscuro;
+                border: 2px solid $color-borde-tarjeta;
+
+                margin: 100px;
+                border-radius: 10px;
+
+                cursor: pointer;
+
+                @include transition(transform, 0.3s);
+
+                div:first-child {
+                    flex: 1 1 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 120px;
+                    margin: 30px;
+                    font-family: $fuente-principal;
+
+                    p {
+                        background-color: $color-fondo-tarjeta-claro;
+                        width: max-content;
+                        padding: 10px;
+                        color: $color-semitransparente;
+                        font-family: $fuente-secundaria;
+                        
+
+                        border: 2px solid $color-borde-tarjeta;
+                        border-radius: 5px;
+                        
+                        span {
+                            padding-right: 10px;
+                        }
+                    }
+                    h1 {
+                        font-size: 36px;
+                    }
+                    h5 {
+                        color: $color-semitransparente;
+                    }                    
+
+                    border-radius: 5px;
+                }
+                .media-container {
+                    position: relative;
+                    width: 900px;
+                    height: 700px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: #000;
+                }
+
+                .media-layer {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    
+                    @include transition(opacity, 0.3s);
+                }
+
+                .image-layer {
+                    object-fit: cover;
+                }
+
+                .video-layer {
+                    object-fit: contain; // se ve completo
+                    opacity: 0;
+                }
+
+                button {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background: rgba(0, 0, 0, 0.5);
+                    border: none;
+                    color: white;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    z-index: 2;
+                }
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+
+                &:hover .image-layer {
+                    opacity: 0;
+                }
+
+                &:hover .video-layer {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
