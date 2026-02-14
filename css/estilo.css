@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Suez+One&display=swap");
 @keyframes efecto-neon {
   0%, 100% {
-    text-shadow: 0 0 3px #00CCCC, 0 0 5px #00CCCC, 0 0 10px #00CCCC, 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+    text-shadow: 0 0 3px #00CCCC, 0 0 3px #00CCCC, 0 0 5px #00CCCC, 0 0 10px #00FFFF, 0 0 20px #00FFFF;
   }
   50% {
-    text-shadow: 0 0 10px #00CCCC, 0 0 20px #00CCCC, 0 0 40px #00FFFF, 0 0 80px #00FFFF;
+    text-shadow: 0 0 20px #00CCCC, 0 0 40px #00CCCC, 0 0 40px #00FFFF, 0 0 40px #00FFFF;
   }
 }
 * {
@@ -49,6 +49,12 @@ body header #logo-nombre {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header #logo-nombre:hover {
+  transform: scale(1.1);
 }
 body header #texto-header {
   padding: 100px;
