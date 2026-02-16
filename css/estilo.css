@@ -7,6 +7,20 @@
     text-shadow: 0 0 20px #00CCCC, 0 0 40px #00CCCC, 0 0 40px #00FFFF, 0 0 40px #00FFFF;
   }
 }
+@keyframes drift {
+  0% {
+    transform: translate(-120px, -60px) rotate(-85deg);
+    border-radius: 20% 75% 30% 70%/30% 35% 65% 70%;
+  }
+  50% {
+    transform: translate(480px, 120px) rotate(-15deg);
+    border-radius: 70% 30% 35% 65%/65% 45% 55% 35%;
+  }
+  100% {
+    transform: translate(-120px, -60px) rotate(-85deg);
+    border-radius: 20% 75% 30% 70%/30% 35% 65% 70%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +37,8 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #0C0A30;
   min-height: 100vh;
-  height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 body .page-scroll {
   height: 100vh;
@@ -38,6 +52,21 @@ body .page-scroll > main {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+body::after {
+  position: absolute;
+  content: "";
+  width: 60vmin;
+  height: 60vmin;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(180, 89, 14, 0.45), rgba(255, 255, 255, 0) 65%);
+  filter: blur(10px);
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  animation: drift 25s ease-in-out infinite both;
+  pointer-events: none;
+  z-index: 1;
+}
 body header {
   display: flex;
   justify-content: left;
@@ -46,6 +75,7 @@ body header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 2;
 }
 body header #video-header {
   position: absolute;
@@ -57,7 +87,7 @@ body header #video-header {
 }
 body header #logo-nombre {
   position: absolute;
-  top: 40px;
+  top: 80px;
   left: 40px;
   font-family: "Suez One", serif;
   display: flex;
@@ -72,7 +102,7 @@ body header #logo-nombre:hover {
 }
 body header #texto-header {
   padding: 100px;
-  animation: efecto-neon 5s ease-in-out infinite;
+  animation: efecto-neon 5s ease-in-out infinite forwards;
 }
 body header #texto-header h1 {
   font-size: 48px;
@@ -86,17 +116,37 @@ body header img {
   width: 75px;
   height: 75px;
 }
+body header #nav-menu {
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+body header #nav-menu svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
 body main {
-  height: auto;
-  overflow: visible;
+  display: contents;
+}
+body main #seccion-destacada,
+body main #bento-grid {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
 }
 body main #seccion-destacada {
   min-height: 100vh;
   background: radial-gradient(circle at center, #D65108 40%, #070617 100%);
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 50px;
+  position: relative;
 }
 body main #seccion-destacada #noticia-destacada {
   display: flex;
@@ -182,4 +232,170 @@ body main #seccion-destacada #noticia-destacada:hover .image-layer {
 }
 body main #seccion-destacada #noticia-destacada:hover .video-layer {
   opacity: 1;
+}
+body main #bento-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "noticia1 noticia2" "noticia1 noticia3" "noticia4 noticia4";
+  gap: 20px;
+  padding: 150px;
+}
+body main #bento-grid article {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+body main #bento-grid article > * {
+  z-index: 2;
+}
+body main #bento-grid article h3 {
+  margin-bottom: 15px;
+}
+body main #bento-grid article p {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 300px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Suez One", serif;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+body main #bento-grid article p span {
+  padding-right: 10px;
+}
+body main #bento-grid article:hover {
+  transform: scale(1.05);
+}
+body main #bento-grid article::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 1;
+}
+body main #bento-grid #noticia1 {
+  grid-area: noticia1;
+  padding: 60px 50px;
+}
+body main #bento-grid #noticia1 h3 {
+  font-size: 30px;
+}
+body main #bento-grid #noticia1 {
+  background-image: url("https://www.meridiano180.com/wp-content/uploads/2012/09/tunel_greenwich2.jpg");
+}
+body main #bento-grid #noticia2 {
+  grid-area: noticia2;
+  padding: 30px;
+}
+body main #bento-grid #noticia2 h3 {
+  font-size: 25px;
+}
+body main #bento-grid #noticia2 {
+  background-image: url("https://inarquia.es/wp-content/uploads/Casas-ecologicas-portada-1.jpg");
+}
+body main #bento-grid #noticia3 {
+  grid-area: noticia3;
+  padding: 30px;
+}
+body main #bento-grid #noticia3 h3 {
+  font-size: 25px;
+}
+body main #bento-grid #noticia3 {
+  background-image: url("https://www.legaltoday.com/wp-content/uploads/2021/05/investigacion-policial.jpg");
+}
+body main #bento-grid #noticia4 {
+  grid-area: noticia4;
+  padding: 40px;
+}
+body main #bento-grid #noticia4 h3 {
+  font-size: 30px;
+}
+body main #bento-grid #noticia4 {
+  background-image: url("https://www.costabravahouse.com/storage/images/estate/photos/46570/1353098/casa-historica-de-piedra-en-venta-en-peratallada.jpg");
+}
+body footer {
+  font-size: 18px;
+  scroll-snap-align: start;
+  min-height: 10vh;
+  padding: 50px;
+}
+body footer .logo {
+  width: 50px;
+  transform: scale(1.4);
+}
+body footer article:first-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+body footer article:first-child div {
+  display: flex;
+  padding: 5px 0 20px 30px;
+  gap: 60px;
+}
+body footer article:first-child div div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body footer article:first-child div div li {
+  font-size: 14px;
+  font-family: "Suez One", serif;
+  list-style: none;
+  padding: 5px 0 5px 5px;
+  transition: transform 0.3s ease-in-out;
+}
+body footer article:first-child div div li a {
+  text-decoration: none;
+}
+body footer article:first-child div div li:hover {
+  transform: scale(1.2);
+}
+body footer article:last-child {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Suez One", serif;
+  padding-top: 20px;
+}
+body footer article:last-child div a {
+  text-decoration: none;
+}
+body footer article:last-child div a svg {
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+body footer article:last-child div a svg:hover {
+  transform: scale(1.2);
+}
+body footer article:last-child div a:nth-child(1) svg {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+body footer article:last-child div a:nth-child(1) svg:hover {
+  transform: scale(1.5);
+}
+body footer article:last-child div a:nth-child(3) svg {
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+body footer article:last-child div a:nth-child(3) svg:hover {
+  transform: scale(1.1);
+}
+body footer article:last-child div a:nth-child(4) img {
+  width: 20px;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+body footer article:last-child div a:nth-child(4) img:hover {
+  transform: scale(1.4);
 }/*# sourceMappingURL=estilo.css.map */
