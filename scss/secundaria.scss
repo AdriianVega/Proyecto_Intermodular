@@ -76,6 +76,8 @@ body {
     overflow: hidden;
     position: relative;
 
+    padding: 80px;
+
     @include animation(fadeIn, 1s, ease-in-out, 1, forwards);
 
     &::after {
@@ -93,38 +95,45 @@ body {
         pointer-events: none;
         z-index: 1;
     }
-
+    .page-scroll {
+        height: 90vh;
+        overflow-y: auto;
+        background-color: $color-fondo-tarjeta-oscuro;
+        border-radius: 20px;
+    }
     header {
-        position: relative;
-            @include animation(efecto-neon, 5s, ease-in-out, infinite);
+        position: fixed;
+        top: 80px;
+        left: 80px;
+        z-index: 100;
 
-            h1 {
-                font-size: 48px;
-                margin-bottom: 20px;
-            }
+        @include animation(efecto-neon, 5s, ease-in-out, infinite);
 
-            h3 {
-                font-family: $fuente-secundaria;
-                margin-top: 15px;
-            }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
-        #nav-menu {
-            position: fixed;
-            top: 40px;
-            left: 60px;
-            background: transparent;
-            border: 0;
-            cursor: pointer;
-
-            svg {
-                width: 32px;
-                height: 32px;
-                display: block;
-            }
+        h3 {
+            font-family: $fuente-secundaria;
+            margin-top: 15px;
         }
     }
 
+    #nav-menu {
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            display: block;
+        }
+    }
     #menu-lateral {
         position: fixed;
         top: 0;
@@ -275,12 +284,24 @@ body {
             pointer-events: all;
         }
     }
-
     main {
         display: flex;
         flex-direction: column;
 
-        article
+
+        article {
+            padding: 100px 150px;
+            line-height: 2;
+
+            h1 {
+                text-align: center;
+            }
+            img {
+                max-width: 800px;
+                display: block;
+                margin: 40px auto;
+            }
+        }
     }
 
     footer {
@@ -380,11 +401,4 @@ body {
             }
         }
     }
-
-    .page-scroll {
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-
+}
