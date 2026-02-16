@@ -34,27 +34,6 @@ $color-fondo: #0C0A30;
     -webkit-backdrop-filter: blur($blur);
 }
 
-@keyframes efecto-neon {
-
-    0%,
-    100% {
-        text-shadow:
-            0 0 3px $color-neon-dim,
-            0 0 3px $color-neon-dim,
-            0 0 5px $color-neon-dim,
-            0 0 10px $color-neon-cyan,
-            0 0 20px $color-neon-cyan;
-    }
-
-    50% {
-        text-shadow:
-            0 0 20px $color-neon-dim,
-            0 0 40px $color-neon-dim,
-            0 0 40px $color-neon-cyan,
-            0 0 40px $color-neon-cyan;
-    }
-}
-
 @keyframes drift {
     0% {
         transform: translate(-120px, -60px) rotate(-85deg);
@@ -71,6 +50,7 @@ $color-fondo: #0C0A30;
         border-radius: 20% 75% 30% 70% / 30% 35% 65% 70%;
     }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -89,11 +69,6 @@ $color-fondo: #0C0A30;
     color: white;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     font-family: $fuente-principal;
     background-color: $color-fondo;
@@ -102,20 +77,6 @@ body {
     position: relative;
 
     @include animation(fadeIn, 1s, ease-in-out, 1, forwards);
-
-    .page-scroll {
-        height: 100vh;
-        overflow-y: auto;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    }
-
-    .page-scroll>header,
-    .page-scroll>main {
-        min-height: 100vh;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
 
     &::after {
         position: absolute;
@@ -134,42 +95,7 @@ body {
     }
 
     header {
-        display: flex;
-        justify-content: left;
-        align-items: center;
         position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        z-index: 2;
-
-        #video-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        #logo-nombre {
-            position: absolute;
-            top: 80px;
-            left: 40px;
-            font-family: $fuente-secundaria;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            @include transition(transform, 0.3s);
-            cursor: pointer;
-            text-decoration: none;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        #texto-header {
-            padding: 100px;
             @include animation(efecto-neon, 5s, ease-in-out, infinite);
 
             h1 {
@@ -181,11 +107,6 @@ body {
                 font-family: $fuente-secundaria;
                 margin-top: 15px;
             }
-        }
-
-        img {
-            width: 75px;
-            height: 75px;
         }
 
         #nav-menu {
@@ -202,7 +123,6 @@ body {
                 display: block;
             }
         }
-        
     }
 
     #menu-lateral {
@@ -212,7 +132,7 @@ body {
 
         width: 350px;
         height: 100vh;
-        
+
         background: $color-fondo-tarjeta-oscuro;
 
         @include desenfoque(10px);
@@ -220,7 +140,7 @@ body {
         transform: translateX(100%);
 
         @include transition(transform, 0.3s, ease-in-out);
-        
+
         z-index: 1001;
         padding: 48px 32px;
         border-left: 2px solid $color-borde-tarjeta;
@@ -282,7 +202,7 @@ body {
 
                         font-size: 24px;
                         font-family: $fuente-secundaria;
-                        
+
                         padding: 8px 0;
 
                         cursor: pointer;
@@ -298,7 +218,7 @@ body {
                         max-height: 0;
 
                         overflow: hidden;
-                        
+
                         @include transition(max-height, 0.4s, ease-in-out);
 
                         li {
@@ -309,7 +229,7 @@ body {
                             a {
                                 font-size: 18px;
                                 font-family: $fuente-principal;
-                                
+
                                 color: rgba(255, 255, 255, 0.8);
                                 padding: 5px 0;
 
@@ -344,9 +264,9 @@ body {
 
         background-color: rgba(0, 0, 0, 0.7);
         opacity: 0;
-        
+
         pointer-events: none;
-        
+
         @include transition(opacity, 0.4s);
         z-index: 1000;
 
@@ -355,226 +275,12 @@ body {
             pointer-events: all;
         }
     }
+
     main {
-        display: contents;
+        display: flex;
+        flex-direction: column;
 
-        #seccion-destacada,
-        #bento-grid {
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-            min-height: 100vh;
-        }
-
-        #seccion-destacada {
-            min-height: 100vh;
-            background: $gradiente-noticia-destacada;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-            position: relative;
-
-            #noticia-destacada {
-                display: flex;
-                background-color: $color-fondo-tarjeta-oscuro;
-                border: 2px solid $color-borde-tarjeta;
-                margin: 100px;
-                border-radius: 10px;
-                cursor: pointer;
-                @include transition(transform, 0.3s);
-
-                div:first-child {
-                    flex: 1 1 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 120px;
-                    margin: 30px;
-                    font-family: $fuente-principal;
-
-                    p {
-                        background-color: $color-fondo-tarjeta-claro;
-                        width: max-content;
-                        padding: 10px;
-                        color: $color-semitransparente;
-                        font-family: $fuente-secundaria;
-                        border: 2px solid $color-borde-tarjeta;
-                        border-radius: 5px;
-
-                        span {
-                            padding-right: 10px;
-                        }
-                    }
-
-                    h1 {
-                        font-size: 36px;
-                    }
-
-                    h5 {
-                        color: $color-semitransparente;
-                    }
-
-                    border-radius: 5px;
-                }
-
-                .media-container {
-                    position: relative;
-                    width: 900px;
-                    height: 700px;
-                    border-radius: 5px;
-                    overflow: hidden;
-                    background: #000;
-                }
-
-                .media-layer {
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    pointer-events: none;
-                    @include transition(opacity, 0.3s);
-                }
-
-                .image-layer {
-                    object-fit: cover;
-                }
-
-                .video-layer {
-                    object-fit: contain;
-                    opacity: 0;
-                }
-
-                button {
-                    position: absolute;
-                    bottom: 10px;
-                    right: 10px;
-                    background: rgba(0, 0, 0, 0.5);
-                    border: none;
-                    color: white;
-                    padding: 5px 10px;
-                    cursor: pointer;
-                    z-index: 2;
-                }
-
-                &:hover {
-                    transform: scale(1.04);
-                }
-
-                &:hover .image-layer {
-                    opacity: 0;
-                }
-
-                &:hover .video-layer {
-                    opacity: 1;
-                }
-            }
-        }
-
-        #bento-grid {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            grid-template-areas:
-                "noticia1 noticia2"
-                "noticia1 noticia3"
-                "noticia4 noticia4";
-            gap: 20px;
-            padding: 150px;
-
-            article {
-                background-color: $color-fondo-tarjeta-oscuro;
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                border-radius: 10px;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: relative;
-                cursor: pointer;
-                @include transition(transform, 0.3s);
-
-                >* {
-                    z-index: 2;
-                }
-
-                h3 {
-                    margin-bottom: 15px;
-                }
-
-                p {
-                    background-color: $color-fondo-tarjeta-claro;
-                    width: 300px;
-                    padding: 10px;
-                    color: $color-semitransparente;
-                    font-family: $fuente-secundaria;
-                    border: 2px solid $color-borde-tarjeta;
-                    border-radius: 5px;
-
-                    span {
-                        padding-right: 10px;
-                    }
-                }
-
-                &:hover {
-                    transform: scale(1.05);
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    background: rgba(0, 0, 0, 0.5);
-                    border-radius: 10px;
-                    pointer-events: none;
-                    z-index: 1;
-                }
-            }
-
-            #noticia1 {
-                grid-area: noticia1;
-                padding: 60px 50px;
-
-                h3 {
-                    font-size: 30px;
-                }
-
-                background-image: url("https://www.meridiano180.com/wp-content/uploads/2012/09/tunel_greenwich2.jpg");
-            }
-
-            #noticia2 {
-                grid-area: noticia2;
-                padding: 30px;
-
-                h3 {
-                    font-size: 25px;
-                }
-
-                background-image: url("https://inarquia.es/wp-content/uploads/Casas-ecologicas-portada-1.jpg");
-            }
-
-            #noticia3 {
-                grid-area: noticia3;
-                padding: 30px;
-
-                h3 {
-                    font-size: 25px;
-                }
-
-                background-image: url("https://www.legaltoday.com/wp-content/uploads/2021/05/investigacion-policial.jpg");
-            }
-
-            #noticia4 {
-                grid-area: noticia4;
-                padding: 40px;
-
-                h3 {
-                    font-size: 30px;
-                }
-
-                background-image: url("https://www.costabravahouse.com/storage/images/estate/photos/46570/1353098/casa-historica-de-piedra-en-venta-en-peratallada.jpg");
-            }
-        }
+        article
     }
 
     footer {
@@ -582,6 +288,8 @@ body {
         scroll-snap-align: start;
         min-height: 10vh;
         padding: 50px;
+        position: relative;
+        z-index: 2;
 
         .logo {
             width: 50px;
@@ -673,12 +381,10 @@ body {
         }
     }
 
-    .fade-in-element {
-        opacity: 0;
-        @include transition(all, 0.8s, ease-out);
+    .page-scroll {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 
-    .fade-in-element.visible {
-        opacity: 1;
-    }
-}

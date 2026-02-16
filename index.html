@@ -49,8 +49,42 @@
             
         </header>
 
+        <aside id="menu-lateral" class="menu-oculto">
+            <button id="cerrar-menu" class="btn-cerrar">✕</button>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <span class="drodown">Países</span>
+
+                        <ul>
+                            <li><a href="#">América</a></li>
+                            <li><a href="#">Europa</a></li>
+                            <li><a href="#">Asia</a></li>
+                            <li><a href="#">África</a></li>
+                            <li><a href="#">Oceanía</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="dropdown">Categorías</span>
+                        <ul>
+                            <li><a href="#">Tecnología</a></li>
+                            <li><a href="#">Ciencia</a></li>
+                            <li><a href="#">Salud</a></li>
+                            <li><a href="#">Deportes</a></li>
+                            <li><a href="#">Entretenimiento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div id="overlay"></div>
+
         <main id="scroll-container">
-            <section id="seccion-destacada">
+            <section id="seccion-destacada" class="fade-in-element">
                 <article id="noticia-destacada">
                     <div>
                         <p><span>🇨🇿</span>REPÚBLICA CHECA</p>
@@ -95,7 +129,7 @@
                 </article>
             </section>
 
-            <section id="bento-grid">
+            <section id="bento-grid" class="fade-in-element">
                 <article id="noticia1">
                     <h3>Descubren un túnel subterráneo bajo una vivienda en Nápoles que podría tener origen romano</h3>
                     <p><span>🇳🇵</span> NEPAL</p>
@@ -116,11 +150,9 @@
                     <p>🇲🇦 MARRUECOS</p>
                 </article>
             </section>
-
-            
         </main>
 
-        <footer>
+        <footer class="fade-in-element">
         
             <section>
                 <article>
@@ -213,9 +245,79 @@
                     </div>
                 </article>
             </section>
-        
-            
         </footer>
     </div>
+    <script>
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1.5s ease-in';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const maxScroll = 500;
+            const opacity = Math.min(scrolled / maxScroll, 1);
+            document.body.style.opacity = opacity;
+        });
+
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-element').forEach(element => {
+            observer.observe(element);
+        });
+
+        const navMenu = document.getElementById('nav-menu');
+        const menuLateral = document.getElementById('menu-lateral');
+        const overlay = document.getElementById('overlay');
+        const cerrarMenu = document.getElementById('cerrar-menu');
+
+        navMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuLateral.classList.add('menu-visible');
+            overlay.classList.add('overlay-visible');
+        });
+
+        overlay.addEventListener('click', () => {
+            menuLateral.classList.remove('menu-visible');
+            overlay.classList.remove('overlay-visible');
+        });
+
+        cerrarMenu.addEventListener('click', () => {
+            menuLateral.classList.remove('menu-visible');
+            overlay.classList.remove('overlay-visible');
+        });
+
+        menuLateral.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        const dropdownItems = document.querySelectorAll('#menu-lateral nav > ul > li > span');
+        
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const parentLi = this.parentElement;
+                
+                parentLi.classList.toggle('dropdown-abierto');
+            });
+        });
+    </script>
 </body>
 </html>
