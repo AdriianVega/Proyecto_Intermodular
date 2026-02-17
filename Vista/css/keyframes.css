@@ -1,0 +1,30 @@
+@keyframes efecto-neon {
+  0%, 100% {
+    text-shadow: 0 0 3px #00CCCC, 0 0 3px #00CCCC, 0 0 5px #00CCCC, 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  }
+  50% {
+    text-shadow: 0 0 20px #00CCCC, 0 0 40px #00CCCC, 0 0 40px #00FFFF, 0 0 40px #00FFFF;
+  }
+}
+@keyframes drift {
+  0% {
+    transform: translate(-120px, -60px) rotate(-85deg);
+    border-radius: 20% 75% 30% 70%/30% 35% 65% 70%;
+  }
+  50% {
+    transform: translate(480px, 120px) rotate(-15deg);
+    border-radius: 70% 30% 35% 65%/65% 45% 55% 35%;
+  }
+  100% {
+    transform: translate(-120px, -60px) rotate(-85deg);
+    border-radius: 20% 75% 30% 70%/30% 35% 65% 70%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=keyframes.css.map */

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 #menu-lateral {
     position: fixed;
     top: 0;

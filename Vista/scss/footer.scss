@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 footer {
     font-size: 18px;
     scroll-snap-align: start;
@@ -83,11 +86,12 @@ footer {
 
             a:nth-child(4) img {
                 width: 20px;
-                transform: scale(1.2);
+                transform: scale(1.2) translateY(-3px);
+
                 @include transition(transform, 0.3s);
 
                 &:hover {
-                    transform: scale(1.4);
+                    transform: scale(1.4) translateY(-3px);
                 }
             }
         }

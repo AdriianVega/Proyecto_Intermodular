@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Suez+One&display=swap');
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'keyframes' as *;
+@use 'header' as *;
+@use 'aside' as *;
+@use 'footer' as *;
 
-@import 'variables';
-@import 'mixins';
-@import 'keyframes';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Suez+One&display=swap');
 
 * {
     margin: 0;
@@ -55,10 +58,6 @@ body {
         pointer-events: none;
         z-index: 1;
     }
-
-    @import 'header';
-
-    @import 'aside';
 
     main {
         display: contents;
@@ -281,7 +280,6 @@ body {
             }
         }
     }
-    @import 'footer';
     
     .fade-in-element {
         opacity: 0;

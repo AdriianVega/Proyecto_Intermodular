@@ -30,6 +30,257 @@
     opacity: 1;
   }
 }
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+header #video-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+header #logo-nombre {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  font-family: "Suez One", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+header #logo-nombre:hover {
+  transform: scale(1.1);
+}
+header #texto-header {
+  padding: 100px;
+  animation: efecto-neon 5s ease-in-out infinite forwards;
+}
+header #texto-header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+header #texto-header h3 {
+  font-family: "Suez One", serif;
+  margin-top: 15px;
+}
+header img {
+  width: 75px;
+  height: 75px;
+}
+header #nav-menu {
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+header #nav-menu svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+#menu-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1001;
+  padding: 48px 32px;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+#menu-lateral.menu-visible {
+  transform: translateX(0);
+}
+#menu-lateral .btn-cerrar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+#menu-lateral .btn-cerrar:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+#menu-lateral nav {
+  margin-top: 80px;
+}
+#menu-lateral nav ul {
+  list-style: none;
+  padding: 0;
+}
+#menu-lateral nav ul li {
+  margin: 32px 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+#menu-lateral nav ul li:hover {
+  transform: translateX(10px);
+}
+#menu-lateral nav ul li a,
+#menu-lateral nav ul li span {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Suez One", serif;
+  padding: 8px 0;
+  cursor: pointer;
+}
+#menu-lateral nav ul li span::after {
+  content: " ⏷";
+}
+#menu-lateral nav ul li ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+#menu-lateral nav ul li ul li {
+  margin: 16px 0;
+  transition: all 0.3s ease-in-out;
+}
+#menu-lateral nav ul li ul li a {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+}
+#menu-lateral nav ul li ul li a:hover {
+  padding-left: 5px;
+}
+#menu-lateral nav ul li ul li:hover {
+  transform: translateX(5px);
+}
+#menu-lateral nav ul li.dropdown-abierto span::after {
+  content: " ⏶";
+}
+#menu-lateral nav ul li.dropdown-abierto ul {
+  max-height: 500px;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1000;
+}
+#overlay.overlay-visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+footer {
+  font-size: 18px;
+  scroll-snap-align: start;
+  min-height: 10vh;
+  padding: 50px;
+}
+footer .logo {
+  width: 50px;
+  transform: scale(1.4);
+}
+footer article:first-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer article:first-child div {
+  display: flex;
+  padding: 5px 0 20px 30px;
+  gap: 60px;
+}
+footer article:first-child div div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer article:first-child div div li {
+  font-size: 14px;
+  font-family: "Suez One", serif;
+  list-style: none;
+  padding: 5px 0 5px 5px;
+  transition: transform 0.3s ease-in-out;
+}
+footer article:first-child div div li a {
+  text-decoration: none;
+}
+footer article:first-child div div li:hover {
+  transform: scale(1.2);
+}
+footer article:last-child {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Suez One", serif;
+  padding-top: 20px;
+}
+footer article:last-child div a {
+  text-decoration: none;
+}
+footer article:last-child div a svg {
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+footer article:last-child div a svg:hover {
+  transform: scale(1.2);
+}
+footer article:last-child div a:nth-child(1) svg {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+footer article:last-child div a:nth-child(1) svg:hover {
+  transform: scale(1.5);
+}
+footer article:last-child div a:nth-child(3) svg {
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+footer article:last-child div a:nth-child(3) svg:hover {
+  transform: scale(1.1);
+}
+footer article:last-child div a:nth-child(4) img {
+  width: 20px;
+  transform: scale(1.2) translateY(-3px);
+  transition: transform 0.3s ease-in-out;
+}
+footer article:last-child div a:nth-child(4) img:hover {
+  transform: scale(1.4) translateY(-3px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,177 +328,6 @@ body::after {
   animation: drift 25s ease-in-out infinite both;
   pointer-events: none;
   z-index: 1;
-}
-body header {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 2;
-}
-body header #video-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-}
-body header #logo-nombre {
-  position: absolute;
-  top: 80px;
-  left: 40px;
-  font-family: "Suez One", serif;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-body header #logo-nombre:hover {
-  transform: scale(1.1);
-}
-body header #texto-header {
-  padding: 100px;
-  animation: efecto-neon 5s ease-in-out infinite forwards;
-}
-body header #texto-header h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-body header #texto-header h3 {
-  font-family: "Suez One", serif;
-  margin-top: 15px;
-}
-body header img {
-  width: 75px;
-  height: 75px;
-}
-body header #nav-menu {
-  position: fixed;
-  top: 40px;
-  left: 60px;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-body header #nav-menu svg {
-  width: 32px;
-  height: 32px;
-  display: block;
-}
-body #menu-lateral {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 350px;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1001;
-  padding: 48px 32px;
-  border-left: 2px solid rgba(255, 255, 255, 0.1);
-}
-body #menu-lateral.menu-visible {
-  transform: translateX(0);
-}
-body #menu-lateral .btn-cerrar {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 32px;
-  cursor: pointer;
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-}
-body #menu-lateral .btn-cerrar:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: rotate(90deg);
-}
-body #menu-lateral nav {
-  margin-top: 80px;
-}
-body #menu-lateral nav ul {
-  list-style: none;
-  padding: 0;
-}
-body #menu-lateral nav ul li {
-  margin: 32px 0;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-}
-body #menu-lateral nav ul li:hover {
-  transform: translateX(10px);
-}
-body #menu-lateral nav ul li a,
-body #menu-lateral nav ul li span {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-family: "Suez One", serif;
-  padding: 8px 0;
-  cursor: pointer;
-}
-body #menu-lateral nav ul li span::after {
-  content: " ⏷";
-}
-body #menu-lateral nav ul li ul {
-  padding-left: 20px;
-  margin-top: 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
-}
-body #menu-lateral nav ul li ul li {
-  margin: 16px 0;
-  transition: all 0.3s ease-in-out;
-}
-body #menu-lateral nav ul li ul li a {
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 5px 0;
-}
-body #menu-lateral nav ul li ul li a:hover {
-  padding-left: 5px;
-}
-body #menu-lateral nav ul li ul li:hover {
-  transform: translateX(5px);
-}
-body #menu-lateral nav ul li.dropdown-abierto span::after {
-  content: " ⏶";
-}
-body #menu-lateral nav ul li.dropdown-abierto ul {
-  max-height: 500px;
-}
-body #overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease-in-out;
-  z-index: 1000;
-}
-body #overlay.overlay-visible {
-  opacity: 1;
-  pointer-events: all;
 }
 body main {
   display: contents;
@@ -442,82 +522,6 @@ body main #bento-grid #noticia4 h3 {
 }
 body main #bento-grid #noticia4 {
   background-image: url("https://www.costabravahouse.com/storage/images/estate/photos/46570/1353098/casa-historica-de-piedra-en-venta-en-peratallada.jpg");
-}
-body footer {
-  font-size: 18px;
-  scroll-snap-align: start;
-  min-height: 10vh;
-  padding: 50px;
-}
-body footer .logo {
-  width: 50px;
-  transform: scale(1.4);
-}
-body footer article:first-child {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-body footer article:first-child div {
-  display: flex;
-  padding: 5px 0 20px 30px;
-  gap: 60px;
-}
-body footer article:first-child div div {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-body footer article:first-child div div li {
-  font-size: 14px;
-  font-family: "Suez One", serif;
-  list-style: none;
-  padding: 5px 0 5px 5px;
-  transition: transform 0.3s ease-in-out;
-}
-body footer article:first-child div div li a {
-  text-decoration: none;
-}
-body footer article:first-child div div li:hover {
-  transform: scale(1.2);
-}
-body footer article:last-child {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Suez One", serif;
-  padding-top: 20px;
-}
-body footer article:last-child div a {
-  text-decoration: none;
-}
-body footer article:last-child div a svg {
-  width: 25px;
-  transition: transform 0.3s ease-in-out;
-}
-body footer article:last-child div a svg:hover {
-  transform: scale(1.2);
-}
-body footer article:last-child div a:nth-child(1) svg {
-  transform: scale(1.3);
-  transition: transform 0.3s ease-in-out;
-}
-body footer article:last-child div a:nth-child(1) svg:hover {
-  transform: scale(1.5);
-}
-body footer article:last-child div a:nth-child(3) svg {
-  transform: scale(0.9);
-  transition: transform 0.3s ease-in-out;
-}
-body footer article:last-child div a:nth-child(3) svg:hover {
-  transform: scale(1.1);
-}
-body footer article:last-child div a:nth-child(4) img {
-  width: 20px;
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
-body footer article:last-child div a:nth-child(4) img:hover {
-  transform: scale(1.4);
 }
 body .fade-in-element {
   opacity: 0;
