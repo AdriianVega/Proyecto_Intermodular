@@ -1,0 +1,18 @@
+@mixin transition($property, $duration, $timing: ease-in-out) {
+    -webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin animation($name, $duration, $timing: ease-in-out, $iteration: forwards, $fill: forwards) {
+    -webkit-animation: $name $duration $timing $iteration $fill;
+    -moz-animation: $name $duration $timing $iteration $fill;
+    -o-animation: $name $duration $timing $iteration $fill;
+    animation: $name $duration $timing $iteration $fill;
+}
+
+@mixin desenfoque($blur) {
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
+}
