@@ -1,0 +1,310 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e2e8f0;
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  transform: scale(1.05);
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 260px;
+  height: 100vh;
+  z-index: 1050;
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid #D500F9;
+  box-shadow: 5px 0 25px rgba(213, 0, 249, 0.2);
+  transition: left 0.3s ease-in-out;
+}
+#sidebar #flecha {
+  position: absolute;
+  top: 30px;
+  right: -28px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border-top: 1px solid #D500F9;
+  border-right: 1px solid #D500F9;
+  border-bottom: 1px solid #D500F9;
+  backdrop-filter: blur(10px);
+}
+#sidebar #flecha img {
+  width: 25px;
+  filter: invert(1);
+  border-radius: 0px;
+}
+#sidebar img {
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 5px;
+}
+#sidebar span {
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+  padding: 10px 0;
+}
+#sidebar small {
+  text-align: center;
+}
+#sidebar .border-bottom {
+  border-bottom: 1px solid #00E5FF !important;
+}
+#sidebar .icon {
+  width: 20px;
+}
+#sidebar::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: -100px;
+  height: 100%;
+  z-index: 0;
+  background: transparent;
+}
+#sidebar:hover {
+  left: 0;
+  right: -50px;
+}
+#sidebar h4 {
+  color: #00E5FF;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  font-weight: 700;
+}
+#sidebar .list-group-item {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-out;
+}
+#sidebar .list-group-item:hover, #sidebar .list-group-item.active {
+  background: linear-gradient(90deg, rgba(213, 0, 249, 0.2), transparent);
+  color: #00E5FF;
+  border-left: 4px solid #00E5FF;
+  padding-left: 25px;
+  text-shadow: 0 0 5px #00E5FF;
+}
+#sidebar .mt-auto .btn-danger {
+  background: transparent;
+  border: 1px solid #ff1744;
+  color: #ff1744;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+#sidebar .mt-auto .btn-danger:hover {
+  background: #ff1744;
+  color: white;
+  box-shadow: 0 0 15px #ff1744;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.card-header,
+.table-dark {
+  background: linear-gradient(135deg, #240b36, #2d1b4e) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table {
+  color: #e2e8f0 !important;
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+.table tr, .table th, .table td {
+  color: white;
+  background-color: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.table thead th {
+  color: #00E5FF;
+  border-bottom: 2px solid #D500F9;
+}
+.table tbody tr {
+  transition: all 0.3s ease-out;
+}
+.table tbody tr:hover {
+  background-color: rgba(0, 229, 255, 0.15) !important;
+}
+.table tbody tr:hover td {
+  color: white;
+}
+
+.form-control,
+.form-select {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.form-control::-moz-placeholder, .form-select::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-control::placeholder,
+.form-select::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: #00E5FF;
+  color: #00E5FF !important;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+.form-control option,
+.form-select option {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid #00E5FF;
+  color: #00E5FF;
+}
+.btn-primary:hover {
+  background: #00E5FF;
+  color: #000;
+  box-shadow: 0 0 15px #00E5FF;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid gray;
+  color: white;
+}
+.btn-secondary:hover {
+  background: gray;
+  box-shadow: 0 0 15px gray;
+}
+
+.btn-success {
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid #2ecc71;
+}
+.btn-success:hover {
+  background: #2ecc71;
+  box-shadow: 0 0 15px #2ecc71;
+}
+
+.btn-sm {
+  transition: all 0.3s ease-out;
+}
+.btn-sm.btn-warning {
+  background: transparent;
+  border: 1px solid #ffca28;
+  color: #ffca28;
+}
+.btn-sm.btn-warning:hover {
+  background: #ffca28;
+  color: #000;
+  box-shadow: 0 0 10px #ffca28;
+}
+.btn-sm.btn-danger {
+  background: transparent;
+  border: 1px solid #ff1744;
+  color: #ff1744;
+}
+.btn-sm.btn-danger:hover {
+  background: #ff1744;
+  color: #fff;
+  box-shadow: 0 0 10px #ff1744;
+}
+
+.btn-light {
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid white;
+}
+.btn-light:hover {
+  background: white;
+  box-shadow: 0 0 15px white;
+}
+
+.pagination {
+  margin-top: 1rem;
+}
+.pagination .page-link {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+}
+.pagination .page-link:hover {
+  background-color: rgba(213, 0, 249, 0.3);
+  border-color: #D500F9;
+}
+.pagination .page-item.disabled .page-link {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-color: transparent;
+}
+
+.container-fluid {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.modal-backdrop {
+  z-index: 1060 !important;
+}
+
+.modal {
+  z-index: 1070 !important;
+}
+
+.modal-content {
+  background-color: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ff1744;
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 23, 68, 0.4);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modal-header .modal-title {
+  color: #e2e8f0;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(255, 23, 68, 0.5);
+}
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-body {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  gap: 15px;
+}/*# sourceMappingURL=tablas.css.map */
