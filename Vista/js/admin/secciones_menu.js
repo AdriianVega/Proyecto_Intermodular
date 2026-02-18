@@ -3,22 +3,17 @@ const main = document.getElementsByTagName("main")[0];
 
 // Definimos todas las secciones del menú con su ruta e icono
 const secciones = [
-    { titulo: "Productos", imagen: "../img/menu/caja.svg", ruta: "../productos/gestion_productos.php", admin: false},
-    { titulo: "Clientes", imagen: "../img/menu/personas.svg", ruta: "../clientes/gestion_clientes.php", admin: false},
-    { titulo: "Pedidos", imagen: "../img/menu/entrega-de-pedidos.svg", ruta: "../pedidos/gestion_pedidos.php", admin: false},
-    { titulo: "Categorías", imagen: "../img/menu/lista.svg", ruta: "../categorias/gestion_categorias.php", admin: false},
-    { titulo: "Usuarios", imagen: "../img/menu/usuario.svg", ruta: "../usuarios/gestion_usuarios.php", admin: true},
-    { titulo: "Configuración", imagen: "../img/menu/ajuste.svg", ruta: "../configuracion/configuracion.php", admin: false},
-    { titulo: "Cerrar Sesión", imagen: "../img/menu/logout.svg", ruta: "../php/logout.php", admin: false},
+    { titulo: "Noticias", imagen: "../../img/admin/menu/noticias.svg", ruta: "../noticias/gestion_noticias.php"},
+    { titulo: "Paises", imagen: "../../img/admin/menu/pais.svg", ruta: "../paises/gestion_paises.php"},
+    { titulo: "Medios", imagen: "../../img/admin/menu/medio.svg", ruta: "../medios/gestion_medios.php"},
+    { titulo: "Categorías", imagen: "../../img/admin/menu/lista.svg", ruta: "../categorias/gestion_categorias.php"},
+    { titulo: "Usuarios", imagen: "../../img/admin/menu/usuario.svg", ruta: "../usuarios/gestion_usuarios.php"},
+    { titulo: "Configuración", imagen: "../../img/admin/menu/ajuste.svg", ruta: "../configuracion/configuracion.php"},
+    { titulo: "Cerrar Sesión", imagen: "../../img/admin/menu/logout.svg", ruta: "../../php/admin/logout.php"},
 ]
 
 // Recorremos el array para crear cada tarjeta del menú
 for (let seccion of secciones) {
-
-    // Comprobamos si la sección es solo para admin y si el usuario actual lo es
-    if (seccion.admin && USER_CONFIG.rol != 1) {
-        continue;
-    }
 
     // Creamos el enlace que envuelve a la sección
     const enlace = document.createElement("a");

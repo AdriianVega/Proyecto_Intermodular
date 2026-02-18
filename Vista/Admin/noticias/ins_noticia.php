@@ -1,162 +1,142 @@
 <?php
-    // Iniciamos la sesión
-    session_start();
+session_start();
+
+if (!isset($_SESSION["email"])) {
+    header("location: ../../control.php");
+    die();
+}
+
+include "../../../Modelo/db/db.inc";
+
+// Función auxiliar para nombres de archivo
+function limpiarNombreArchivo($str) {
+    $str = strtolower(trim($str));
+    $str = preg_replace('/[^a-z0-9-]/', '-', $str);
+    return trim($str, '-');
+}
+
+// Cargar listas para los selects
+$paises = $conn->query("SELECT id, nombre FROM pais ORDER BY nombre ASC");
+$medios = $conn->query("SELECT id, nombre FROM medio ORDER BY nombre ASC");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // Si no está logueado, redirigimos al inicio
-    if(!isset($_SESSION["nombre"])) {
-        header("location:../index.php");
-        die();
-    }
+    // Directorio de destino
+    $directorio = "../../img/noticias/"; 
+    $nuevo_nombre_archivo = "";
 
-    // Iniciamos la conexión a la base de datos
-    include "../db/db.inc";
-
-    // Función para limpiar el nombre de la imagen
-    function nombreImagen($str) {
-        $str = strtolower(trim($str));
-        $str = preg_replace('/[^a-z0-9-]/', '-', $str);
-        $str = preg_replace('/-+/', '-', $str);
-        return trim($str, '-');
-    }
-
-    // Sacamos los datos de la sesión
-    $nombre_usuario = $_SESSION["nombre"];
-    $rol= $_SESSION["rol"];
-    $pagina_activa = "productos";
-
-    // Si recibimos los datos del producto
-    if(isset($_POST["nombre"]) && !empty($_POST["nombre"])) {
-        
-        $directorio = "../img/productos/";
-
-        // Sacamos la ruta temporal y preparamos un nombre único
+    // 1. Procesar Imagen (Campo 'url' en la BD)
+    if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0) {
         $archivo_temporal = $_FILES["imagen"]["tmp_name"];
-        $archivo_original = uniqid().$_FILES["imagen"]["name"];
-        $extension = pathinfo($archivo_original, PATHINFO_EXTENSION);
+        $extension = pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION);
+        $nuevo_nombre_archivo = limpiarNombreArchivo($_POST["nombre"]) . "_" . time() . "." . $extension;
 
-        // Generamos el nombre final basado en el producto y el timestamp
-        $nuevo_nombre = nombreImagen($_POST["nombre"]) . "_" . time() . "." . $extension;
-
-        // Comprobamos si se ha subido bien la imagen
-        if (!isset($_FILES["imagen"]) || $_FILES["imagen"]["error"] != 0)
-        {
-            $nuevo_nombre = "fondo.jpg";
+        if (getimagesize($archivo_temporal)) {
+            move_uploaded_file($archivo_temporal, $directorio . $nuevo_nombre_archivo);
         }
-        // Comprobamos que el archivo sea una imagen real
-        elseif (getimagesize($archivo_temporal))
-        {
-            // Colocamos la ruta donde vamos a guardar la foto
-            $ruta_final = $directorio . $nuevo_nombre;
-
-            // Movemos el archivo de la carpeta temporal a la final
-            if(move_uploaded_file($archivo_temporal, $directorio . $nuevo_nombre))
-            {
-                echo "<h1> $nuevo_nombre </h1>";
-                echo "<img src='$ruta_final' alt='$archivo_original'>";
-            }
-            else
-            {
-                $error = "Se ha producido un error subiendo el icono";
-            }
-        }
-        else
-        {
-            $error = "Sólo se permiten imagenes";
-        }
-        
-        // Limpiamos los datos del formulario para evitar inyecciones SQL
-        $nombre = mysqli_real_escape_string($conn, $_POST["nombre"]);
-        $descripcion = mysqli_real_escape_string($conn, $_POST["descripcion"]);
-        $precio = floatval($_POST["precio"]);
-        $stock = intval($_POST["stock"]);
-        $categoria_id = intval($_POST["categoria_id"]);
-        $estado = intval($_POST["estado"]);
-        
-        try {
-                // Metemos el nuevo producto en la base de datos
-                $sql = "INSERT INTO productos (nombre, descripcion, precio, stock, categoria_id, imagen, estado)
-                VALUES ('$nombre', '$descripcion', '$precio', '$stock', '$categoria_id', '$nuevo_nombre', '$estado');";
-
-                // Ejecutamos la inserción
-                mysqli_query($conn, $sql);
-
-                // Redirigimos a la gestión con mensaje de éxito
-                header("location:gestion_productos.php?msg=0");
-            }
-            catch (mysqli_sql_exception $e) {
-                header("location:gestion_productos.php?msg=error");
-            }
     }
-?>
 
+    // 2. Procesar Datos de Texto
+    $nombre = $conn->real_escape_string($_POST["nombre"]);
+    $texto_original = $conn->real_escape_string($_POST["texto_original"]);
+    $texto_traducido = $conn->real_escape_string($_POST["texto_traducido"]);
+    $pais_id = !empty($_POST["pais_id"]) ? intval($_POST["pais_id"]) : "NULL";
+    $medio_id = !empty($_POST["medio_id"]) ? intval($_POST["medio_id"]) : "NULL";
+    
+    // Fecha actual para fecha_publicacion
+    $fecha_publicacion = date('Y-m-d H:i:s');
+
+    // 3. Insertar en BD
+    // Nota: 'url' guarda el nombre del archivo de imagen
+    $sql = "INSERT INTO noticia (nombre, url, texto_original, texto_traducido, fecha_publicacion, pais_id, medio_id)
+            VALUES ('$nombre', '$nuevo_nombre_archivo', '$texto_original', '$texto_traducido', '$fecha_publicacion', $pais_id, $medio_id)";
+
+    if ($conn->query($sql)) {
+        header("location: gestion_noticias.php?msg=created");
+    } else {
+        $error = "Error al guardar: " . $conn->error;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/tablas.css">
-    <title>Nuevo Producto</title>
+    <title>Nueva Noticia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin/estilo.css">
 </head>
 <body class="bg-light">
-    <?php include "../php/panel_control.php"; ?>
-    
-    <main class="container mt-5">
-        <div class="card shadow">
-            <div class="card-header bg-success text-white">
-                <h2 class="h4 mb-0">📦 Añadir Producto</h2>
-            </div>
-            <div class="card-body">
-                <form method="POST" enctype="multipart/form-data">
-                    <div class="row g-3">
-                        
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre del Producto</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="categoria_id" class="form-label">ID de Categoría</label>
-                            <input type="number" class="form-control" id="categoria_id" name="categoria_id" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="descripcion" class="form-label">Descripción</label>
-                            <textarea class="form-control" id="descripcion" name="descripcion" rows="2" required></textarea>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="precio" class="form-label">Precio (€)</label>
-                            <input type="number" step="0.01" class="form-control" id="precio" name="precio" required>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="stock" class="form-label">Stock (Unidades)</label>
-                            <input type="number" class="form-control" id="stock" name="stock" required>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="estado" class="form-label">Estado</label>
-                            <select name="estado" id="estado" class="form-select" required>
-                                <option value="1" selected>Activo</option>
-                                <option value="0">Inactivo</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-12">
-                            <label for="imagen" class="form-label">Nombre del archivo de imagen</label>
-                            <input type="file" class="form-control" id="imagen" name="imagen">
-                        </div>
-
-                        <div class="col-12 mt-4">
-                            <button type="submit" class="btn btn-success w-100">Guardar Producto</button>
-                            <a href="gestion_productos.php" class="btn btn-secondary w-100 mt-2">Cancelar</a>
-                        </div>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0 rounded-4">
+                    <div class="card-header bg-success text-white border-0 pt-4 px-4">
+                        <h4>📝 Redactar Nueva Noticia</h4>
                     </div>
-                </form>
+                    <div class="card-body p-5">
+                        <?php if(isset($error)): ?><div class="alert alert-danger"><?= $error ?></div><?php endif; ?>
+                        
+                        <form method="POST" enctype="multipart/form-data">
+                            <div class="row g-4">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Titular (Nombre)</label>
+                                        <input type="text" class="form-control form-control-lg" name="nombre" required placeholder="Titular impactante...">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Texto Original (Contenido)</label>
+                                        <textarea class="form-control" name="texto_original" rows="8" required placeholder="Cuerpo de la noticia..."></textarea>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label text-muted">Texto Traducido (Opcional)</label>
+                                        <textarea class="form-control" name="texto_traducido" rows="4" placeholder="Versión traducida si aplica..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="p-3 bg-light rounded-3 border">
+                                        <h5 class="mb-3">Configuración</h5>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">País</label>
+                                            <select name="pais_id" class="form-select" required>
+                                                <option value="" selected disabled>Seleccionar...</option>
+                                                <?php while($p = $paises->fetch_assoc()): ?>
+                                                    <option value="<?= $p['id'] ?>"><?= $p['nombre'] ?></option>
+                                                <?php endwhile; ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Medio / Fuente</label>
+                                            <select name="medio_id" class="form-select" required>
+                                                <option value="" selected disabled>Seleccionar...</option>
+                                                <?php while($m = $medios->fetch_assoc()): ?>
+                                                    <option value="<?= $m['id'] ?>"><?= $m['nombre'] ?></option>
+                                                <?php endwhile; ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Imagen de Portada</label>
+                                            <input type="file" class="form-control" name="imagen" accept="image/*" required>
+                                            <div class="form-text small">Se guardará en el campo 'url'.</div>
+                                        </div>
+
+                                        <hr>
+                                        <button type="submit" class="btn btn-success w-100 py-2">Publicar Noticia</button>
+                                        <a href="gestion_noticias.php" class="btn btn-light w-100 mt-2">Cancelar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>

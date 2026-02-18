@@ -1,6 +1,6 @@
 <?php
     // Iniciamos la conexión a la base de datos
-    include "../db/db.inc";
+    include "../../Modelo/db/db.inc";
     
     // Iniciamos la sesión
     session_start();
@@ -32,6 +32,6 @@
     }
 
     // Redirigimos al formulario de acceso principal
-    header("location: ../index.php");
+    header("location: ../../control.php");
     die();
 ?>

@@ -5,14 +5,14 @@
         $_SESSION["id"]     = $datos["id"];
         $_SESSION["nombre"] = $datos["nombre"];
         $_SESSION["email"]  = $datos["email"];
-        $_SESSION["rol"]    = "admin";
+        $_SESSION["icono"] = "../../img/admin/usuarios/adriannataniel.jpg";
     }
     
     session_start();
     
-    include "../../Modelo/db/Conexion.php";
+    include "../Modelo/db/db.inc";
 
-    define('MENU_INICIO_LOCATION', "location: ./menu/menu_inicio.php");
+    define('MENU_INICIO_LOCATION', "location: ./Admin/menu/menu_inicio.php");
 
     if (isset($_SESSION["email"])) {
         header(MENU_INICIO_LOCATION);

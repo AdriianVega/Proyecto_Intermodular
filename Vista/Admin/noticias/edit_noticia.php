@@ -1,226 +1,161 @@
 <?php
-    // Configuramos los errores para que se muestren por pantalla
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+session_start();
 
-    // Iniciamos la sesión
-    session_start();
+if (!isset($_SESSION["email"])) {
+    header("location: ../../control.php");
+    die();
+}
 
-    // Comprobamos si el usuario está logueado
-    if(!isset($_SESSION["nombre"])) {
-        header("location:../index.php");
-        die();
-    }
+include "../../../Modelo/db/db.inc";
 
-    // Iniciamos la conexión a la base de datos
-    include "../db/db.inc";
+if (!isset($_GET['id'])) {
+    header("location: gestion_noticias.php");
+    die();
+}
 
-    // Función para limpiar el nombre de la imagen y evitar caracteres raros
-    function nombreImagen($str) {
-        $str = strtolower(trim($str));
-        $str = preg_replace('/[^a-z0-9-]/', '-', $str);
-        $str = preg_replace('/-+/', '-', $str);
-        return trim($str, '-');
-    }
+$id = intval($_GET['id']);
+$directorio = "../../img/noticias/";
 
-    // Sacamos los datos de la sesión
-    $nombre_usuario = $_SESSION["nombre"];
-    $rol = $_SESSION["rol"];
-    $pagina_activa = "productos";
+// Función auxiliar
+function limpiarNombreArchivo($str) {
+    $str = strtolower(trim($str));
+    $str = preg_replace('/[^a-z0-9-]/', '-', $str);
+    return trim($str, '-');
+}
 
-    // Si recibimos la acción de editar desde el formulario
-    if (isset($_POST["accion"]) && $_POST["accion"] == "editar") {
+// Procesar Formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $nombre = $conn->real_escape_string($_POST["nombre"]);
+    $texto_original = $conn->real_escape_string($_POST["texto_original"]);
+    $texto_traducido = $conn->real_escape_string($_POST["texto_traducido"]);
+    $pais_id = !empty($_POST["pais_id"]) ? intval($_POST["pais_id"]) : "NULL";
+    $medio_id = !empty($_POST["medio_id"]) ? intval($_POST["medio_id"]) : "NULL";
 
-        $directorio = "../img/productos/";
+    // Iniciar consulta base
+    $sql = "UPDATE noticia SET 
+            nombre = '$nombre', 
+            texto_original = '$texto_original', 
+            texto_traducido = '$texto_traducido',
+            pais_id = $pais_id,
+            medio_id = $medio_id ";
 
-        // Recogemos el id del producto
-        $id = intval($_POST["id"]);
+    // Verificar si se subió nueva imagen
+    if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0) {
+        $archivo_temporal = $_FILES["imagen"]["tmp_name"];
+        $extension = pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION);
+        $nuevo_nombre_archivo = limpiarNombreArchivo($_POST["nombre"]) . "_" . time() . "." . $extension;
 
-        // Sacamos la imagen actual por si no se cambia
-        $sql = "SELECT imagen FROM productos WHERE id = $id";
-        $res_icono = mysqli_query($conn, $sql);
-        $datos = mysqli_fetch_assoc($res_icono);
-
-        // Guardamos la ruta por defecto
-        $ruta_final = $datos["imagen"];
-
-        // Miramos si se ha subido una imagen nueva
-        if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0)
-        {
-            // Sacamos la ruta temporal y preparamos el nombre único
-            $archivo_temporal = $_FILES["imagen"]["tmp_name"];
-            $archivo_original = uniqid().$_FILES["imagen"]["name"];
-            $extension = pathinfo($archivo_original, PATHINFO_EXTENSION);
-
-            // Comprobamos que sea una imagen de verdad
-            if (getimagesize($archivo_temporal))
-            {
-                // Colocamos el nuevo nombre basado en el producto y el tiempo
-                $nuevo_nombre = nombreImagen($_POST["nombre"]) . "_" . time() . "." . $extension;
-                $ruta_final = $directorio . $nuevo_nombre;
-
-                // Movemos la foto de la carpeta temporal a la final
-                if(move_uploaded_file($archivo_temporal, $directorio . $nuevo_nombre))
-                {
-                    echo "<h1> $nuevo_nombre </h1>";
-                    echo "<img src='$ruta_final' alt='$archivo_original'>";
-                }
-                else
-                {
-                    $error = "Se ha producido un error subiendo el icono";
-                }
-            }
-            else
-            {
-                $error = "Sólo se permiten imagenes";
-            }
-        }
-        
-        // Si recibimos el nombre, procedemos a actualizar
-        if(isset($_POST["nombre"]) && !empty($_POST["nombre"])) {
-
-            // Recogemos los datos del formulario limpiando strings para evitar inyecciones SQL
-            $id = intval($_POST["id"]);
-            $nombre = mysqli_real_escape_string($conn, $_POST["nombre"]);
-            $descripcion = mysqli_real_escape_string($conn, $_POST["descripcion"]);
-            $precio = floatval($_POST["precio"]);
-            $stock = intval($_POST["stock"]);
-            $categoria_id = intval($_POST["categoria_id"]);
-            $estado = intval($_POST["estado"]);
-
-            try {
-                // Montamos la consulta para actualizar los datos
-                $sql = "UPDATE productos SET
-                    nombre = '$nombre',
-                    descripcion = '$descripcion',
-                    precio = $precio,
-                    stock = $stock,
-                    categoria_id = $categoria_id, ";
-                
-                // Si hay una imagen nueva, la metemos en la consulta
-                if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0) {
-                    $sql .= "imagen = '$nuevo_nombre', ";
-                }
-
-                $sql .= "estado = $estado WHERE id = $id";
-
-                // Ejecutamos la actualización
-                mysqli_query($conn, $sql);
-
-                // Redirigimos a la gestión con mensaje de éxito
-                header("location:gestion_productos.php?msg=0");
-            }
-            catch (mysqli_sql_exception $e) {
-                header("location:gestion_productos.php?msg=error");
-            }
-
-            die();
+        if (getimagesize($archivo_temporal)) {
+            move_uploaded_file($archivo_temporal, $directorio . $nuevo_nombre_archivo);
+            // Añadir a la consulta SQL
+            $sql .= ", url = '$nuevo_nombre_archivo' ";
         }
     }
 
-    // Si no recibimos el id por GET, volvemos a la lista
-    if(!isset($_GET["id"])) {
-        header("location:gestion_productos.php");
-        die();
+    $sql .= " WHERE id = $id";
+
+    if ($conn->query($sql)) {
+        header("location: gestion_noticias.php?msg=updated");
+        exit();
+    } else {
+        $error = "Error al actualizar: " . $conn->error;
     }
+}
+
+// Obtener datos actuales
+$noticia = $conn->query("SELECT * FROM noticia WHERE id = $id")->fetch_assoc();
+if (!$noticia) die("Noticia no encontrada");
+
+// Listas para selects
+$paises = $conn->query("SELECT id, nombre FROM pais ORDER BY nombre ASC");
+$medios = $conn->query("SELECT id, nombre FROM medio ORDER BY nombre ASC");
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/tablas.css">
-    <title>Editar Producto</title>
+    <title>Editar Noticia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin/estilo.css">
 </head>
 <body class="bg-light">
-
-    <?php include "../php/panel_control.php"; ?>
-
-    <main class="container mt-5">
-        <div class="card shadow">
-            <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">✏️ Editar Producto</h2>
-            </div>
-            <div class="card-body">
-
-            <?php
-                // Sacamos los datos del producto para rellenar el formulario
-                $id = intval($_GET["id"]);
-                $sql = "SELECT * FROM productos WHERE id = $id";
-                $res = mysqli_query($conn, $sql);
-                
-                // Si existe el producto, recogemos los datos, si no, redirigimos
-                if (mysqli_num_rows($res) > 0) {
-                    $prod = mysqli_fetch_assoc($res);
-                } else {
-                    header("location:gestion_productos.php");
-                    die();
-                }
-            ?>
-
-                <form method="POST" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="<?=$id;?>">
-                    <input type="hidden" name="accion" value="editar">
-                    
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre del Producto:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre"
-                                value="<?= htmlspecialchars($prod["nombre"]) ?>" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="categoria_id" class="form-label">ID Categoría:</label>
-                            <input type="number" class="form-control" id="categoria_id" name="categoria_id"
-                                value="<?= $prod["categoria_id"] ?>" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="descripcion" class="form-label">Descripción:</label>
-                            <textarea class="form-control" id="descripcion" name="descripcion" rows="2" required><?= htmlspecialchars($prod["descripcion"]) ?></textarea>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="precio" class="form-label">Precio (€):</label>
-                            <input type="number" step="0.01" class="form-control" id="precio" name="precio"
-                                value="<?= $prod["precio"] ?>" required>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="stock" class="form-label">Stock (uds):</label>
-                            <input type="number" class="form-control" id="stock" name="stock"
-                                value="<?= $prod["stock"] ?>" required>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="estado" class="form-label">Estado:</label>
-                            <select name="estado" id="estado" class="form-select" required>
-                                <?php
-                                    // Comprobamos el estado actual para marcar el select
-                                    $est = $prod['estado'];
-                                    echo '<option value="1" ' . ($est == 1 ? 'selected' : '') . '>Activo</option>';
-                                    echo '<option value="0" ' . ($est == 0 ? 'selected' : '') . '>Inactivo</option>';
-                                ?>
-                            </select>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="imagen" class="form-label">Nombre archivo imagen:</label>
-                            <input type="file" class="form-control" id="imagen" name="imagen">
-                        </div>
-
-                        <div class="col-12 mt-4">
-                            <button type="submit" class="btn btn-success w-100">Guardar Cambios</button>
-                            <a href="gestion_productos.php" class="btn btn-secondary w-100 mt-2">Cancelar</a>
-                        </div>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0 rounded-4">
+                    <div class="card-header bg-primary text-white border-0 pt-4 px-4">
+                        <h4>✏️ Editar Noticia</h4>
                     </div>
-                </form>
+                    <div class="card-body p-5">
+                        <?php if(isset($error)): ?><div class="alert alert-danger"><?= $error ?></div><?php endif; ?>
+                        
+                        <form method="POST" enctype="multipart/form-data">
+                            <div class="row g-4">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Titular (Nombre)</label>
+                                        <input type="text" class="form-control" name="nombre" value="<?= htmlspecialchars($noticia['nombre']) ?>" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Texto Original</label>
+                                        <textarea class="form-control" name="texto_original" rows="8" required><?= htmlspecialchars($noticia['texto_original']) ?></textarea>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label text-muted">Texto Traducido</label>
+                                        <textarea class="form-control" name="texto_traducido" rows="4"><?= htmlspecialchars($noticia['texto_traducido']) ?></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="p-3 bg-light rounded-3 border">
+                                        <div class="mb-3 text-center">
+                                            <label class="form-label d-block text-start small text-muted">Imagen Actual</label>
+                                            <?php if(!empty($noticia['url'])): ?>
+                                                <img src="<?= $directorio . $noticia['url'] ?>" class="img-fluid rounded mb-2" style="max-height: 150px;">
+                                            <?php endif; ?>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Cambiar Imagen</label>
+                                            <input type="file" class="form-control" name="imagen" accept="image/*">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">País</label>
+                                            <select name="pais_id" class="form-select" required>
+                                                <?php while($p = $paises->fetch_assoc()): ?>
+                                                    <option value="<?= $p['id'] ?>" <?= ($p['id'] == $noticia['pais_id']) ? 'selected' : '' ?>>
+                                                        <?= $p['nombre'] ?>
+                                                    </option>
+                                                <?php endwhile; ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Medio</label>
+                                            <select name="medio_id" class="form-select" required>
+                                                <?php while($m = $medios->fetch_assoc()): ?>
+                                                    <option value="<?= $m['id'] ?>" <?= ($m['id'] == $noticia['medio_id']) ? 'selected' : '' ?>>
+                                                        <?= $m['nombre'] ?>
+                                                    </option>
+                                                <?php endwhile; ?>
+                                            </select>
+                                        </div>
+
+                                        <hr>
+                                        <button type="submit" class="btn btn-warning w-100 py-2">Guardar Cambios</button>
+                                        <a href="gestion_noticias.php" class="btn btn-light w-100 mt-2">Cancelar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>
