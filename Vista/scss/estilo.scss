@@ -44,7 +44,7 @@ body {
     }
 
     &::after {
-        position: absolute;
+        position: absolute; 
         content: '';
         width: 60vmin;
         height: 60vmin;
@@ -58,7 +58,6 @@ body {
         pointer-events: none;
         z-index: 1;
     }
-
     main {
         display: contents;
 
@@ -88,6 +87,10 @@ body {
                 cursor: pointer;
                 @include transition(transform, 0.3s);
 
+                a {
+                    text-decoration: none;
+                }
+
                 div:first-child {
                     flex: 1 1 50%;
                     display: flex;
@@ -108,7 +111,7 @@ body {
 
                         span {
                             padding-right: 10px;
-                        }
+                        } 
                     }
 
                     h1 {
@@ -191,11 +194,15 @@ body {
                 border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 10px;
                 padding: 20px;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
                 position: relative;
+
                 cursor: pointer;
+
                 @include transition(transform, 0.3s);
 
                 >* {
@@ -280,7 +287,7 @@ body {
             }
         }
     }
-    
+
     .fade-in-element {
         opacity: 0;
         @include transition(all, 0.8s, ease-out);

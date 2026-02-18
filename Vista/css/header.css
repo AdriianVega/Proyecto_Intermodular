@@ -16,7 +16,7 @@ header #video-header {
      object-fit: cover;
   z-index: -1;
 }
-header #logo-nombre {
+header #logo-tierra {
   position: absolute;
   top: 80px;
   left: 40px;
@@ -28,7 +28,7 @@ header #logo-nombre {
   cursor: pointer;
   text-decoration: none;
 }
-header #logo-nombre:hover {
+header #logo-tierra:hover {
   transform: scale(1.1);
 }
 header #texto-header {

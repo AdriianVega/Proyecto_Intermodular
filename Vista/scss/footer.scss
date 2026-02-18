@@ -7,11 +7,6 @@ footer {
     min-height: 10vh;
     padding: 50px;
 
-    .logo {
-        width: 50px;
-        transform: scale(1.4);
-    }
-
     article:first-child {
         display: flex;
         align-items: flex-start;
@@ -53,6 +48,10 @@ footer {
         padding-top: 20px;
 
         div {
+            position: relative;
+            top: -60px;
+
+
             a {
                 text-decoration: none;
 
@@ -86,12 +85,12 @@ footer {
 
             a:nth-child(4) img {
                 width: 20px;
-                transform: scale(1.2) translateY(-3px);
+                transform: translateY(-63px) scale(1.2); 
 
                 @include transition(transform, 0.3s);
 
                 &:hover {
-                    transform: scale(1.4) translateY(-3px);
+                    transform: translateY(-63px) scale(1.4);
                 }
             }
         }

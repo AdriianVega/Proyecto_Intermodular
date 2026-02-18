@@ -4,10 +4,6 @@ footer {
   min-height: 10vh;
   padding: 50px;
 }
-footer .logo {
-  width: 50px;
-  transform: scale(1.4);
-}
 footer article:first-child {
   display: flex;
   align-items: flex-start;
@@ -42,6 +38,10 @@ footer article:last-child {
   font-family: "Suez One", serif;
   padding-top: 20px;
 }
+footer article:last-child div {
+  position: relative;
+  top: -60px;
+}
 footer article:last-child div a {
   text-decoration: none;
 }
@@ -68,9 +68,9 @@ footer article:last-child div a:nth-child(3) svg:hover {
 }
 footer article:last-child div a:nth-child(4) img {
   width: 20px;
-  transform: scale(1.2) translateY(-3px);
+  transform: translateY(-63px) scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 footer article:last-child div a:nth-child(4) img:hover {
-  transform: scale(1.4) translateY(-3px);
+  transform: translateY(-63px) scale(1.4);
 }/*# sourceMappingURL=footer.css.map */

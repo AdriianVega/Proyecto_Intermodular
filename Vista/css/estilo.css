@@ -48,7 +48,7 @@ header #video-header {
      object-fit: cover;
   z-index: -1;
 }
-header #logo-nombre {
+header #logo-tierra {
   position: absolute;
   top: 80px;
   left: 40px;
@@ -60,7 +60,7 @@ header #logo-nombre {
   cursor: pointer;
   text-decoration: none;
 }
-header #logo-nombre:hover {
+header #logo-tierra:hover {
   transform: scale(1.1);
 }
 header #texto-header {
@@ -140,16 +140,16 @@ header #nav-menu svg {
   list-style: none;
   padding: 0;
 }
-#menu-lateral nav ul li {
+#menu-lateral nav ul li:not(.buscador) {
   margin: 32px 0;
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
 }
-#menu-lateral nav ul li:hover {
+#menu-lateral nav ul li:not(.buscador):hover {
   transform: translateX(10px);
 }
-#menu-lateral nav ul li a,
-#menu-lateral nav ul li span {
+#menu-lateral nav ul li:not(.buscador) a,
+#menu-lateral nav ul li:not(.buscador) span {
   color: white;
   text-decoration: none;
   font-size: 24px;
@@ -157,37 +157,81 @@ header #nav-menu svg {
   padding: 8px 0;
   cursor: pointer;
 }
-#menu-lateral nav ul li span::after {
+#menu-lateral nav ul li:not(.buscador) span::after {
   content: " ⏷";
 }
-#menu-lateral nav ul li ul {
+#menu-lateral nav ul li:not(.buscador) ul {
   padding-left: 20px;
   margin-top: 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
 }
-#menu-lateral nav ul li ul li {
+#menu-lateral nav ul li:not(.buscador) ul li {
   margin: 16px 0;
   transition: all 0.3s ease-in-out;
 }
-#menu-lateral nav ul li ul li a {
+#menu-lateral nav ul li:not(.buscador) ul li a {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   padding: 5px 0;
 }
-#menu-lateral nav ul li ul li a:hover {
+#menu-lateral nav ul li:not(.buscador) ul li a:hover {
   padding-left: 5px;
 }
-#menu-lateral nav ul li ul li:hover {
+#menu-lateral nav ul li:not(.buscador) ul li:hover {
   transform: translateX(5px);
 }
-#menu-lateral nav ul li.dropdown-abierto span::after {
+#menu-lateral nav ul li:not(.buscador).dropdown-abierto span::after {
   content: " ⏶";
 }
-#menu-lateral nav ul li.dropdown-abierto ul {
+#menu-lateral nav ul li:not(.buscador).dropdown-abierto ul {
   max-height: 500px;
+}
+#menu-lateral nav ul .buscador {
+  position: relative;
+}
+#menu-lateral nav ul .buscador label {
+  display: none;
+}
+#menu-lateral nav ul .buscador input {
+  width: 84%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: "Suez One", serif;
+}
+#menu-lateral nav ul .buscador input:focus {
+  outline: none;
+}
+#menu-lateral nav ul .buscador .btn-buscar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  padding: 0;
+  height: 45px;
+  width: 50px;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+#menu-lateral nav ul .buscador .btn-buscar svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+#menu-lateral nav ul .buscador .btn-buscar {
+  transition: all 0.3s ease-in-out;
+}
+#menu-lateral nav ul .buscador .btn-buscar:hover svg {
+  transform: scale(1.2);
+}
+#menu-lateral nav ul .buscador .btn-buscar:hover {
+  background-color: rgb(12.75, 12.75, 12.75);
 }
 
 #overlay {
@@ -209,10 +253,6 @@ footer {
   scroll-snap-align: start;
   min-height: 10vh;
   padding: 50px;
-}
-footer .logo {
-  width: 50px;
-  transform: scale(1.4);
 }
 footer article:first-child {
   display: flex;
@@ -248,6 +288,10 @@ footer article:last-child {
   font-family: "Suez One", serif;
   padding-top: 20px;
 }
+footer article:last-child div {
+  position: relative;
+  top: -60px;
+}
 footer article:last-child div a {
   text-decoration: none;
 }
@@ -274,11 +318,11 @@ footer article:last-child div a:nth-child(3) svg:hover {
 }
 footer article:last-child div a:nth-child(4) img {
   width: 20px;
-  transform: scale(1.2) translateY(-3px);
+  transform: translateY(-63px) scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 footer article:last-child div a:nth-child(4) img:hover {
-  transform: scale(1.4) translateY(-3px);
+  transform: translateY(-63px) scale(1.4);
 }
 
 * {
@@ -356,6 +400,9 @@ body main #seccion-destacada #noticia-destacada {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+}
+body main #seccion-destacada #noticia-destacada a {
+  text-decoration: none;
 }
 body main #seccion-destacada #noticia-destacada div:first-child {
   flex: 1 1 50%;

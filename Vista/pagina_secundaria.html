@@ -11,22 +11,14 @@
 <body>
     <header>
         <button id="nav-menu">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path
-                        d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
-                        fill="#ffffff"></path>
-                    <path
-                        d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
-                        fill="#ffffff"></path>
-                    <path
-                        d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
-                        fill="#ffffff"></path>
-                </g>
+            <svg>
+                <use href="img/sprites.svg#icon-menu"></use>
             </svg>
         </button>
+
+        <a href="index.html">
+            <img src="img/logo_tierra.png" alt="Logo GobleNews" class="logo">
+        </a>
     </header>
 
     <aside id="menu-lateral" class="menu-oculto">
@@ -34,25 +26,37 @@
 
         <nav>
             <ul>
+                <li class="buscador">
+                    <form action="buscador.php?search=" method="get">
+                        <label for="search">Buscar</label>
+                        <input type="text" id="search" name="search" placeholder="Buscar" required>
+                        <button type="submit" class="btn-buscar">
+                            <svg>
+                                <use href="img/sprites.svg#btn-buscador"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </li>
+
                 <li>
-                    <span class="drodown">Países</span>
+                    <span class="dropdown">Países</span>
 
                     <ul>
-                        <li><a href="#">América</a></li>
-                        <li><a href="#">Europa</a></li>
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">África</a></li>
-                        <li><a href="#">Oceanía</a></li>
+                        <li><a href="buscador.php?search=america">América</a></li>
+                        <li><a href="buscador.php?search=europa">Europa</a></li>
+                        <li><a href="buscador.php?search=asia">Asia</a></li>
+                        <li><a href="buscador.php?search=africa">África</a></li>
+                        <li><a href="buscador.php?search=oceania">Oceanía</a></li>
                     </ul>
                 </li>
                 <li>
                     <span class="dropdown">Categorías</span>
                     <ul>
-                        <li><a href="#">Tecnología</a></li>
-                        <li><a href="#">Ciencia</a></li>
-                        <li><a href="#">Salud</a></li>
-                        <li><a href="#">Deportes</a></li>
-                        <li><a href="#">Entretenimiento</a></li>
+                        <li><a href="buscador.php?search=tecnologia">Tecnología</a></li>
+                        <li><a href="buscador.php?search=ciencia">Ciencia</a></li>
+                        <li><a href="buscador.php?search=salud">Salud</a></li>
+                        <li><a href="buscador.php?search=deportes">Deportes</a></li>
+                        <li><a href="buscador.php?search=entretenimiento">Entretenimiento</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Sobre Nosotros</a></li>
@@ -115,7 +119,11 @@
                         podría aumentar tras la evaluación completa.
                     </p>
                 </article>
-                
+                <article>
+                    <video id="video-incendio" controls>
+                        <source src="video/incendio-video.mp4" type="video/mp4">
+                    </video>
+                </article>
                 <article>
                     <p>
                         Expertos en seguridad advierten que los incendios domésticos aumentan durante los meses de invierno en Europa
@@ -140,93 +148,76 @@
         </main>
 
         <footer class="fade-in-element">
-
             <section>
                 <article>
-                    <img src="img/logo_tierra.png" alt="Logo GobleNews" class="logo">
-
+                    <a href="index.html">
+                        <img src="img/logo_tierra.png" alt="Logo GobleNews" class="logo">
+                    </a>
+        
                     <div>
                         <div>
                             <p>Países</p>
-
+        
                             <ul>
-                                <li><a href="#">Ámerica</a></li>
-                                <li><a href="#">Europa</a></li>
-                                <li><a href="#">Asia</a></li>
-                                <li><a href="#">África</a></li>
-                                <li><a href="#">Oceanía</a></li>
+                                <li><a href="buscador.php?search=america">Ámerica</a></li>
+                                <li><a href="buscador.php?search=europa">Europa</a></li>
+                                <li><a href="buscador.php?search=asia">Asia</a></li>
+                                <li><a href="buscador.php?search=africa">África</a></li>
+                                <li><a href="buscador.php?search=oceania">Oceanía</a></li>
                             </ul>
                         </div>
-
+        
                         <div>
                             <p>Categoría</p>
-
+        
                             <ul>
-                                <li><a href="#">Política</a></li>
-                                <li><a href="#">Economía</a></li>
-                                <li><a href="#">Tecnología</a></li>
-                                <li><a href="#">Deportes</a></li>
-                                <li><a href="#">Cultura</a></li>
+                                <li><a href="buscador.php?search=politica">Política</a></li>
+                                <li><a href="buscador.php?search=economia">Economía</a></li>
+                                <li><a href="buscador.php?search=tecnologia">Tecnología</a></li>
+                                <li><a href="buscador.php?search=deportes">Deportes</a></li>
+                                <li><a href="buscador.php?search=cultura">Cultura</a></li>
                             </ul>
                         </div>
-
+        
                         <div>
                             <p>Sobre Nosotros</p>
-
+        
                             <ul>
                                 <li><a href="#">Gmail</a></li>
                                 <li><a href="#">Teléfono</a></li>
                             </ul>
                         </div>
-
+        
                         <div>
                             <p>Últimas Noticias</p>
                         </div>
-
+        
                         <div>
                             <p>Cookies</p>
                         </div>
                     </div>
-
+        
                 </article>
-
+        
                 <hr>
-
+        
                 <article>
                     <p>© 2026 GobleNews. Todos los derechos reservados.</p>
-
+        
                     <div>
                         <a href="#">
-                            <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z"
-                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z"
-                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)"
-                                    fill="#ffffff"></rect>
-                                <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)"
-                                    stroke="#ffffff" stroke-linecap="round"></rect>
+                            <svg>
+                                <use href="img/sprites.svg#icon-instagram"></use>
                             </svg>
                         </a>
                         <a href="#">
-                            <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z">
-                                </path>
+                            <svg>
+                                <use href="img/sprites.svg#icon-facebook"></use>
                             </svg>
                         </a>
                         <a href="#">
-                            <svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-                                <g id="7935ec95c421cee6d86eb22ecd125aef">
-                                    <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;"
-                                        d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z">
-                                    </path>
-                                </g>
+                            <svg>
+                                <use href="img/sprites.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                         <a href="#">
@@ -237,79 +228,7 @@
             </section>
         </footer>
     </div>
-
-    <script>
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 1.5s ease-in';
-
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const maxScroll = 500;
-            const opacity = Math.min(scrolled / maxScroll, 1);
-            document.body.style.opacity = opacity;
-        });
-
-        const observerOptions = {
-            threshold: 0.2,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    entry.target.classList.remove('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in-element').forEach(element => {
-            observer.observe(element);
-        });
-
-        const navMenu = document.getElementById('nav-menu');
-        const menuLateral = document.getElementById('menu-lateral');
-        const overlay = document.getElementById('overlay');
-        const cerrarMenu = document.getElementById('cerrar-menu');
-
-        navMenu.addEventListener('click', (e) => {
-            e.stopPropagation();
-            menuLateral.classList.add('menu-visible');
-            overlay.classList.add('overlay-visible');
-        });
-
-        overlay.addEventListener('click', () => {
-            menuLateral.classList.remove('menu-visible');
-            overlay.classList.remove('overlay-visible');
-        });
-
-        cerrarMenu.addEventListener('click', () => {
-            menuLateral.classList.remove('menu-visible');
-            overlay.classList.remove('overlay-visible');
-        });
-
-        menuLateral.addEventListener('click', (e) => {
-            e.stopPropagation();
-        });
-
-        const dropdownItems = document.querySelectorAll('#menu-lateral nav > ul > li > span');
-
-        dropdownItems.forEach(item => {
-            item.addEventListener('click', function (e) {
-                e.preventDefault();
-                const parentLi = this.parentElement;
-
-                parentLi.classList.toggle('dropdown-abierto');
-            });
-        });
-    </script>
+    <script src="js/menu-lateral.js"></script>
 </body>
 
 </html>
