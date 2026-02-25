@@ -1,0 +1,106 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Tecnología"
+    },
+    {
+      "id": "2",
+      "nombre": "Inteligencia Artificial"
+    },
+    {
+      "id": "3",
+      "nombre": "Cultura"
+    }
+  ],
+  "medios": [
+    {
+      "id": "1",
+      "nombre": "TechCrunch",
+      "url": "https://techcrunch.com"
+    },
+    {
+      "id": "2",
+      "nombre": "Wired",
+      "url": "https://www.wired.com"
+    }
+  ],
+  "paises": [
+    {
+      "id": "1",
+      "nombre": "España",
+      "continente": "Europa"
+    },
+    {
+      "id": "2",
+      "nombre": "Estados Unidos",
+      "continente": "América"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Admin",
+      "email": "admin@empresa.com",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "nombre": "Usuario Test",
+      "email": "test@empresa.com",
+      "rol": "user"
+    }
+  ],
+  "noticias": [
+    {
+      "id": "1",
+      "nombre": "Nuevos avances en modelos de lenguaje",
+      "url": "https://techcrunch.com/ejemplo-llm",
+      "texto_original": "New advances in LLMs...",
+      "texto_traducido": "Nuevos avances en LLMs...",
+      "fecha_publicacion": "2026-02-17",
+      "paisId": 2,
+      "medioId": 1
+    }
+  ],
+  "preferencias": [
+    {
+      "id": "1",
+      "usuarioId": 2,
+      "fecha_actualizacion": "2026-02-17T18:00:00Z"
+    }
+  ],
+  "noticia_categoria": [
+    {
+      "id": "1",
+      "noticiaId": 1,
+      "categoriaId": 2
+    }
+  ],
+  "preferencia_categoria": [
+    {
+      "id": "1",
+      "preferenciaId": 1,
+      "categoriaId": 1
+    },
+    {
+      "id": "2",
+      "preferenciaId": 1,
+      "categoriaId": 2
+    }
+  ],
+  "preferencia_medio": [
+    {
+      "id": "1",
+      "preferenciaId": 1,
+      "medioId": 1
+    }
+  ],
+  "preferencia_pais": [
+    {
+      "id": "1",
+      "preferenciaId": 1,
+      "paisId": 1
+    }
+  ]
+}
