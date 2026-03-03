@@ -1,0 +1,26 @@
+{
+  "name": "goblenews",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:next": "next dev",
+    "dev:php": "node serve-php.js",
+    "dev": "concurrently -n \"Next,PHP\" -c \"cyan,magenta\" \"npm run dev:next\" \"npm run dev:php\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-react-compiler": "1.0.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "sass": "^1.83.0"
+  }
+}
