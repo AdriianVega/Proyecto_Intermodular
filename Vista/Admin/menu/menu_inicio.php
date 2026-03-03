@@ -31,7 +31,11 @@
         <h1 class="my-3">Bienvenido <?= $nombre; ?> </h1>
 
         <h2 class="fs-4">
-            <span class="badge bg-danger">Administrador</span>
+            <?php if ($rol === "1") : ?>
+                <span class="badge bg-danger">Administrador</span>
+            <?php else: ?>
+                <span class="badge bg-secondary">Usuario</span>
+            <?php endif; ?>
         </h2>
     </header>
     <main>

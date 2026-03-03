@@ -1,6 +1,6 @@
 <aside id="sidebar" class="text-white d-flex flex-column p-3">
         <div id="flecha">
-            <img src="../img/arrow-right-from-line-svgrepo-com.svg" alt="flecha">
+            <img src="../../img/admin/arrow-right-from-line-svgrepo-com.svg" alt="flecha">
         </div>
         <h4 class="mb-4 text-center">Panel de Control</h4>
 

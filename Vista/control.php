@@ -5,7 +5,8 @@
         $_SESSION["id"]     = $datos["id"];
         $_SESSION["nombre"] = $datos["nombre"];
         $_SESSION["email"]  = $datos["email"];
-        $_SESSION["icono"] = "../../img/admin/usuarios/adriannataniel.jpg";
+        $_SESSION["rol"]    = $datos["rol"];
+        $_SESSION["icono"] = "../../img/admin/usuarios/". strtolower($datos["icono"]);
     }
     
     session_start();
@@ -35,7 +36,7 @@
             <div class="gradient-border-card bg-white w-100 p-5 rounded-2">
                 <div class="text-center mb-4">
                     <img src="img/logo_tierra.png" width="100px" alt="Logo" class="img-fluid" style="max-width: 200px;">
-                    <p style="color:white; font-family: 'Roboto'; font-weight: 900;">GobleNews</p>
+                    <p style="color:white; font-family: 'Roboto'; font-weight: 900; font-size: 20px;">GobleNews</p>
                 </div>
 
                 <?php
@@ -57,9 +58,10 @@
                                 $res = $check->get_result();
                                 $datos = $res->fetch_assoc();
 
-                                if ($datos && password_verify($password, $datos["password"])) {
-                                    crearSesion($datos);
+                                $hash = trim($datos["password"]);
 
+                                if ($datos && password_verify($password, $hash)) {
+                                    crearSesion($datos);
                                     header(MENU_INICIO_LOCATION);
                                     die();
                                 } else {
