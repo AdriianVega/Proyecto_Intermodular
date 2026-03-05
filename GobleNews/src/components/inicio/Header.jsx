@@ -1,5 +1,7 @@
+'use client';
+
 import Link from 'next/link';
-// Usamos el alias @ para evitar los ../../ innecesarios
+import Image from "next/image";
 import styles from '@/app/assets/scss/web/Header.module.scss'; 
 
 export default function Header({ onMenuOpen }) {
@@ -15,10 +17,13 @@ export default function Header({ onMenuOpen }) {
             </video>
 
             <Link href="/" className={styles.logoLink}>      
-                <img 
-                    src="/img/logo_tierra.png" 
+                <Image 
+                    src="/img/web/logo_tierra.png" 
                     alt="Logo GobleNews" 
-                    className={styles.logoImg} 
+                    className={styles.logoImg}
+                    width={100}
+                    height={100}
+                    priority 
                 />
                 <h3 className={styles.subtitle}>GobleNews</h3>
             </Link>
@@ -34,7 +39,7 @@ export default function Header({ onMenuOpen }) {
                 aria-label="Abrir menú"
             >
                 <svg>
-                    <use href="/img/sprites.svg#icon-menu"></use>
+                    <use href="/img/web/sprites.svg#icon-menu"></use>
                 </svg>
             </button>
         </header>
