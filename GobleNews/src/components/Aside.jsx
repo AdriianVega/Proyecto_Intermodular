@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import styles from '@/app/assets/scss/web/Aside.module.scss'; 
+import styles from '@/app/assets/scss/web/Global.module.scss'; 
 
 const lista = [
     {
@@ -103,12 +102,14 @@ export default function Aside( { isOpen, onMenuClose } ) {
     return (
         <>
             <div
-                id="overlay"
-                className={isOpen ? "overlay-visible" : ""}
+                className={`${styles.overlay} ${isOpen ? styles.overlayVisible : ""}`}
                 onClick={onMenuClose}
             >
             </div>
-            <aside className={styles.asideContainer}>
+            <aside 
+                className={`${styles.asideContainer} ${isOpen ? styles.menuVisible : ''}`}
+                onClick={(e) => e.stopPropagation()}
+            >
                 <button 
                     onClick={onMenuClose} 
                     className={styles.closeBtn} 
@@ -118,7 +119,7 @@ export default function Aside( { isOpen, onMenuClose } ) {
 
                 <nav>
                     <ul>
-                        <li className="buscador">
+                        <li className={styles.buscador}>
                             <form action="/buscador" method="get">
                                 <label htmlFor="search">Buscar</label>
                                 <input 
@@ -142,7 +143,7 @@ export default function Aside( { isOpen, onMenuClose } ) {
                             return (
                                 <li
                                     key={item.id}
-                                    className={isDropdownOpen ? "dropdown-open" : ""}
+                                    className={isDropdownOpen ? styles.dropdownOpen : ""}
                                 >
                                     {
                                         hasDropdown ? 

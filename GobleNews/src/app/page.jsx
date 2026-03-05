@@ -1,13 +1,17 @@
 'use client'
 
-import Image from "next/image";
 import React, { useState } from "react";
-import styles from "./page.module.css";
 import Header from "../components/inicio/Header"
 import Aside from "../components/Aside"
+import styles from '@/app/assets/scss/web/Global.module.scss'; 
+import TarjetaPrincipal from "@/components/inicio/TarjetaPrincipal";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuOpen = () => {
+    setIsMenuOpen(true);
+  };
 
   const handleMenuClose = () => {
     setIsMenuOpen(false);
@@ -15,12 +19,16 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <Header />
+      <Header onMenuOpen={handleMenuOpen} />
 
       <Aside 
         isOpen={isMenuOpen} 
         onMenuClose={handleMenuClose} 
       />
+
+      <main>
+        <TarjetaPrincipal />
+      </main>
     </div>
   );
 }

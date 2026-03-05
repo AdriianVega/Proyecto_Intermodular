@@ -4,11 +4,12 @@
 .overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     pointer-events: none;
-    @include transition(opacity, 0.4s);
     z-index: 1000;
+
+    @include transition(opacity, 0.3s);
 
     &.overlayVisible {
         opacity: 1;
@@ -22,16 +23,13 @@
     right: 0;
     width: 350px;
     height: 100vh;
-    background: $color-fondo-tarjeta-oscuro;
-
+    background: rgba(0, 0, 0, 0.6);
     @include desenfoque(10px);
-
     transform: translateX(100%);
-    @include transition(transform, 0.3s, ease-in-out);
-
+    @include transition(transform, 0.3s);
     z-index: 1001;
     padding: 48px 32px;
-    border-left: 2px solid $color-borde-tarjeta;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
 
     &.menuVisible {
         transform: translateX(0);
@@ -68,7 +66,7 @@
             list-style: none;
             padding: 0;
 
-            li:not(:global(.buscador)) {
+            li:not(.buscador) {
                 margin: 32px 0;
                 transform: translateX(0);
                 @include transition(transform, 0.3s);
@@ -89,7 +87,7 @@
                 }
 
                 span::after {
-                    content: ' ⏷';
+                    content: " ⏷";
                 }
 
                 ul {
@@ -97,7 +95,7 @@
                     margin-top: 10px;
                     max-height: 0;
                     overflow: hidden;
-                    @include transition(max-height, 0.4s, ease-in-out);
+                    @include transition(max-height, 0.4s);
 
                     li {
                         margin: 16px 0;
@@ -122,7 +120,7 @@
 
                 &.dropdownOpen {
                     span::after {
-                        content: ' ⏶';
+                        content: " ⏶";
                     }
 
                     ul {
@@ -131,7 +129,7 @@
                 }
             }
 
-            :global(.buscador) {
+            .buscador {
                 position: relative;
 
                 label {
@@ -142,8 +140,8 @@
                     width: 84%;
                     padding: 10px;
                     border-radius: 5px;
-                    border: 2px solid $color-borde-tarjeta;
-                    background-color: $color-fondo-tarjeta-claro;
+                    border: 2px solid rgba(255, 255, 255, 0.1);
+                    background-color: rgba(255, 255, 255, 0.1);
                     color: white;
                     font-family: $fuente-secundaria;
 
@@ -161,8 +159,9 @@
                     height: 45px;
                     width: 50px;
                     border-radius: 0 5px 5px 0;
-                    border: 2px solid $color-borde-tarjeta;
+                    border: 2px solid rgba(255, 255, 255, 0.1);
                     cursor: pointer;
+                    @include transition(all, 0.3s);
 
                     svg {
                         width: 20px;
@@ -171,10 +170,8 @@
                         fill: white;
                     }
 
-                    @include transition(all, 0.3s);
-
                     &:hover {
-                        background-color: lighten(black, 10%);
+                        background-color: rgb(12.75, 12.75, 12.75);
 
                         svg {
                             transform: scale(1.2);

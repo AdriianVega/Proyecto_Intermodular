@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from "next/image";
-import styles from '@/app/assets/scss/web/Header.module.scss'; 
+import styles from '@/app/assets/scss/web/Global.module.scss'; 
 
 export default function Header({ onMenuOpen }) {
     return (
