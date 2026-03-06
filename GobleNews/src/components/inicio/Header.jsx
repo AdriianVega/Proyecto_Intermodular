@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import Image from "next/image";
-import styles from '@/app/assets/scss/web/Global.module.scss'; 
+import styles from '@/app/assets/scss/web/Estilo.module.scss';
+
+
 
 export default function Header({ onMenuOpen }) {
     return (

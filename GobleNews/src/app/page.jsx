@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 import Header from "../components/inicio/Header"
 import Aside from "../components/Aside"
-import styles from '@/app/assets/scss/web/Global.module.scss'; 
-import TarjetaPrincipal from "@/components/inicio/TarjetaPrincipal";
+import TarjetaPrincipal from "../components/inicio/TarjetaPrincipal";
+import BentoGrid from "../components/inicio/BentoGrid"
+import styles from '../app/assets/scss/web/Estilo.module.scss';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,6 +29,8 @@ export default function Home() {
 
       <main>
         <TarjetaPrincipal />
+
+        <BentoGrid />
       </main>
     </div>
   );

@@ -2,7 +2,7 @@ import { Inter, Suez_One } from 'next/font/google';
 import "./globals.css";
 
 const inter = Inter({
-  weight: "600",
+  weight: ["600", "700", "900"],
   variable: "--font-inter",
   subsets: ["latin"],
 });

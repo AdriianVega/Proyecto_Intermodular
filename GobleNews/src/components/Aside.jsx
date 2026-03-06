@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from '@/app/assets/scss/web/Global.module.scss'; 
+import styles from '@/app/assets/scss/web/Estilo.module.scss'; 
 
 const lista = [
     {

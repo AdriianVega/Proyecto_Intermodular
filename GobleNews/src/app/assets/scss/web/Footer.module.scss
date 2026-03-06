@@ -1,28 +1,28 @@
 @use "Variables.module" as *;
 @use "Mixins.module" as *;
 
-footer {
+.footer {
     font-size: 18px;
     scroll-snap-align: start;
     min-height: 10vh;
     padding: 50px;
 
-    article:first-child {
+    .topSection {
         display: flex;
         align-items: flex-start;
         gap: 20px;
 
-        div {
+        .linksWrapper {
             display: flex;
             padding: 5px 0 20px 30px;
             gap: 60px;
 
-            div {
+            .linkColumn {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
 
-                li {
+                .listItem {
                     font-size: 14px;
                     font-family: $fuente-secundaria;
                     list-style: none;
@@ -41,16 +41,15 @@ footer {
         }
     }
 
-    article:last-child {
+    .bottomSection {
         display: flex;
         justify-content: space-between;
         font-family: $fuente-secundaria;
         padding-top: 20px;
 
-        div {
+        .socialLinks {
             position: relative;
             top: -60px;
-
 
             a {
                 text-decoration: none;
@@ -85,7 +84,7 @@ footer {
 
             a:nth-child(4) img {
                 width: 20px;
-                transform: translateY(-63px) scale(1.2); 
+                transform: translateY(-63px) scale(1.2);
 
                 @include transition(transform, 0.3s);
 
