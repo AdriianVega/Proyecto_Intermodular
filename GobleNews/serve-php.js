@@ -2,6 +2,7 @@ import { spawn } from 'node:child_process';
 import { existsSync } from 'node:fs';
 
 const possiblePaths = [
+    '/opt/lampp/bin/php',
     'C:/xampp/php/php.exe', 
     'php'                  
 ];
@@ -20,7 +21,7 @@ console.log(`\x1b[35m[PHP]\x1b[0m Usando binario en: ${phpBinary}`);
 
 const phpServer = spawn(phpBinary, ['-S', 'localhost:8000'], {
     stdio: 'inherit',
-    shell: true
+    shell: false
 });
 
 phpServer.on('error', (err) => {

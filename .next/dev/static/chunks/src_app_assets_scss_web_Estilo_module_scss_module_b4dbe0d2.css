@@ -1,0 +1,686 @@
+/* [project]/src/app/assets/scss/web/Estilo.module.scss.module.css [app-client] (css) */
+@keyframes Estilo-module-scss-module__dib-dq__efecto-neon {
+  0%, 100% {
+    text-shadow: 0 0 3px #0cc, 0 0 3px #0cc, 0 0 5px #0cc, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #0cc, 0 0 40px #0cc, 0 0 40px #0ff, 0 0 40px #0ff;
+  }
+}
+
+@keyframes Estilo-module-scss-module__dib-dq__drift {
+  0% {
+    border-radius: 20% 75% 30% 70% / 30% 35% 65% 70%;
+    transform: translate(-120px, -60px)rotate(-85deg);
+  }
+
+  50% {
+    border-radius: 70% 30% 35% 65% / 65% 45% 55% 35%;
+    transform: translate(480px, 120px)rotate(-15deg);
+  }
+
+  100% {
+    border-radius: 20% 75% 30% 70% / 30% 35% 65% 70%;
+    transform: translate(-120px, -60px)rotate(-85deg);
+  }
+}
+
+@keyframes Estilo-module-scss-module__dib-dq__fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.Estilo-module-scss-module__dib-dq__headerContainer {
+  z-index: 2;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Estilo-module-scss-module__dib-dq__videoBackground {
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__logoLink {
+  -o-transition: transform .3s ease-in-out;
+  cursor: pointer;
+  color: inherit;
+  align-items: center;
+  gap: 10px;
+  font-family: Suez One, serif;
+  text-decoration: none;
+  transition: transform .3s ease-in-out;
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+.Estilo-module-scss-module__dib-dq__logoLink:hover {
+  transform: scale(1.1);
+}
+
+.Estilo-module-scss-module__dib-dq__logoImg {
+  width: 75px;
+  height: 75px;
+}
+
+.Estilo-module-scss-module__dib-dq__textWrapper {
+  padding: 100px;
+  animation: 5s ease-in-out infinite forwards Estilo-module-scss-module__dib-dq__efecto-neon;
+}
+
+.Estilo-module-scss-module__dib-dq__title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.Estilo-module-scss-module__dib-dq__subtitle {
+  margin-top: 15px;
+  font-family: Suez One, serif;
+}
+
+.Estilo-module-scss-module__dib-dq__menuBtn {
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  border: 0;
+  position: fixed;
+  top: 40px;
+  left: 60px;
+}
+
+.Estilo-module-scss-module__dib-dq__menuBtn svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.Estilo-module-scss-module__dib-dq__overlay {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  -o-transition: opacity .3s ease-in-out;
+  background-color: #0006;
+  transition: opacity .3s ease-in-out;
+  position: fixed;
+  inset: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__overlay.Estilo-module-scss-module__dib-dq__overlayVisible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer {
+  -webkit-backdrop-filter: blur(10px);
+  -o-transition: transform .3s ease-in-out;
+  z-index: 1001;
+  background: #0009;
+  border-left: 2px solid #ffffff1a;
+  width: 350px;
+  height: 100vh;
+  padding: 48px 32px;
+  transition: transform .3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer.Estilo-module-scss-module__dib-dq__menuVisible {
+  transform: translateX(0);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer .Estilo-module-scss-module__dib-dq__closeBtn {
+  color: #fff;
+  cursor: pointer;
+  -o-transition: all .3s ease-in-out;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 32px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer .Estilo-module-scss-module__dib-dq__closeBtn:hover {
+  background: #ffffff1a;
+  transform: rotate(90deg);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav {
+  margin-top: 80px;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) {
+  -o-transition: transform .3s ease-in-out;
+  margin: 32px 0;
+  transition: transform .3s ease-in-out;
+  transform: translateX(0);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador):hover {
+  transform: translateX(10px);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) a, .Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) span {
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 0;
+  font-family: Suez One, serif;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) span:after {
+  content: " ⏷";
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) ul {
+  -o-transition: max-height .4s ease-in-out;
+  max-height: 0;
+  margin-top: 10px;
+  padding-left: 20px;
+  transition: max-height .4s ease-in-out;
+  overflow: hidden;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) ul li {
+  -o-transition: all .3s ease-in-out;
+  margin: 16px 0;
+  transition: all .3s ease-in-out;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) ul li a {
+  color: #fffc;
+  padding: 5px 0;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) ul li a:hover {
+  padding-left: 5px;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador) ul li:hover {
+  transform: translateX(5px);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador).Estilo-module-scss-module__dib-dq__dropdownOpen span:after {
+  content: " ⏶";
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul li:not(.Estilo-module-scss-module__dib-dq__buscador).Estilo-module-scss-module__dib-dq__dropdownOpen ul {
+  max-height: 500px;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador {
+  position: relative;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador label {
+  display: none;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador input {
+  color: #fff;
+  background-color: #ffffff1a;
+  border: 2px solid #ffffff1a;
+  border-radius: 5px;
+  width: 84%;
+  padding: 10px;
+  font-family: Suez One, serif;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador input:focus {
+  outline: none;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador button {
+  cursor: pointer;
+  -o-transition: all .3s ease-in-out;
+  background: #000;
+  border: 2px solid #ffffff1a;
+  border-radius: 0 5px 5px 0;
+  width: 50px;
+  height: 45px;
+  padding: 0;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador button svg {
+  -o-transition: transform .3s ease-in-out;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  transition: transform .3s ease-in-out;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador button:hover {
+  background-color: #0d0d0d;
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador button:hover svg {
+  transform: scale(1.2);
+}
+
+.Estilo-module-scss-module__dib-dq__seccionDestacada {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: radial-gradient(circle, #d65108 40%, #070617 100%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  position: relative;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada {
+  cursor: pointer;
+  -o-transition: transform .3s ease-in-out;
+  background-color: #0009;
+  border: 2px solid #ffffff1a;
+  border-radius: 10px;
+  margin: 100px;
+  transition: transform .3s ease-in-out;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada a {
+  text-decoration: none;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__content {
+  flex-direction: column;
+  flex: 50%;
+  justify-content: space-between;
+  gap: 120px;
+  margin: 30px;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__content p.Estilo-module-scss-module__dib-dq__category {
+  letter-spacing: 1px;
+  color: #ffffff80;
+  background-color: #ffffff1a;
+  border: 2px solid #ffffff1a;
+  border-radius: 5px;
+  width: max-content;
+  padding: 10px;
+  font-family: Suez One, serif;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__content p.Estilo-module-scss-module__dib-dq__category span {
+  color: #000;
+  padding-right: 10px;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__content h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__content h5 {
+  color: #ffffff80;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer {
+  background: #000;
+  border-radius: 5px;
+  width: 900px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer .Estilo-module-scss-module__dib-dq__mainImage, .Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer .Estilo-module-scss-module__dib-dq__videoLayer {
+  pointer-events: none;
+  -o-transition: opacity .3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  transition: opacity .3s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer .Estilo-module-scss-module__dib-dq__mainImage {
+  object-fit: cover;
+  opacity: 1;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer .Estilo-module-scss-module__dib-dq__videoLayer {
+  object-fit: contain;
+  opacity: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada .Estilo-module-scss-module__dib-dq__mediaContainer .Estilo-module-scss-module__dib-dq__muteBtn {
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  background: #00000080;
+  border: none;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada:hover {
+  transform: scale(1.04);
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada:hover .Estilo-module-scss-module__dib-dq__mainImage {
+  opacity: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__noticiaDestacada:hover .Estilo-module-scss-module__dib-dq__videoLayer {
+  opacity: 1;
+}
+
+.Estilo-module-scss-module__dib-dq__footer {
+  scroll-snap-align: start;
+  min-height: 10vh;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection {
+  align-items: flex-start;
+  gap: 20px;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection .Estilo-module-scss-module__dib-dq__linksWrapper {
+  gap: 60px;
+  padding: 5px 0 20px 30px;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection .Estilo-module-scss-module__dib-dq__linksWrapper .Estilo-module-scss-module__dib-dq__linkColumn {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection .Estilo-module-scss-module__dib-dq__linksWrapper .Estilo-module-scss-module__dib-dq__linkColumn .Estilo-module-scss-module__dib-dq__listItem {
+  -o-transition: transform .3s ease-in-out;
+  padding: 5px 0 5px 5px;
+  font-family: Suez One, serif;
+  font-size: 14px;
+  list-style: none;
+  transition: transform .3s ease-in-out;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection .Estilo-module-scss-module__dib-dq__linksWrapper .Estilo-module-scss-module__dib-dq__linkColumn .Estilo-module-scss-module__dib-dq__listItem a {
+  text-decoration: none;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__topSection .Estilo-module-scss-module__dib-dq__linksWrapper .Estilo-module-scss-module__dib-dq__linkColumn .Estilo-module-scss-module__dib-dq__listItem:hover {
+  transform: scale(1.2);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection {
+  justify-content: space-between;
+  padding-top: 20px;
+  font-family: Suez One, serif;
+  display: flex;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks {
+  position: relative;
+  top: -60px;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a {
+  text-decoration: none;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a svg {
+  -o-transition: transform .3s ease-in-out;
+  width: 25px;
+  transition: transform .3s ease-in-out;
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a svg:hover {
+  transform: scale(1.2);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:first-child svg {
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transform: scale(1.3);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:first-child svg:hover {
+  transform: scale(1.5);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:nth-child(3) svg {
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transform: scale(.9);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:nth-child(3) svg:hover {
+  transform: scale(1.1);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:nth-child(4) img {
+  -o-transition: transform .3s ease-in-out;
+  width: 20px;
+  transition: transform .3s ease-in-out;
+  transform: translateY(-63px)scale(1.2);
+}
+
+.Estilo-module-scss-module__dib-dq__footer .Estilo-module-scss-module__dib-dq__bottomSection .Estilo-module-scss-module__dib-dq__socialLinks a:nth-child(4) img:hover {
+  transform: translateY(-63px)scale(1.4);
+}
+
+.Estilo-module-scss-module__dib-dq__page {
+  background-color: #0c0a30;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  animation: 1s ease-in-out forwards Estilo-module-scss-module__dib-dq__fadeIn;
+  position: relative;
+  overflow: hidden;
+}
+
+.Estilo-module-scss-module__dib-dq__page:after {
+  content: "";
+  filter: blur(10px);
+  opacity: .7;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle at 30% 30%, #b4590e73, #fff0 65%);
+  width: 60vmin;
+  height: 60vmin;
+  animation: 25s ease-in-out infinite both Estilo-module-scss-module__dib-dq__drift;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__pageScroll {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.Estilo-module-scss-module__dib-dq__pageScroll > header, .Estilo-module-scss-module__dib-dq__pageScroll > main {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "noticia1 noticia2"
+                       "noticia1 noticia3"
+                       "noticia4 noticia4";
+  gap: 20px;
+  min-height: 100vh;
+  padding: 150px;
+  display: grid;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article {
+  cursor: pointer;
+  -o-transition: transform .3s ease-in-out;
+  background-color: #0009;
+  border: 1px solid #fff3;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform .3s ease-in-out;
+  display: flex;
+  position: relative;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article > * {
+  z-index: 2;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article h3 {
+  margin-bottom: 15px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article p {
+  color: #ffffff80;
+  background-color: #ffffff1a;
+  border: 2px solid #ffffff1a;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  font-family: Suez One, serif;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article p span {
+  padding-right: 10px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article:hover {
+  transform: scale(1.05);
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid article:after {
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+  background: #00000080;
+  border-radius: 10px;
+  position: absolute;
+  inset: 0;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia1 {
+  grid-area: noticia1;
+  padding: 60px 50px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia1 h3 {
+  font-size: 30px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia1 {
+  background-image: url("https://www.meridiano180.com/wp-content/uploads/2012/09/tunel_greenwich2.jpg");
+  background-size: cover;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia2 {
+  grid-area: noticia2;
+  padding: 30px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia2 h3 {
+  font-size: 25px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia2 {
+  background-image: url("https://inarquia.es/wp-content/uploads/Casas-ecologicas-portada-1.jpg");
+  background-size: cover;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia3 {
+  grid-area: noticia3;
+  padding: 30px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia3 h3 {
+  font-size: 25px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia3 {
+  background-image: url("https://www.legaltoday.com/wp-content/uploads/2021/05/investigacion-policial.jpg");
+  background-size: cover;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia4 {
+  grid-area: noticia4;
+  padding: 40px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia4 h3 {
+  font-size: 30px;
+}
+
+.Estilo-module-scss-module__dib-dq__bentoGrid .Estilo-module-scss-module__dib-dq__noticia4 {
+  background-image: url("https://www.costabravahouse.com/storage/images/estate/photos/46570/1353098/casa-historica-de-piedra-en-venta-en-peratallada.jpg");
+  background-size: cover;
+}
+
+.Estilo-module-scss-module__dib-dq__fadeInElement {
+  opacity: 0;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.Estilo-module-scss-module__dib-dq__fadeInElement.Estilo-module-scss-module__dib-dq__visible {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=src_app_assets_scss_web_Estilo_module_scss_module_b4dbe0d2.css.map*/
