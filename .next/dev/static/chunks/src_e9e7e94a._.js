@@ -47,7 +47,7 @@ __turbopack_context__.v({
   "visible": "Estilo-module-scss-module__dib-dq__visible",
 });
 }),
-"[project]/src/components/inicio/Header.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/Header.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -59,7 +59,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
-'use client';
 ;
 ;
 ;
@@ -67,11 +66,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss
 ;
 function Header(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(7);
-    if ($[0] !== "7063dd909862a64ab1b7519867ae6dd092378e6ae23f18398a8df6661305e7a6") {
+    if ($[0] !== "aabb1dcba5803feede92ef13842d68a7353d2f4ed54510233f241349b4fa1816") {
         for(let $i = 0; $i < 7; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7063dd909862a64ab1b7519867ae6dd092378e6ae23f18398a8df6661305e7a6";
+        $[0] = "aabb1dcba5803feede92ef13842d68a7353d2f4ed54510233f241349b4fa1816";
     }
     const { onMenuOpen } = t0;
     let t1;
@@ -85,13 +84,13 @@ function Header(t0) {
                 src: "/video/tierra-video.mp4",
                 type: "video/mp4"
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/Header.jsx",
-                lineNumber: 20,
+                fileName: "[project]/src/components/home/Header.jsx",
+                lineNumber: 18,
                 columnNumber: 93
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/Header.jsx",
-            lineNumber: 20,
+            fileName: "[project]/src/components/home/Header.jsx",
+            lineNumber: 18,
             columnNumber: 10
         }, this);
         $[1] = t1;
@@ -112,22 +111,22 @@ function Header(t0) {
                     height: 100,
                     priority: true
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/Header.jsx",
-                    lineNumber: 27,
+                    fileName: "[project]/src/components/home/Header.jsx",
+                    lineNumber: 25,
                     columnNumber: 53
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
                     children: "GobleNews"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/Header.jsx",
-                    lineNumber: 27,
+                    fileName: "[project]/src/components/home/Header.jsx",
+                    lineNumber: 25,
                     columnNumber: 182
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/Header.jsx",
-            lineNumber: 27,
+            fileName: "[project]/src/components/home/Header.jsx",
+            lineNumber: 25,
             columnNumber: 10
         }, this);
         $[2] = t2;
@@ -143,22 +142,22 @@ function Header(t0) {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
                     children: "La nueva inteligencia"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/Header.jsx",
-                    lineNumber: 34,
+                    fileName: "[project]/src/components/home/Header.jsx",
+                    lineNumber: 32,
                     columnNumber: 46
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
                     children: "Periodismo técnico en la era post-humana"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/Header.jsx",
-                    lineNumber: 34,
+                    fileName: "[project]/src/components/home/Header.jsx",
+                    lineNumber: 32,
                     columnNumber: 101
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/Header.jsx",
-            lineNumber: 34,
+            fileName: "[project]/src/components/home/Header.jsx",
+            lineNumber: 32,
             columnNumber: 10
         }, this);
         $[3] = t3;
@@ -171,13 +170,13 @@ function Header(t0) {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                 href: "/img/web/sprites.svg#icon-menu"
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/Header.jsx",
-                lineNumber: 41,
+                fileName: "[project]/src/components/home/Header.jsx",
+                lineNumber: 39,
                 columnNumber: 15
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/Header.jsx",
-            lineNumber: 41,
+            fileName: "[project]/src/components/home/Header.jsx",
+            lineNumber: 39,
             columnNumber: 10
         }, this);
         $[4] = t4;
@@ -198,14 +197,14 @@ function Header(t0) {
                     "aria-label": "Abrir men\xFA",
                     children: t4
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/Header.jsx",
-                    lineNumber: 48,
+                    fileName: "[project]/src/components/home/Header.jsx",
+                    lineNumber: 46,
                     columnNumber: 65
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/Header.jsx",
-            lineNumber: 48,
+            fileName: "[project]/src/components/home/Header.jsx",
+            lineNumber: 46,
             columnNumber: 10
         }, this);
         $[5] = onMenuOpen;
@@ -236,7 +235,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
-'use client';
 ;
 ;
 ;
@@ -320,11 +318,11 @@ const dropdown = {
 function Aside(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(25);
-    if ($[0] !== "c24b55832acafa9f0c3f6aded446f9e6950e37da30a7621379930423a602b630") {
+    if ($[0] !== "b2fc8ff44bf92c16603226c24355dc2f6a03e27b2aef3d1466e691c844e9ed9f") {
         for(let $i = 0; $i < 25; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c24b55832acafa9f0c3f6aded446f9e6950e37da30a7621379930423a602b630";
+        $[0] = "b2fc8ff44bf92c16603226c24355dc2f6a03e27b2aef3d1466e691c844e9ed9f";
     }
     const { isOpen, onMenuClose } = t0;
     const [nav, setNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -373,7 +371,7 @@ function Aside(t0) {
             onClick: onMenuClose
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 117,
+            lineNumber: 115,
             columnNumber: 10
         }, this);
         $[5] = onMenuClose;
@@ -392,7 +390,7 @@ function Aside(t0) {
             children: "✕"
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 127,
+            lineNumber: 125,
             columnNumber: 10
         }, this);
         $[8] = onMenuClose;
@@ -408,7 +406,7 @@ function Aside(t0) {
             children: "Buscar"
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 136,
+            lineNumber: 134,
             columnNumber: 10
         }, this);
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -418,7 +416,7 @@ function Aside(t0) {
             placeholder: "Buscar"
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 137,
+            lineNumber: 135,
             columnNumber: 10
         }, this);
         $[10] = t8;
@@ -444,28 +442,28 @@ function Aside(t0) {
                                 href: "img/web/sprites.svg#btn-buscador"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Aside.jsx",
-                                lineNumber: 146,
+                                lineNumber: 144,
                                 columnNumber: 116
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Aside.jsx",
-                            lineNumber: 146,
+                            lineNumber: 144,
                             columnNumber: 111
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Aside.jsx",
-                        lineNumber: 146,
+                        lineNumber: 144,
                         columnNumber: 89
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Aside.jsx",
-                lineNumber: 146,
+                lineNumber: 144,
                 columnNumber: 43
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 146,
+            lineNumber: 144,
             columnNumber: 11
         }, this);
         $[12] = t10;
@@ -489,7 +487,7 @@ function Aside(t0) {
                                 children: item.name
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Aside.jsx",
-                                lineNumber: 157,
+                                lineNumber: 155,
                                 columnNumber: 105
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -506,18 +504,18 @@ function Aside(t0) {
                                                 children: sub.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Aside.jsx",
-                                                lineNumber: 160,
+                                                lineNumber: 158,
                                                 columnNumber: 83
                                             }, this)
                                         }, sub.id, false, {
                                             fileName: "[project]/src/components/Aside.jsx",
-                                            lineNumber: 160,
+                                            lineNumber: 158,
                                             columnNumber: 66
                                         }, this)
                                 }["Aside[lista.map() > hasDropdown.map()]"])
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Aside.jsx",
-                                lineNumber: 159,
+                                lineNumber: 157,
                                 columnNumber: 73
                             }, this)
                         ]
@@ -527,12 +525,12 @@ function Aside(t0) {
                         children: item.name
                     }, void 0, false, {
                         fileName: "[project]/src/components/Aside.jsx",
-                        lineNumber: 166,
+                        lineNumber: 164,
                         columnNumber: 71
                     }, this)
                 }, item.id, false, {
                     fileName: "[project]/src/components/Aside.jsx",
-                    lineNumber: 157,
+                    lineNumber: 155,
                     columnNumber: 16
                 }, this);
             }
@@ -553,12 +551,12 @@ function Aside(t0) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Aside.jsx",
-                lineNumber: 177,
+                lineNumber: 175,
                 columnNumber: 16
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 177,
+            lineNumber: 175,
             columnNumber: 11
         }, this);
         $[16] = t11;
@@ -577,7 +575,7 @@ function Aside(t0) {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Aside.jsx",
-            lineNumber: 185,
+            lineNumber: 183,
             columnNumber: 11
         }, this);
         $[18] = t12;
@@ -614,7 +612,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/inicio/TarjetaPrincipal.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/TarjetaPrincipal.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -736,7 +734,7 @@ function TarjetaPrincipal() {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
                 children: "Cargando noticia..."
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                 lineNumber: 103,
                 columnNumber: 12
             }, this);
@@ -753,7 +751,7 @@ function TarjetaPrincipal() {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
                 children: "No se pudo cargar la noticia destacada."
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                 lineNumber: 113,
                 columnNumber: 12
             }, this);
@@ -770,7 +768,7 @@ function TarjetaPrincipal() {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             children: noticia.bandera
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 124,
             columnNumber: 10
         }, this);
@@ -797,7 +795,7 @@ function TarjetaPrincipal() {
                 t6
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 140,
             columnNumber: 10
         }, this);
@@ -812,7 +810,7 @@ function TarjetaPrincipal() {
         t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
             children: noticia.titulo
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 149,
             columnNumber: 10
         }, this);
@@ -837,7 +835,7 @@ function TarjetaPrincipal() {
                 t9
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 165,
             columnNumber: 11
         }, this);
@@ -857,7 +855,7 @@ function TarjetaPrincipal() {
                 t10
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 173,
             columnNumber: 11
         }, this);
@@ -881,7 +879,7 @@ function TarjetaPrincipal() {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainImage,
             priority: true
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 186,
             columnNumber: 11
         }, this);
@@ -906,12 +904,12 @@ function TarjetaPrincipal() {
                     src: videoSrc,
                     type: "video/mp4"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                    fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                     lineNumber: 195,
                     columnNumber: 175
                 }, this)
             }, noticia.id, false, {
-                fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                 lineNumber: 195,
                 columnNumber: 24
             }, this)
@@ -921,20 +919,20 @@ function TarjetaPrincipal() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     children: "Error: 404"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                    fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                     lineNumber: 195,
                     columnNumber: 263
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     children: "No hay video disponible"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                    fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                     lineNumber: 195,
                     columnNumber: 282
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 195,
             columnNumber: 231
         }, this);
@@ -954,7 +952,7 @@ function TarjetaPrincipal() {
                 t15
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 205,
             columnNumber: 11
         }, this);
@@ -977,12 +975,12 @@ function TarjetaPrincipal() {
                     t16
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+                fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
                 lineNumber: 214,
                 columnNumber: 56
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/TarjetaPrincipal.jsx",
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
             lineNumber: 214,
             columnNumber: 11
         }, this);
@@ -1006,7 +1004,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/inicio/BentoGrid.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/BentoGrid.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -1077,7 +1075,7 @@ function BentoGrid() {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
                 children: "Cargando panel..."
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+                fileName: "[project]/src/components/home/BentoGrid.jsx",
                 lineNumber: 53,
                 columnNumber: 12
             }, this);
@@ -1094,7 +1092,7 @@ function BentoGrid() {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
                 children: "No hay noticias disponibles."
             }, void 0, false, {
-                fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+                fileName: "[project]/src/components/home/BentoGrid.jsx",
                 lineNumber: 63,
                 columnNumber: 12
             }, this);
@@ -1118,7 +1116,7 @@ function BentoGrid() {
             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bentoGrid}`,
             children: t3
         }, void 0, false, {
-            fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+            fileName: "[project]/src/components/home/BentoGrid.jsx",
             lineNumber: 80,
             columnNumber: 10
         }, this);
@@ -1144,7 +1142,7 @@ function _BentoGridAnonymous(noticia, index) {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: noticia.titulo
                 }, void 0, false, {
-                    fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+                    fileName: "[project]/src/components/home/BentoGrid.jsx",
                     lineNumber: 92,
                     columnNumber: 44
                 }, this),
@@ -1153,25 +1151,25 @@ function _BentoGridAnonymous(noticia, index) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             children: noticia.bandera
                         }, void 0, false, {
-                            fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+                            fileName: "[project]/src/components/home/BentoGrid.jsx",
                             lineNumber: 92,
                             columnNumber: 72
                         }, this),
                         noticia.nombre_pais?.toUpperCase()
                     ]
                 }, void 0, true, {
-                    fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+                    fileName: "[project]/src/components/home/BentoGrid.jsx",
                     lineNumber: 92,
                     columnNumber: 69
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+            fileName: "[project]/src/components/home/BentoGrid.jsx",
             lineNumber: 92,
             columnNumber: 6
         }, this)
     }, noticia.id, false, {
-        fileName: "[project]/src/components/inicio/BentoGrid.jsx",
+        fileName: "[project]/src/components/home/BentoGrid.jsx",
         lineNumber: 90,
         columnNumber: 10
     }, this);
@@ -1181,6 +1179,626 @@ function _BentoGridUseEffectAnonymous(response) {
 }
 var _c;
 __turbopack_context__.k.register(_c, "BentoGrid");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/assets/scss/web/Footer.module.scss [app-client] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "bottomSection": "Footer-module-scss-module__kYQCeW__bottomSection",
+  "footer": "Footer-module-scss-module__kYQCeW__footer",
+  "linkColumn": "Footer-module-scss-module__kYQCeW__linkColumn",
+  "linksWrapper": "Footer-module-scss-module__kYQCeW__linksWrapper",
+  "listItem": "Footer-module-scss-module__kYQCeW__listItem",
+  "socialLinks": "Footer-module-scss-module__kYQCeW__socialLinks",
+  "topSection": "Footer-module-scss-module__kYQCeW__topSection",
+});
+}),
+"[project]/src/components/Footer.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Footer.module.scss [app-client] (css module)");
+;
+;
+;
+;
+;
+function Footer() {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(23);
+    if ($[0] !== "7484982b2a5eb1faee535cb8e81d4dae475b09a22776483c83cdff9536a344d2") {
+        for(let $i = 0; $i < 23; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "7484982b2a5eb1faee535cb8e81d4dae475b09a22776483c83cdff9536a344d2";
+    }
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "/",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                src: "/img/logo_tierra.png",
+                alt: "Logo GobleNews",
+                width: 120,
+                height: 120,
+                className: "logo"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 15,
+                columnNumber: 25
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 15,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    let t1;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            children: "Países"
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 22,
+            columnNumber: 10
+        }, this);
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=america",
+                children: "América"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 29,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 29,
+            columnNumber: 10
+        }, this);
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    let t3;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=europa",
+                children: "Europa"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 36,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 36,
+            columnNumber: 10
+        }, this);
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=asia",
+                children: "Asia"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 43,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 43,
+            columnNumber: 10
+        }, this);
+        $[5] = t4;
+    } else {
+        t4 = $[5];
+    }
+    let t5;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=africa",
+                children: "África"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 50,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 50,
+            columnNumber: 10
+        }, this);
+        $[6] = t5;
+    } else {
+        t5 = $[6];
+    }
+    let t6;
+    let t7;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: [
+                t1,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                    children: [
+                        t2,
+                        t3,
+                        t4,
+                        t5,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/buscador?search=oceania",
+                                children: "Oceanía"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 58,
+                                columnNumber: 101
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 58,
+                            columnNumber: 69
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 58,
+                    columnNumber: 19
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 58,
+            columnNumber: 10
+        }, this);
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            children: "Categoría"
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 59,
+            columnNumber: 10
+        }, this);
+        $[7] = t6;
+        $[8] = t7;
+    } else {
+        t6 = $[7];
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=politica",
+                children: "Política"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 68,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 68,
+            columnNumber: 10
+        }, this);
+        $[9] = t8;
+    } else {
+        t8 = $[9];
+    }
+    let t9;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=economia",
+                children: "Economía"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 75,
+                columnNumber: 42
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 75,
+            columnNumber: 10
+        }, this);
+        $[10] = t9;
+    } else {
+        t9 = $[10];
+    }
+    let t10;
+    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=tecnologia",
+                children: "Tecnología"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 82,
+                columnNumber: 43
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 82,
+            columnNumber: 11
+        }, this);
+        $[11] = t10;
+    } else {
+        t10 = $[11];
+    }
+    let t11;
+    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "/buscador?search=deportes",
+                children: "Deportes"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 89,
+                columnNumber: 43
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 89,
+            columnNumber: 11
+        }, this);
+        $[12] = t11;
+    } else {
+        t11 = $[12];
+    }
+    let t12;
+    let t13;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: [
+                t7,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                    children: [
+                        t8,
+                        t9,
+                        t10,
+                        t11,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/buscador?search=cultura",
+                                children: "Cultura"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 97,
+                                columnNumber: 104
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 97,
+                            columnNumber: 72
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 97,
+                    columnNumber: 20
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 97,
+            columnNumber: 11
+        }, this);
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            children: "Sobre Nosotros"
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 98,
+            columnNumber: 11
+        }, this);
+        $[13] = t12;
+        $[14] = t13;
+    } else {
+        t12 = $[13];
+        t13 = $[14];
+    }
+    let t14;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: "#",
+                children: "Gmail"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 107,
+                columnNumber: 43
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 107,
+            columnNumber: 11
+        }, this);
+        $[15] = t14;
+    } else {
+        t14 = $[15];
+    }
+    let t15;
+    let t16;
+    if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topSection,
+            children: [
+                t0,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linksWrapper,
+                    children: [
+                        t6,
+                        t12,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                t13,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                                    children: [
+                                        t14,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: "#",
+                                                children: "Teléfono"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.jsx",
+                                                lineNumber: 115,
+                                                columnNumber: 181
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Footer.jsx",
+                                            lineNumber: 115,
+                                            columnNumber: 149
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Footer.jsx",
+                                    lineNumber: 115,
+                                    columnNumber: 110
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 115,
+                            columnNumber: 100
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: "Últimas Noticias"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 115,
+                                columnNumber: 232
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 115,
+                            columnNumber: 227
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: "Cookies"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 115,
+                                columnNumber: 266
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 115,
+                            columnNumber: 261
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 115,
+                    columnNumber: 54
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 115,
+            columnNumber: 11
+        }, this);
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 116,
+            columnNumber: 11
+        }, this);
+        $[16] = t15;
+        $[17] = t16;
+    } else {
+        t15 = $[16];
+        t16 = $[17];
+    }
+    let t17;
+    if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            children: "© 2026 GobleNews. Todos los derechos reservados."
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 125,
+            columnNumber: 11
+        }, this);
+        $[18] = t17;
+    } else {
+        t17 = $[18];
+    }
+    let t18;
+    if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                    href: "/img/sprites.svg#icon-instagram"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 132,
+                    columnNumber: 31
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 132,
+                columnNumber: 26
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 132,
+            columnNumber: 11
+        }, this);
+        $[19] = t18;
+    } else {
+        t18 = $[19];
+    }
+    let t19;
+    if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                    href: "/img/sprites.svg#icon-facebook"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 139,
+                    columnNumber: 31
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 139,
+                columnNumber: 26
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 139,
+            columnNumber: 11
+        }, this);
+        $[20] = t19;
+    } else {
+        t19 = $[20];
+    }
+    let t20;
+    if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                    href: "/img/sprites.svg#icon-linkedin"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 146,
+                    columnNumber: 31
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Footer.jsx",
+                lineNumber: 146,
+                columnNumber: 26
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 146,
+            columnNumber: 11
+        }, this);
+        $[21] = t20;
+    } else {
+        t20 = $[21];
+    }
+    let t21;
+    if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footer,
+            children: [
+                t15,
+                t16,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomSection,
+                    children: [
+                        t17,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Footer$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].socialLinks,
+                            children: [
+                                t18,
+                                t19,
+                                t20,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "#",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/img/icons8-x-50.png",
+                                        alt: "Twitter logo",
+                                        width: 20,
+                                        height: 20
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.jsx",
+                                        lineNumber: 153,
+                                        columnNumber: 168
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.jsx",
+                                    lineNumber: 153,
+                                    columnNumber: 153
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Footer.jsx",
+                            lineNumber: 153,
+                            columnNumber: 102
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.jsx",
+                    lineNumber: 153,
+                    columnNumber: 55
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Footer.jsx",
+            lineNumber: 153,
+            columnNumber: 11
+        }, this);
+        $[22] = t21;
+    } else {
+        t21 = $[22];
+    }
+    return t21;
+}
+_c = Footer;
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -1195,10 +1813,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/inicio/Header.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Header.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Aside.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/inicio/TarjetaPrincipal.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/inicio/BentoGrid.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/TarjetaPrincipal.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/BentoGrid.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Footer.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -1210,14 +1829,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Home() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "48e623993709903b116c33c0b21dbad29ea5f0322d1dfb0c229ca675476fd54b") {
-        for(let $i = 0; $i < 9; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
+    if ($[0] !== "d049261e208684d97067c1acaed703da03ee3d6ac1c5ae4f5e4fa685e97819d0") {
+        for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "48e623993709903b116c33c0b21dbad29ea5f0322d1dfb0c229ca675476fd54b";
+        $[0] = "d049261e208684d97067c1acaed703da03ee3d6ac1c5ae4f5e4fa685e97819d0";
     }
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -1246,11 +1866,11 @@ function Home() {
     const handleMenuClose = t1;
     let t2;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             onMenuOpen: handleMenuOpen
         }, void 0, false, {
             fileName: "[project]/src/app/page.jsx",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -1264,7 +1884,7 @@ function Home() {
             onMenuClose: handleMenuClose
         }, void 0, false, {
             fileName: "[project]/src/app/page.jsx",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 10
         }, this);
         $[4] = isMenuOpen;
@@ -1273,49 +1893,58 @@ function Home() {
         t3 = $[5];
     }
     let t4;
+    let t5;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 60,
+                    lineNumber: 62,
                     columnNumber: 16
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$inicio$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 60,
+                    lineNumber: 62,
                     columnNumber: 36
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.jsx",
-            lineNumber: 60,
+            lineNumber: 62,
+            columnNumber: 10
+        }, this);
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/page.jsx",
+            lineNumber: 63,
             columnNumber: 10
         }, this);
         $[6] = t4;
+        $[7] = t5;
     } else {
         t4 = $[6];
+        t5 = $[7];
     }
-    let t5;
-    if ($[7] !== t3) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t6;
+    if ($[8] !== t3) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].page,
             children: [
                 t2,
                 t3,
-                t4
+                t4,
+                t5
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.jsx",
-            lineNumber: 67,
+            lineNumber: 72,
             columnNumber: 10
         }, this);
-        $[7] = t3;
-        $[8] = t5;
+        $[8] = t3;
+        $[9] = t6;
     } else {
-        t5 = $[8];
+        t6 = $[9];
     }
-    return t5;
+    return t6;
 }
 _s(Home, "vK10R+uCyHfZ4DZVnxbYkMWJB8g=");
 _c = Home;
@@ -1327,4 +1956,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_79a8e1f4._.js.map
+//# sourceMappingURL=src_e9e7e94a._.js.map

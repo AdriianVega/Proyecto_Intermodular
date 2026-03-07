@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FastAverageColor } from 'fast-average-color';
 import styles from '@/app/assets/scss/web/Estilo.module.scss';
 
 function tiempoTranscurrido(fecha) {
@@ -36,10 +37,13 @@ export default function TarjetaPrincipal() {
     const [noticia, setNoticia] = useState(null);
     const [loading, setLoading] = useState(true);
     const [isMuted, setIsMuted] = useState(true);
+    const [bgColor, setBgColor] = useState('#D65108');
+    
     const videoRef = useRef(null);
+    const sectionRef = useRef(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/backend/api/handlers/noticia.php?destacada=true')
+        fetch('http://localhost:8000/backend/api/handlers/pagina_principal.php?destacada=true')
             .then(res => res.json())
             .then(data => {
                 if (data.success && data.data && data.data.id > 0) {
@@ -53,22 +57,73 @@ export default function TarjetaPrincipal() {
             });
     }, []);
 
+    useEffect(() => {
+        if (!loading && sectionRef.current) {
+            const observer = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(styles.visible);
+                } else {
+                    entry.target.classList.remove(styles.visible);
+                }
+            }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+
+            observer.observe(sectionRef.current);
+            return () => observer.disconnect();
+        }
+    }, [loading]);
+
+    useEffect(() => {
+        if (noticia) {
+            const fac = new FastAverageColor();
+            const imageUrl = noticia.path 
+                ? `/img/web/${noticia.path}/img_${noticia.path}.png` 
+                : '/img/web/logo_tierra.png';
+
+            const img = new window.Image();
+            img.crossOrigin = 'anonymous';
+            img.src = imageUrl;
+
+            img.onload = () => {
+                try {
+                    const color = fac.getColor(img);
+                    setBgColor(color.hex);
+                    fac.destroy(); 
+                } catch (e) {
+                    console.error('Fallo al extraer color:', e);
+                }
+            };
+        }
+    }, [noticia]);
+
+    const handleMouseEnter = () => {
+        if (!videoRef.current) return;
+        const p = videoRef.current.play();
+        if (p && typeof p.catch === 'function') p.catch(() => {});
+    };
+
+    const handleMouseLeave = () => {
+        if (!videoRef.current) return;
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+    };
+
     if (loading) return <div className={styles.loading}>Cargando noticia...</div>;
     
     if (!noticia) {
         return <div className={styles.error}>No se pudo cargar la noticia destacada.</div>;
     }
 
-    const toggleMute = (e) => {
-        if (videoRef.current) {
-            videoRef.current.muted = !videoRef.current.muted;
-            setIsMuted(videoRef.current.muted);
-        }
-    }
+    const videoSrc = noticia?.path
+        ? `/video/web/${noticia.path}/video_${noticia.path}.mp4`
+        : null;
 
     return (
-        <section className={styles.seccionDestacada}>
-            <article className={styles.noticiaDestacada}>
+        <section ref={sectionRef} className={`${styles.seccionDestacada} ${styles.fadeInElement} `} style={{ '--color-dominante': bgColor }}>
+            <article
+                className={styles.noticiaDestacada}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
                 
                 <Link href={`/noticia/${noticia.id}`} className={styles.content}>
                     <p className={styles.category}>
@@ -90,24 +145,26 @@ export default function TarjetaPrincipal() {
                         priority 
                     />
                     
-                    {noticia.url_video && (
+                    {videoSrc ? (
                         <>
-                            <video 
+                            <video
                                 key={noticia.id}
                                 ref={videoRef}
-                                loop 
+                                controls
+                                loop
                                 muted={isMuted}
-                                playsInline 
+                                playsInline
+                                preload="metadata"
                                 className={styles.videoLayer}
                             >
-                                <source src={noticia.url_video} type="video/mp4" />
-                            </video> 
-
-                            <button type='button' className={styles.muteBtn} aria-pressed={!isMuted} onClick={toggleMute}>
-                                {isMuted ? '🔇' : '🔊'}
-                            </button> 
+                                <source src={videoSrc} type="video/mp4" />
+                            </video>
                         </>
-                    )}
+                    ) : (
+                        <div className={styles.noVideo}>
+                            <h1>Error: 404</h1>
+                            <h2>No hay video disponible</h2>
+                        </div>)}
                 </div>
             </article>
         </section>

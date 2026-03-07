@@ -1,0 +1,123 @@
+@use "Variables.module" as *;
+@use "Mixins.module" as *;
+
+.bentoGrid {
+    min-height: 100vh;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "noticia1 noticia2"
+        "noticia1 noticia3"
+        "noticia4 noticia4";
+    grid-template-rows: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 150px;
+
+    .tarjetaNoticia {
+        background-color: $color-fondo-tarjeta-oscuro;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        gap: 0;
+        cursor: pointer;
+        @include transition(transform, 0.3s);
+
+        > * {
+            z-index: 2;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            position: absolute;
+            bottom: 20px;
+            margin: 0;
+            width: fit-content;
+            padding: 10px;
+            color: $color-semitransparente;
+            font-family: $fuente-secundaria;
+            border: 2px solid $color-borde-tarjeta;
+            border-radius: 5px;
+
+            span {
+                padding-right: 10px;
+            }
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            pointer-events: none;
+            z-index: 1;
+        }
+    }
+
+    .noticia1,
+    .noticia2,
+    .noticia3,
+    .noticia4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+
+        span {
+            color: black;
+        }
+
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%), var(--bg-noticia);
+    }
+
+    .noticia1 {
+        grid-area: noticia1;
+        padding: 60px 50px;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .noticia2 {
+        grid-area: noticia2;
+        padding: 30px;
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+    .noticia3 {
+        grid-area: noticia3;
+        padding: 30px;
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+    .noticia4 {
+        grid-area: noticia4;
+        padding: 40px;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+}

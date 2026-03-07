@@ -4,6 +4,7 @@
 @use "Header.module" as *;
 @use "Aside.module" as *;
 @use "TarjetaPrincipal.module" as *;
+@use "BentoGrid.module" as *;
 @use "Footer.module" as *;
 
 .page {
@@ -15,19 +16,19 @@
     @include animation(fadeIn, 1s, ease-in-out, 1, forwards);
 
     &::after {
-        position: absolute;
+        position: fixed;
         content: '';
         width: 60vmin;
         height: 60vmin;
         top: 0;
         left: 0;
-        background: radial-gradient(circle at 30% 30%, rgba(180, 89, 14, 0.45), rgba(255, 255, 255, 0) 65%);
+        background: radial-gradient(circle at 30% 30%, rgba(14, 133, 180, 0.45), rgba(255, 255, 255, 0) 65%);
         filter: blur(10px);
         opacity: 0.7;
         mix-blend-mode: screen;
         @include animation(drift, 25s, ease-in-out, infinite, both);
         pointer-events: none;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
@@ -37,122 +38,19 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 
-    >header,
-    >main {
-        min-height: 100vh;
+    >header, footer {
         scroll-snap-align: start;
-        scroll-snap-stop: always;
+    }
+
+    > header {
+        min-height: 100vh;
     }
 }
 
-.bentoGrid {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-        "noticia1 noticia2"
-        "noticia1 noticia3"
-        "noticia4 noticia4";
-    gap: 20px;
-    padding: 150px;
-
-    article {
-        background-color: $color-fondo-tarjeta-oscuro;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        cursor: pointer;
-        @include transition(transform, 0.3s);
-
-        >* {
-            z-index: 2;
-        }
-
-        h3 {
-            margin-bottom: 15px;
-        }
-
-        p {
-            background-color: $color-fondo-tarjeta-claro;
-            width: 300px;
-            padding: 10px;
-            color: $color-semitransparente;
-            font-family: $fuente-secundaria;
-            border: 2px solid $color-borde-tarjeta;
-            border-radius: 5px;
-
-            span {
-                padding-right: 10px;
-            }
-        }
-
-        &:hover {
-            transform: scale(1.05);
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            pointer-events: none;
-            z-index: 1;
-        }
-    }
-
-    .noticia1 {
-        grid-area: noticia1;
-        padding: 60px 50px;
-
-        h3 {
-            font-size: 30px;
-        }
-
-        background-image: url("https://www.meridiano180.com/wp-content/uploads/2012/09/tunel_greenwich2.jpg");
-        background-size: cover;
-    }
-
-    .noticia2 {
-        grid-area: noticia2;
-        padding: 30px;
-
-        h3 {
-            font-size: 25px;
-        }
-
-        background-image: url("https://inarquia.es/wp-content/uploads/Casas-ecologicas-portada-1.jpg");
-        background-size: cover;
-    }
-
-    .noticia3 {
-        grid-area: noticia3;
-        padding: 30px;
-
-        h3 {
-            font-size: 25px;
-        }
-
-        background-image: url("https://www.legaltoday.com/wp-content/uploads/2021/05/investigacion-policial.jpg");
-        background-size: cover;
-    }
-
-    .noticia4 {
-        grid-area: noticia4;
-        padding: 40px;
-
-        h3 {
-            font-size: 30px;
-        }
-
-        background-image: url("https://www.costabravahouse.com/storage/images/estate/photos/46570/1353098/casa-historica-de-piedra-en-venta-en-peratallada.jpg");
-        background-size: cover;
+.mainSnap {
+    > section {
+        min-height: 100vh;
+        scroll-snap-align: start;
     }
 }
 

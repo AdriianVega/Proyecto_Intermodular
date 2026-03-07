@@ -1,16 +1,13 @@
-'use client';
-
 import Link from 'next/link';
 import Image from "next/image";
 import styles from '@/app/assets/scss/web/Estilo.module.scss';
 
-
-
-export default function Header({ onMenuOpen }) {
+export default function Header() {
     return (
-        <header className={styles.headerContainer}>
+        <header className={`${styles.headerContainer} ${styles.fadeInElement}`} id="header">
             <video 
-                autoPlay 
+                autoPlay
+                playsInline
                 muted
                 loop 
                 className={styles.videoBackground}
@@ -34,16 +31,6 @@ export default function Header({ onMenuOpen }) {
                 <h1 className={styles.title}>La nueva inteligencia</h1>
                 <h3 className={styles.subtitle}>Periodismo técnico en la era post-humana</h3>
             </div>
-
-            <button 
-                className={styles.menuBtn} 
-                onClick={onMenuOpen}
-                aria-label="Abrir menú"
-            >
-                <svg>
-                    <use href="/img/web/sprites.svg#icon-menu"></use>
-                </svg>
-            </button>
         </header>
     );
 }

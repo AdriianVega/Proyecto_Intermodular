@@ -1,8 +1,6 @@
-'use client'
-
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from '@/app/assets/scss/web/Estilo.module.scss'; 
+import styles from '@/app/assets/scss/web/Aside.module.scss'; 
 
 const lista = [
     {
@@ -92,12 +90,14 @@ export default function Aside( { isOpen, onMenuClose } ) {
     };
 
     useEffect(() => {
-        if (nav) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-    }, [nav]);
+        document.documentElement.style.overflow = isOpen ? 'hidden' : '';
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+
+        return () => {
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
 
     return (
         <>
@@ -183,6 +183,14 @@ export default function Aside( { isOpen, onMenuClose } ) {
                                 </li>
                             )
                         })}
+                        <li className={styles.controlPanel}>
+                            <Link
+                                href="/panel-de-control"
+                                onClick={onMenuClose}
+                            >
+                                Panel de Control
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </aside>

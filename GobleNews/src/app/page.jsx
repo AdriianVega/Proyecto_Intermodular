@@ -1,14 +1,40 @@
 'use client'
 
-import React, { useState } from "react";
-import Header from "../components/inicio/Header"
+import React, { useState, useEffect } from "react";
+import Header from "../components/home/Header"
 import Aside from "../components/Aside"
-import TarjetaPrincipal from "../components/inicio/TarjetaPrincipal";
-import BentoGrid from "../components/inicio/BentoGrid"
+import TarjetaPrincipal from "../components/home/TarjetaPrincipal";
+import BentoGrid from "../components/home/BentoGrid"
+import Footer from "../components/Footer";
 import styles from '../app/assets/scss/web/Estilo.module.scss';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.visible)
+        } else {
+          entry.target.classList.remove(styles.visible)
+        }
+      });
+    }, observerOptions);
+
+    const fadeElements = document.querySelectorAll(`.${styles.fadeInElement}`)
+    fadeElements.forEach(element => observer.observe(element));
+
+    return () => {
+      observer.disconnect();
+    };
+  
+  }, []);
 
   const handleMenuOpen = () => {
     setIsMenuOpen(true);
@@ -19,19 +45,28 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.page}>
-      <Header onMenuOpen={handleMenuOpen} />
+    <>
+      <Aside isOpen={isMenuOpen} onMenuClose={handleMenuClose} />
+      <button 
+          className={styles.menuBtn} 
+          onClick={handleMenuOpen}
+          aria-label="Abrir menú"
+      >
+          <svg>
+              <use href="/img/web/sprites.svg#icon-menu"></use>
+          </svg>
+      </button>
 
-      <Aside 
-        isOpen={isMenuOpen} 
-        onMenuClose={handleMenuClose} 
-      />
+      <div className={`${styles.page} ${styles.pageScroll}`}>
+        <Header />
 
-      <main>
-        <TarjetaPrincipal />
+        <main className={styles.mainSnap}>
+            <TarjetaPrincipal />
+            <BentoGrid />
+        </main>
 
-        <BentoGrid />
-      </main>
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }

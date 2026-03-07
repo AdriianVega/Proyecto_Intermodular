@@ -3,7 +3,6 @@
 
 .seccionDestacada {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
     min-height: 100vh;
     background: $gradiente-noticia-destacada;
     display: flex;
@@ -82,12 +81,18 @@
             @include transition(opacity, 0.3s);
         }
 
+        .noVideo {
+            visibility: hidden;
+        }
+
         .mainImage {
+            pointer-events: none;
             object-fit: cover;
             opacity: 1;
         }
 
         .videoLayer {
+            pointer-events: auto;
             object-fit: contain;
             opacity: 0;
         }
@@ -114,6 +119,18 @@
 
         .videoLayer {
             opacity: 1;
+        }
+
+        .noVideo {
+            visibility: visible;
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: red;
+            pointer-events: none;
         }
     }
 }

@@ -17,7 +17,7 @@ if (!phpBinary) {
     process.exit(1);
 }
 
-console.log(`\x1b[35m[PHP]\x1b[0m Usando binario en: ${phpBinary}`);
+console.log(`Usando binario en: ${phpBinary}`);
 
 const phpServer = spawn(phpBinary, ['-S', 'localhost:8000'], {
     stdio: 'inherit',
@@ -25,5 +25,5 @@ const phpServer = spawn(phpBinary, ['-S', 'localhost:8000'], {
 });
 
 phpServer.on('error', (err) => {
-    console.error(`\x1b[31m[PHP] Error al iniciar el servidor: ${err.message}\x1b[0m`);
+    console.error(`Error al iniciar el servidor: ${err.message}`);
 });

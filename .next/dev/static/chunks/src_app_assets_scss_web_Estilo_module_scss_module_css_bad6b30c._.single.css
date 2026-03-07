@@ -246,6 +246,11 @@
   max-height: 500px;
 }
 
+.Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__controlPanel {
+  position: absolute;
+  bottom: 0;
+}
+
 .Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador {
   position: relative;
 }
@@ -296,6 +301,12 @@
 
 .Estilo-module-scss-module__dib-dq__asideContainer nav ul .Estilo-module-scss-module__dib-dq__buscador button:hover svg {
   transform: scale(1.2);
+}
+
+.Estilo-module-scss-module__dib-dq__asideContainer nav .Estilo-module-scss-module__dib-dq__menuList {
+  flex-direction: column;
+  height: 100%;
+  display: flex;
 }
 
 .Estilo-module-scss-module__dib-dq__seccionDestacada {
@@ -715,4 +726,4 @@
   opacity: 1;
 }
 
-/*# sourceMappingURL=src_app_assets_scss_web_Estilo_module_scss_module_b4dbe0d2.css.map*/
+/*# sourceMappingURL=src_app_assets_scss_web_Estilo_module_scss_module_css_bad6b30c._.single.css.map*/

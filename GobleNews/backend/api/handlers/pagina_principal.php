@@ -24,7 +24,7 @@
     $bento      = $_GET['bento'] ?? null;
 
     try {
-        $sql = "SELECT n.*, p.bandera, p.nombre AS nombre_pais
+        $sql = "SELECT n.id, n.titulo, n.pais_id, n.medio_id, n.path, n.create_time, p.bandera, p.nombre AS nombre_pais
                     FROM noticia n
                     LEFT JOIN pais p ON n.pais_id = p.id";
         $params = [];

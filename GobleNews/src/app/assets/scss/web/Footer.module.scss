@@ -5,21 +5,27 @@
     font-size: 18px;
     scroll-snap-align: start;
     min-height: 10vh;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
 
     .topSection {
         display: flex;
         align-items: flex-start;
         gap: 20px;
 
+        .logo {
+            position: relative;
+            bottom: 10px;
+        }
+
         .linksWrapper {
             display: flex;
-            padding: 5px 0 20px 30px;
+            padding: 5px 0 80px 30px;
             gap: 60px;
 
             .linkColumn {
                 display: flex;
                 flex-direction: column;
+                margin-top: 20px;
                 gap: 20px;
 
                 .listItem {
@@ -48,6 +54,8 @@
         padding-top: 20px;
 
         .socialLinks {
+            display: flex;
+            gap: 10px;
             position: relative;
             top: -60px;
 
@@ -83,13 +91,13 @@
             }
 
             a:nth-child(4) img {
-                width: 20px;
-                transform: translateY(-63px) scale(1.2);
+                
+                transform: translateY(67px) scale(1.2);
 
                 @include transition(transform, 0.3s);
 
                 &:hover {
-                    transform: translateY(-63px) scale(1.4);
+                    transform: translateY(67px) scale(1.4);
                 }
             }
         }
