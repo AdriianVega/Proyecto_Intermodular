@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from '@/app/assets/scss/web/Aside.module.scss'; 
+import styles from '@/app/assets/scss/web/home/Aside.module.scss'; 
 
 const lista = [
     {

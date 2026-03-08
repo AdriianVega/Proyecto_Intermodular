@@ -1,5 +1,5 @@
-@use "Variables.module" as *;
-@use "Mixins.module" as *;
+@use "../Variables.module" as *;
+@use "../Mixins.module" as *;
 
 .overlay {
     position: fixed;

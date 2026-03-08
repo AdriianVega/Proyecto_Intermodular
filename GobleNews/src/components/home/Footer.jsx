@@ -1,7 +1,77 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/app/assets/scss/web/Estilo.module.scss'; 
+import styles from '@/app/assets/scss/web/home/Estilo.module.scss'; 
+
+const enlaces = [
+    [
+        {
+            id: 1,
+            nombre: "América",
+            url: "america"
+        },
+        {
+            id: 2,
+            nombre: "Europa",
+            url: "europa"
+        },
+        {
+            id: 3,
+            nombre: "Asia",
+            url: "asia"
+        },
+        {
+            id: 4,
+            nombre: "África",
+            url: "africa"
+        },
+        {
+            id: 5,
+            nombre: "Oceanía",
+            url: "oceania"
+        }
+    ],
+    [
+        {
+            id: 1,
+            nombre: "Política",
+            url: "politica"
+        },
+        {
+            id: 2,
+            nombre: "Economía",
+            url: "economia"
+        },
+        {
+            id: 3,
+            nombre: "Tecnología",
+            url: "tecnologia"
+        },
+        {
+            id: 4,
+            nombre: "Deportes",
+            url: "deportes"
+        },
+        {
+            id: 5,
+            nombre: "Cultura",
+            url: "cultura"
+        }
+    ],
+    [
+        {
+            id: 1,
+            nombre: "Gmail",
+            url: "gmail"
+        },
+        {
+            id: 2,
+            nombre: "Teléfono",
+            url: "telefono"
+        }
+    ]
+    
+]
 
 export default function Footer() {
 
@@ -49,39 +119,42 @@ export default function Footer() {
                     <div>
                         <p>Países</p>
                         <ul className={styles.linkColumn}>
-                            <li className={styles.listItem}><Link href="/buscador?search=america">América</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=europa">Europa</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=asia">Asia</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=africa">África</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=oceania">Oceanía</Link></li>
+                            {enlaces[0].map((enlace) => (
+                                <li key={enlace.id} className={styles.listItem}>
+                                    <Link href={`/buscador?search=${enlace.url}`}>{enlace.nombre}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     
                     <div>
                         <p>Categoría</p>
                         <ul className={styles.linkColumn}>
-                            <li className={styles.listItem}><Link href="/buscador?search=politica">Política</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=economia">Economía</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=tecnologia">Tecnología</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=deportes">Deportes</Link></li>
-                            <li className={styles.listItem}><Link href="/buscador?search=cultura">Cultura</Link></li>
+                            {enlaces[1].map((enlace) => (
+                                <li key={enlace.id} className={styles.listItem}>
+                                    <Link href={`/buscador?search=${enlace.url}`}>{enlace.nombre}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     
                     <div>
                         <p>Sobre Nosotros</p>
                         <ul className={styles.linkColumn}>
-                            <li className={styles.listItem}><Link href="#">Gmail</Link></li>
-                            <li className={styles.listItem}><Link href="#">Teléfono</Link></li>
+                            {enlaces[2].map((enlace) => (
+                                <li key={enlace.id} className={styles.listItem}>
+                                    <Link href={`/buscador?search=${enlace.url}`}>{enlace.nombre}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     
                     <div>
-                        <p>Últimas Noticias</p>
+                        <Link href={`/`}>Últimas Noticias</Link>
                     </div>
                     
                     <div>
-                        <p>Cookies</p>
+                        <Link href={`/cookies`}>Cookies</Link>
                     </div>
                 </div>
             </section>
@@ -89,7 +162,7 @@ export default function Footer() {
             <hr />
             
             <section className={styles.bottomSection}>
-                <p>© 2026 GobleNews. Todos los derechos reservados.</p>
+                <p className={styles.copyright}>© 2026 GobleNews. Todos los derechos reservados.</p>
             
                 <div className={styles.socialLinks}>
                     <a href="#">

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import styles from '@/app/assets/scss/web/Estilo.module.scss';
+import styles from '@/app/assets/scss/web/home/Estilo.module.scss';
 
 export default function BentoGrid() {
     const [noticias, setNoticias] = useState([]);
@@ -49,7 +49,7 @@ export default function BentoGrid() {
 
                     return (
                         <article key={noticia.id} className={`${styles[`noticia${index + 1}`]} ${styles.tarjetaNoticia}`} style={{ '--bg-noticia': `url(${imageUrl})` }}>
-                            <Link href={`/noticia/${noticia.id}`}>
+                            <Link href={`noticia?id=${noticia.id}`}>
                                 <h3>{noticia.titulo}</h3>
                                 <p>
                                     <span>{noticia.bandera}</span> 

@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${suezOne.variable}`}>
+      <body className={`${inter.variable} ${suezOne.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>

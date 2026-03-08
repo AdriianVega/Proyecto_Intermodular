@@ -1,55 +1,56 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)", ((__turbopack_context__) => {
+"[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "asideContainer": "Estilo-module-scss-module__dib-dq__asideContainer",
-  "bentoGrid": "Estilo-module-scss-module__dib-dq__bentoGrid",
-  "bottomSection": "Estilo-module-scss-module__dib-dq__bottomSection",
-  "buscador": "Estilo-module-scss-module__dib-dq__buscador",
-  "category": "Estilo-module-scss-module__dib-dq__category",
-  "closeBtn": "Estilo-module-scss-module__dib-dq__closeBtn",
-  "content": "Estilo-module-scss-module__dib-dq__content",
-  "controlPanel": "Estilo-module-scss-module__dib-dq__controlPanel",
-  "drift": "Estilo-module-scss-module__dib-dq__drift",
-  "dropdownOpen": "Estilo-module-scss-module__dib-dq__dropdownOpen",
-  "efecto-neon": "Estilo-module-scss-module__dib-dq__efecto-neon",
-  "fadeIn": "Estilo-module-scss-module__dib-dq__fadeIn",
-  "fadeInElement": "Estilo-module-scss-module__dib-dq__fadeInElement",
-  "footer": "Estilo-module-scss-module__dib-dq__footer",
-  "headerContainer": "Estilo-module-scss-module__dib-dq__headerContainer",
-  "linkColumn": "Estilo-module-scss-module__dib-dq__linkColumn",
-  "linksWrapper": "Estilo-module-scss-module__dib-dq__linksWrapper",
-  "listItem": "Estilo-module-scss-module__dib-dq__listItem",
-  "logo": "Estilo-module-scss-module__dib-dq__logo",
-  "logoImg": "Estilo-module-scss-module__dib-dq__logoImg",
-  "logoLink": "Estilo-module-scss-module__dib-dq__logoLink",
-  "mainImage": "Estilo-module-scss-module__dib-dq__mainImage",
-  "mainSnap": "Estilo-module-scss-module__dib-dq__mainSnap",
-  "mediaContainer": "Estilo-module-scss-module__dib-dq__mediaContainer",
-  "menuBtn": "Estilo-module-scss-module__dib-dq__menuBtn",
-  "menuList": "Estilo-module-scss-module__dib-dq__menuList",
-  "menuVisible": "Estilo-module-scss-module__dib-dq__menuVisible",
-  "muteBtn": "Estilo-module-scss-module__dib-dq__muteBtn",
-  "noVideo": "Estilo-module-scss-module__dib-dq__noVideo",
-  "noticia1": "Estilo-module-scss-module__dib-dq__noticia1",
-  "noticia2": "Estilo-module-scss-module__dib-dq__noticia2",
-  "noticia3": "Estilo-module-scss-module__dib-dq__noticia3",
-  "noticia4": "Estilo-module-scss-module__dib-dq__noticia4",
-  "noticiaDestacada": "Estilo-module-scss-module__dib-dq__noticiaDestacada",
-  "overlay": "Estilo-module-scss-module__dib-dq__overlay",
-  "overlayVisible": "Estilo-module-scss-module__dib-dq__overlayVisible",
-  "page": "Estilo-module-scss-module__dib-dq__page",
-  "pageScroll": "Estilo-module-scss-module__dib-dq__pageScroll",
-  "seccionDestacada": "Estilo-module-scss-module__dib-dq__seccionDestacada",
-  "socialLinks": "Estilo-module-scss-module__dib-dq__socialLinks",
-  "subtitle": "Estilo-module-scss-module__dib-dq__subtitle",
-  "tarjetaNoticia": "Estilo-module-scss-module__dib-dq__tarjetaNoticia",
-  "textWrapper": "Estilo-module-scss-module__dib-dq__textWrapper",
-  "title": "Estilo-module-scss-module__dib-dq__title",
-  "topSection": "Estilo-module-scss-module__dib-dq__topSection",
-  "videoBackground": "Estilo-module-scss-module__dib-dq__videoBackground",
-  "videoLayer": "Estilo-module-scss-module__dib-dq__videoLayer",
-  "visible": "Estilo-module-scss-module__dib-dq__visible",
+  "asideContainer": "Estilo-module-scss-module__GGnB2q__asideContainer",
+  "bentoGrid": "Estilo-module-scss-module__GGnB2q__bentoGrid",
+  "bottomSection": "Estilo-module-scss-module__GGnB2q__bottomSection",
+  "buscador": "Estilo-module-scss-module__GGnB2q__buscador",
+  "category": "Estilo-module-scss-module__GGnB2q__category",
+  "closeBtn": "Estilo-module-scss-module__GGnB2q__closeBtn",
+  "content": "Estilo-module-scss-module__GGnB2q__content",
+  "controlPanel": "Estilo-module-scss-module__GGnB2q__controlPanel",
+  "copyright": "Estilo-module-scss-module__GGnB2q__copyright",
+  "drift": "Estilo-module-scss-module__GGnB2q__drift",
+  "dropdownOpen": "Estilo-module-scss-module__GGnB2q__dropdownOpen",
+  "efecto-neon": "Estilo-module-scss-module__GGnB2q__efecto-neon",
+  "fadeIn": "Estilo-module-scss-module__GGnB2q__fadeIn",
+  "fadeInElement": "Estilo-module-scss-module__GGnB2q__fadeInElement",
+  "footer": "Estilo-module-scss-module__GGnB2q__footer",
+  "headerContainer": "Estilo-module-scss-module__GGnB2q__headerContainer",
+  "linkColumn": "Estilo-module-scss-module__GGnB2q__linkColumn",
+  "linksWrapper": "Estilo-module-scss-module__GGnB2q__linksWrapper",
+  "listItem": "Estilo-module-scss-module__GGnB2q__listItem",
+  "logo": "Estilo-module-scss-module__GGnB2q__logo",
+  "logoImg": "Estilo-module-scss-module__GGnB2q__logoImg",
+  "logoLink": "Estilo-module-scss-module__GGnB2q__logoLink",
+  "mainImage": "Estilo-module-scss-module__GGnB2q__mainImage",
+  "mainSnap": "Estilo-module-scss-module__GGnB2q__mainSnap",
+  "mediaContainer": "Estilo-module-scss-module__GGnB2q__mediaContainer",
+  "menuBtn": "Estilo-module-scss-module__GGnB2q__menuBtn",
+  "menuList": "Estilo-module-scss-module__GGnB2q__menuList",
+  "menuVisible": "Estilo-module-scss-module__GGnB2q__menuVisible",
+  "muteBtn": "Estilo-module-scss-module__GGnB2q__muteBtn",
+  "noVideo": "Estilo-module-scss-module__GGnB2q__noVideo",
+  "noticia1": "Estilo-module-scss-module__GGnB2q__noticia1",
+  "noticia2": "Estilo-module-scss-module__GGnB2q__noticia2",
+  "noticia3": "Estilo-module-scss-module__GGnB2q__noticia3",
+  "noticia4": "Estilo-module-scss-module__GGnB2q__noticia4",
+  "noticiaDestacada": "Estilo-module-scss-module__GGnB2q__noticiaDestacada",
+  "overlay": "Estilo-module-scss-module__GGnB2q__overlay",
+  "overlayVisible": "Estilo-module-scss-module__GGnB2q__overlayVisible",
+  "page": "Estilo-module-scss-module__GGnB2q__page",
+  "pageScroll": "Estilo-module-scss-module__GGnB2q__pageScroll",
+  "seccionDestacada": "Estilo-module-scss-module__GGnB2q__seccionDestacada",
+  "socialLinks": "Estilo-module-scss-module__GGnB2q__socialLinks",
+  "subtitle": "Estilo-module-scss-module__GGnB2q__subtitle",
+  "tarjetaNoticia": "Estilo-module-scss-module__GGnB2q__tarjetaNoticia",
+  "textWrapper": "Estilo-module-scss-module__GGnB2q__textWrapper",
+  "title": "Estilo-module-scss-module__GGnB2q__title",
+  "topSection": "Estilo-module-scss-module__GGnB2q__topSection",
+  "videoBackground": "Estilo-module-scss-module__GGnB2q__videoBackground",
+  "videoLayer": "Estilo-module-scss-module__GGnB2q__videoLayer",
+  "visible": "Estilo-module-scss-module__GGnB2q__visible",
 });
 }),
 "[project]/src/components/home/Header.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -63,7 +64,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)");
 ;
 ;
 ;
@@ -71,11 +72,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss
 ;
 function Header() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "c25970a2bdf3f33fe91c71a3296185fb5f476b7b940fb1a43fe2895277500fc8") {
+    if ($[0] !== "7bebd82e84a115c246805bf2ae2cecb1bbb256906b0a1198782a7dd499bc8b89") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c25970a2bdf3f33fe91c71a3296185fb5f476b7b940fb1a43fe2895277500fc8";
+        $[0] = "7bebd82e84a115c246805bf2ae2cecb1bbb256906b0a1198782a7dd499bc8b89";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -84,7 +85,7 @@ function Header() {
             playsInline: true,
             muted: true,
             loop: true,
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].videoBackground,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].videoBackground,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
                 src: "/video/tierra-video.mp4",
                 type: "video/mp4"
@@ -106,12 +107,12 @@ function Header() {
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: "/",
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logoLink,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logoLink,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: "/img/web/logo_tierra.png",
                     alt: "Logo GobleNews",
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logoImg,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logoImg,
                     width: 100,
                     height: 100,
                     priority: true
@@ -121,7 +122,7 @@ function Header() {
                     columnNumber: 53
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
                     children: "GobleNews"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/Header.jsx",
@@ -141,16 +142,16 @@ function Header() {
     let t2;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].headerContainer} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].headerContainer} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
             id: "header",
             children: [
                 t0,
                 t1,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].textWrapper,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].textWrapper,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
                             children: "La nueva inteligencia"
                         }, void 0, false, {
                             fileName: "[project]/src/components/home/Header.jsx",
@@ -158,7 +159,7 @@ function Header() {
                             columnNumber: 138
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
                             children: "Periodismo técnico en la era post-humana"
                         }, void 0, false, {
                             fileName: "[project]/src/components/home/Header.jsx",
@@ -190,21 +191,21 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/app/assets/scss/web/Aside.module.scss [app-client] (css module)", ((__turbopack_context__) => {
+"[project]/src/app/assets/scss/web/home/Aside.module.scss [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "asideContainer": "Aside-module-scss-module__9p2PNW__asideContainer",
-  "buscador": "Aside-module-scss-module__9p2PNW__buscador",
-  "closeBtn": "Aside-module-scss-module__9p2PNW__closeBtn",
-  "controlPanel": "Aside-module-scss-module__9p2PNW__controlPanel",
-  "dropdownOpen": "Aside-module-scss-module__9p2PNW__dropdownOpen",
-  "menuList": "Aside-module-scss-module__9p2PNW__menuList",
-  "menuVisible": "Aside-module-scss-module__9p2PNW__menuVisible",
-  "overlay": "Aside-module-scss-module__9p2PNW__overlay",
-  "overlayVisible": "Aside-module-scss-module__9p2PNW__overlayVisible",
+  "asideContainer": "Aside-module-scss-module__d5k3Za__asideContainer",
+  "buscador": "Aside-module-scss-module__d5k3Za__buscador",
+  "closeBtn": "Aside-module-scss-module__d5k3Za__closeBtn",
+  "controlPanel": "Aside-module-scss-module__d5k3Za__controlPanel",
+  "dropdownOpen": "Aside-module-scss-module__d5k3Za__dropdownOpen",
+  "menuList": "Aside-module-scss-module__d5k3Za__menuList",
+  "menuVisible": "Aside-module-scss-module__d5k3Za__menuVisible",
+  "overlay": "Aside-module-scss-module__d5k3Za__overlay",
+  "overlayVisible": "Aside-module-scss-module__d5k3Za__overlayVisible",
 });
 }),
-"[project]/src/components/Aside.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/Aside.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -215,7 +216,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Aside.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Aside.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 ;
@@ -301,11 +302,11 @@ const dropdown = {
 function Aside(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(28);
-    if ($[0] !== "5b256f282830d1ec8653aa275aba453e3da0dfbd2638ee4f4af750ee2f3f1d84") {
+    if ($[0] !== "53dedd078ec6142a015591142c05b8c583907b716f1d18ca1f6dc476f3882bfe") {
         for(let $i = 0; $i < 28; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5b256f282830d1ec8653aa275aba453e3da0dfbd2638ee4f4af750ee2f3f1d84";
+        $[0] = "53dedd078ec6142a015591142c05b8c583907b716f1d18ca1f6dc476f3882bfe";
     }
     const { isOpen, onMenuClose } = t0;
     const [nav, setNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -344,14 +345,14 @@ function Aside(t0) {
         t3 = $[4];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
-    const t4 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].overlay} ${isOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].overlayVisible : ""}`;
+    const t4 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].overlay} ${isOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].overlayVisible : ""}`;
     let t5;
     if ($[5] !== onMenuClose || $[6] !== t4) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: t4,
             onClick: onMenuClose
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 113,
             columnNumber: 10
         }, this);
@@ -361,16 +362,16 @@ function Aside(t0) {
     } else {
         t5 = $[7];
     }
-    const t6 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].asideContainer} ${isOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuVisible : ""}`;
+    const t6 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].asideContainer} ${isOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuVisible : ""}`;
     let t7;
     if ($[8] !== onMenuClose) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             onClick: onMenuClose,
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].closeBtn,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].closeBtn,
             "aria-label": "Cerrar men\xFA",
             children: "✕"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 123,
             columnNumber: 10
         }, this);
@@ -386,7 +387,7 @@ function Aside(t0) {
             htmlFor: "search",
             children: "Buscar"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 132,
             columnNumber: 10
         }, this);
@@ -396,7 +397,7 @@ function Aside(t0) {
             name: "search",
             placeholder: "Buscar"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 133,
             columnNumber: 10
         }, this);
@@ -409,7 +410,7 @@ function Aside(t0) {
     let t10;
     if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buscador,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buscador,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 action: "/buscador",
                 method: "get",
@@ -422,28 +423,28 @@ function Aside(t0) {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                                 href: "img/web/sprites.svg#btn-buscador"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 142,
                                 columnNumber: 116
                             }, this)
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Aside.jsx",
+                            fileName: "[project]/src/components/home/Aside.jsx",
                             lineNumber: 142,
                             columnNumber: 111
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Aside.jsx",
+                        fileName: "[project]/src/components/home/Aside.jsx",
                         lineNumber: 142,
                         columnNumber: 89
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 142,
                 columnNumber: 43
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 142,
             columnNumber: 11
         }, this);
@@ -458,7 +459,7 @@ function Aside(t0) {
                 const hasDropdown = dropdown[item.name];
                 const isDropdownOpen = nav === item.name;
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    className: isDropdownOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].dropdownOpen : "",
+                    className: isDropdownOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].dropdownOpen : "",
                     children: hasDropdown ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -467,7 +468,7 @@ function Aside(t0) {
                                 }["Aside[lista.map() > <span>.onClick]"],
                                 children: item.name
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 153,
                                 columnNumber: 105
                             }, this),
@@ -484,18 +485,18 @@ function Aside(t0) {
                                                 }["Aside[lista.map() > hasDropdown.map() > <Link>.onClick]"],
                                                 children: sub.name
                                             }, void 0, false, {
-                                                fileName: "[project]/src/components/Aside.jsx",
+                                                fileName: "[project]/src/components/home/Aside.jsx",
                                                 lineNumber: 156,
                                                 columnNumber: 83
                                             }, this)
                                         }, sub.id, false, {
-                                            fileName: "[project]/src/components/Aside.jsx",
+                                            fileName: "[project]/src/components/home/Aside.jsx",
                                             lineNumber: 156,
                                             columnNumber: 66
                                         }, this)
                                 }["Aside[lista.map() > hasDropdown.map()]"])
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 155,
                                 columnNumber: 73
                             }, this)
@@ -505,12 +506,12 @@ function Aside(t0) {
                         onClick: onMenuClose,
                         children: item.name
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Aside.jsx",
+                        fileName: "[project]/src/components/home/Aside.jsx",
                         lineNumber: 162,
                         columnNumber: 71
                     }, this)
                 }, item.id, false, {
-                    fileName: "[project]/src/components/Aside.jsx",
+                    fileName: "[project]/src/components/home/Aside.jsx",
                     lineNumber: 153,
                     columnNumber: 16
                 }, this);
@@ -525,18 +526,18 @@ function Aside(t0) {
     let t12;
     if ($[16] !== onMenuClose) {
         t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].controlPanel,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].controlPanel,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 href: "/panel-de-control",
                 onClick: onMenuClose,
                 children: "Panel de Control"
             }, void 0, false, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 173,
                 columnNumber: 47
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 173,
             columnNumber: 11
         }, this);
@@ -555,12 +556,12 @@ function Aside(t0) {
                     t12
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 181,
                 columnNumber: 16
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 181,
             columnNumber: 11
         }, this);
@@ -580,7 +581,7 @@ function Aside(t0) {
                 t13
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 190,
             columnNumber: 11
         }, this);
@@ -635,7 +636,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$fast$2d$average$2d$color$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/fast-average-color/dist/index.esm.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 ;
@@ -667,11 +668,11 @@ function tiempoTranscurrido(fecha) {
 function TarjetaPrincipal() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(48);
-    if ($[0] !== "d6c5b859bc9c64067eaa59d783f193a908d9d900822cd099d603abcee1ea836e") {
+    if ($[0] !== "bab53b4e9eb705cd8e5953d4a7707121359b882b057def22bed67d7526fe6579") {
         for(let $i = 0; $i < 48; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d6c5b859bc9c64067eaa59d783f193a908d9d900822cd099d603abcee1ea836e";
+        $[0] = "bab53b4e9eb705cd8e5953d4a7707121359b882b057def22bed67d7526fe6579";
     }
     const [noticia, setNoticia] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
@@ -806,7 +807,7 @@ function TarjetaPrincipal() {
         let t8;
         if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
             t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
                 children: "Cargando noticia..."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
@@ -823,7 +824,7 @@ function TarjetaPrincipal() {
         let t8;
         if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
             t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
                 children: "No se pudo cargar la noticia destacada."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
@@ -847,7 +848,7 @@ function TarjetaPrincipal() {
     } else {
         t8 = $[14];
     }
-    const t9 = `/noticia?${noticia.id}`;
+    const t9 = `/noticia?id=${noticia.id}`;
     let t10;
     if ($[15] !== noticia.bandera) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -873,7 +874,7 @@ function TarjetaPrincipal() {
     let t12;
     if ($[19] !== t10 || $[20] !== t11) {
         t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].category,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].category,
             children: [
                 t10,
                 " ",
@@ -933,7 +934,7 @@ function TarjetaPrincipal() {
     if ($[28] !== t12 || $[29] !== t13 || $[30] !== t15 || $[31] !== t9) {
         t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: t9,
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
             children: [
                 t12,
                 t13,
@@ -961,7 +962,7 @@ function TarjetaPrincipal() {
             alt: t18,
             width: 600,
             height: 400,
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainImage,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainImage,
             priority: true
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
@@ -984,7 +985,7 @@ function TarjetaPrincipal() {
                 muted: isMuted,
                 playsInline: true,
                 preload: "metadata",
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].videoLayer,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].videoLayer,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
                     src: videoSrc,
                     type: "video/mp4"
@@ -999,7 +1000,7 @@ function TarjetaPrincipal() {
                 columnNumber: 24
             }, this)
         }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noVideo,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noVideo,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     children: "Error: 404"
@@ -1030,7 +1031,7 @@ function TarjetaPrincipal() {
     let t21;
     if ($[39] !== t19 || $[40] !== t20) {
         t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mediaContainer,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mediaContainer,
             children: [
                 t19,
                 t20
@@ -1049,7 +1050,7 @@ function TarjetaPrincipal() {
     let t22;
     if ($[42] !== t16 || $[43] !== t21) {
         t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noticiaDestacada,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noticiaDestacada,
             onMouseEnter: handleMouseEnter,
             onMouseLeave: handleMouseLeave,
             children: [
@@ -1071,7 +1072,7 @@ function TarjetaPrincipal() {
     if ($[45] !== t22 || $[46] !== t8) {
         t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             ref: sectionRef,
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].seccionDestacada} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement} `,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].seccionDestacada} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement} `,
             style: t8,
             children: t22
         }, void 0, false, {
@@ -1093,9 +1094,9 @@ function _TarjetaPrincipalHandleMouseEnterPCatch() {}
 function _temp(t0) {
     const [entry] = t0;
     if (entry.isIntersecting) {
-        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     } else {
-        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     }
 }
 function _TarjetaPrincipalUseEffectAnonymous(res) {
@@ -1118,7 +1119,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 ;
@@ -1128,11 +1129,11 @@ var _s = __turbopack_context__.k.signature();
 function BentoGrid() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "dd0fea9e9bbc44d4b929c84c768b7c4465e2b176f4d0123665a5db3778d8c793") {
+    if ($[0] !== "07033091619b7fbb3ca1842c5a28b694a21d590f77a5cd86b6954aad4accd95d") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "dd0fea9e9bbc44d4b929c84c768b7c4465e2b176f4d0123665a5db3778d8c793";
+        $[0] = "07033091619b7fbb3ca1842c5a28b694a21d590f77a5cd86b6954aad4accd95d";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1202,7 +1203,7 @@ function BentoGrid() {
         let t5;
         if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
             t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
                 children: "Cargando panel..."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/BentoGrid.jsx",
@@ -1219,7 +1220,7 @@ function BentoGrid() {
         let t5;
         if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
             t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
                 children: "No hay noticias disponibles."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/BentoGrid.jsx",
@@ -1244,7 +1245,7 @@ function BentoGrid() {
     if ($[11] !== t5) {
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             ref: sectionRef,
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bentoGrid} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bentoGrid} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
             children: t5
         }, void 0, false, {
             fileName: "[project]/src/components/home/BentoGrid.jsx",
@@ -1263,19 +1264,19 @@ _c = BentoGrid;
 function _BentoGridAnonymous(noticia, index) {
     const imageUrl = noticia.path ? `/img/web/${noticia.path}/img_${noticia.path}.png` : "/img/web/logo_tierra.png";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"][`noticia${index + 1}`]} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tarjetaNoticia}`,
+        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"][`noticia${index + 1}`]} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tarjetaNoticia}`,
         style: {
             "--bg-noticia": `url(${imageUrl})`
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: `noticia?${noticia.id}`,
+            href: `noticia?id=${noticia.id}`,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: noticia.titulo
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/BentoGrid.jsx",
                     lineNumber: 117,
-                    columnNumber: 43
+                    columnNumber: 46
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: [
@@ -1284,14 +1285,14 @@ function _BentoGridAnonymous(noticia, index) {
                         }, void 0, false, {
                             fileName: "[project]/src/components/home/BentoGrid.jsx",
                             lineNumber: 117,
-                            columnNumber: 71
+                            columnNumber: 74
                         }, this),
                         noticia.nombre_pais?.toUpperCase()
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/home/BentoGrid.jsx",
                     lineNumber: 117,
-                    columnNumber: 68
+                    columnNumber: 71
                 }, this)
             ]
         }, void 0, true, {
@@ -1308,9 +1309,9 @@ function _BentoGridAnonymous(noticia, index) {
 function _temp(t0) {
     const [entry] = t0;
     if (entry.isIntersecting) {
-        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     } else {
-        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     }
 }
 function _BentoGridUseEffectAnonymous(response) {
@@ -1322,7 +1323,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/Footer.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/Footer.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -1334,7 +1335,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 ;
@@ -1413,11 +1414,11 @@ const enlaces = [
 function Footer() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(16);
-    if ($[0] !== "e6e2a44069fbb5985dc6cc5a57f03aae36395dd8fb08a979631b9eecb2901649") {
+    if ($[0] !== "276d7d304067cd31cb08bd0cea5c58a4e57137412c44ca37447744598aa1adf8") {
         for(let $i = 0; $i < 16; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "e6e2a44069fbb5985dc6cc5a57f03aae36395dd8fb08a979631b9eecb2901649";
+        $[0] = "276d7d304067cd31cb08bd0cea5c58a4e57137412c44ca37447744598aa1adf8";
     }
     const footerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
@@ -1454,14 +1455,14 @@ function Footer() {
                 alt: "Logo GobleNews",
                 width: 80,
                 height: 80,
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo
             }, void 0, false, {
-                fileName: "[project]/src/components/Footer.jsx",
+                fileName: "[project]/src/components/home/Footer.jsx",
                 lineNumber: 90,
                 columnNumber: 53
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 90,
             columnNumber: 10
         }, this);
@@ -1474,7 +1475,7 @@ function Footer() {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             children: "Países"
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 97,
             columnNumber: 10
         }, this);
@@ -1489,23 +1490,23 @@ function Footer() {
             children: [
                 t3,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
                     children: enlaces[0].map(_FooterEnlaces0Map)
                 }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 105,
                     columnNumber: 19
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 105,
             columnNumber: 10
         }, this);
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             children: "Categoría"
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 106,
             columnNumber: 10
         }, this);
@@ -1522,23 +1523,23 @@ function Footer() {
             children: [
                 t5,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
                     children: enlaces[1].map(_FooterEnlaces1Map)
                 }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 116,
                     columnNumber: 19
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 116,
             columnNumber: 10
         }, this);
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             children: "Sobre Nosotros"
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 117,
             columnNumber: 10
         }, this);
@@ -1552,11 +1553,11 @@ function Footer() {
     let t9;
     if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
         t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topSection,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].topSection,
             children: [
                 t2,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linksWrapper,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linksWrapper,
                     children: [
                         t4,
                         t6,
@@ -1564,16 +1565,16 @@ function Footer() {
                             children: [
                                 t7,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].linkColumn,
                                     children: enlaces[2].map(_FooterEnlaces2Map)
                                 }, void 0, false, {
-                                    fileName: "[project]/src/components/Footer.jsx",
+                                    fileName: "[project]/src/components/home/Footer.jsx",
                                     lineNumber: 127,
                                     columnNumber: 107
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/src/components/Footer.jsx",
+                            fileName: "[project]/src/components/home/Footer.jsx",
                             lineNumber: 127,
                             columnNumber: 98
                         }, this),
@@ -1582,12 +1583,12 @@ function Footer() {
                                 href: "/",
                                 children: "Últimas Noticias"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Footer.jsx",
+                                fileName: "[project]/src/components/home/Footer.jsx",
                                 lineNumber: 127,
                                 columnNumber: 193
                             }, this)
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Footer.jsx",
+                            fileName: "[project]/src/components/home/Footer.jsx",
                             lineNumber: 127,
                             columnNumber: 188
                         }, this),
@@ -1596,29 +1597,29 @@ function Footer() {
                                 href: "/cookies",
                                 children: "Cookies"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Footer.jsx",
+                                fileName: "[project]/src/components/home/Footer.jsx",
                                 lineNumber: 127,
                                 columnNumber: 242
                             }, this)
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Footer.jsx",
+                            fileName: "[project]/src/components/home/Footer.jsx",
                             lineNumber: 127,
                             columnNumber: 237
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 127,
                     columnNumber: 53
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 127,
             columnNumber: 10
         }, this);
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 128,
             columnNumber: 10
         }, this);
@@ -1631,9 +1632,10 @@ function Footer() {
     let t10;
     if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].copyright,
             children: "© 2026 GobleNews. Todos los derechos reservados."
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 137,
             columnNumber: 11
         }, this);
@@ -1649,17 +1651,17 @@ function Footer() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                     href: "/img/web/sprites.svg#icon-instagram"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 144,
                     columnNumber: 28
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/src/components/Footer.jsx",
+                fileName: "[project]/src/components/home/Footer.jsx",
                 lineNumber: 144,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 144,
             columnNumber: 11
         }, this);
@@ -1675,17 +1677,17 @@ function Footer() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                     href: "/img/web/sprites.svg#icon-facebook"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 151,
                     columnNumber: 28
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/src/components/Footer.jsx",
+                fileName: "[project]/src/components/home/Footer.jsx",
                 lineNumber: 151,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 151,
             columnNumber: 11
         }, this);
@@ -1701,17 +1703,17 @@ function Footer() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                     href: "/img/web/sprites.svg#icon-linkedin"
                 }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 158,
                     columnNumber: 28
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/src/components/Footer.jsx",
+                fileName: "[project]/src/components/home/Footer.jsx",
                 lineNumber: 158,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 158,
             columnNumber: 11
         }, this);
@@ -1723,16 +1725,16 @@ function Footer() {
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
         t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
             ref: footerRef,
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footer} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footer} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`,
             children: [
                 t8,
                 t9,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomSection,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomSection,
                     children: [
                         t10,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].socialLinks,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].socialLinks,
                             children: [
                                 t11,
                                 t12,
@@ -1745,30 +1747,30 @@ function Footer() {
                                         width: 20,
                                         height: 20
                                     }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.jsx",
+                                        fileName: "[project]/src/components/home/Footer.jsx",
                                         lineNumber: 165,
                                         columnNumber: 208
                                     }, this)
                                 }, void 0, false, {
-                                    fileName: "[project]/src/components/Footer.jsx",
+                                    fileName: "[project]/src/components/home/Footer.jsx",
                                     lineNumber: 165,
                                     columnNumber: 196
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/src/components/Footer.jsx",
+                            fileName: "[project]/src/components/home/Footer.jsx",
                             lineNumber: 165,
                             columnNumber: 145
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "[project]/src/components/Footer.jsx",
+                    fileName: "[project]/src/components/home/Footer.jsx",
                     lineNumber: 165,
                     columnNumber: 98
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 165,
             columnNumber: 11
         }, this);
@@ -1782,51 +1784,51 @@ _s(Footer, "eCegZDAHZVFkZflyjZmUJahdfxk=");
 _c = Footer;
 function _FooterEnlaces2Map(enlace_1) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: `/buscador?search=${enlace_1.url}`,
             children: enlace_1.nombre
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 173,
             columnNumber: 60
         }, this)
     }, enlace_1.id, false, {
-        fileName: "[project]/src/components/Footer.jsx",
+        fileName: "[project]/src/components/home/Footer.jsx",
         lineNumber: 173,
         columnNumber: 10
     }, this);
 }
 function _FooterEnlaces1Map(enlace_0) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: `/buscador?search=${enlace_0.url}`,
             children: enlace_0.nombre
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 176,
             columnNumber: 60
         }, this)
     }, enlace_0.id, false, {
-        fileName: "[project]/src/components/Footer.jsx",
+        fileName: "[project]/src/components/home/Footer.jsx",
         lineNumber: 176,
         columnNumber: 10
     }, this);
 }
 function _FooterEnlaces0Map(enlace) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].listItem,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: `/buscador?search=${enlace.url}`,
             children: enlace.nombre
         }, void 0, false, {
-            fileName: "[project]/src/components/Footer.jsx",
+            fileName: "[project]/src/components/home/Footer.jsx",
             lineNumber: 179,
             columnNumber: 58
         }, this)
     }, enlace.id, false, {
-        fileName: "[project]/src/components/Footer.jsx",
+        fileName: "[project]/src/components/home/Footer.jsx",
         lineNumber: 179,
         columnNumber: 10
     }, this);
@@ -1843,9 +1845,9 @@ function _FooterHandleScrollToTop(e) {
 function _temp(t0) {
     const [entry] = t0;
     if (entry.isIntersecting) {
-        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     } else {
-        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     }
 }
 var _c;
@@ -1865,11 +1867,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Header.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Aside.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Aside.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/TarjetaPrincipal.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/BentoGrid.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Footer.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/Estilo.module.scss [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Footer.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/assets/scss/web/home/Estilo.module.scss [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -1884,11 +1886,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "51815c59f0a0d2254c4c26ae50d4eec1b3c5d5c6fc48e34aec592171d552418e") {
+    if ($[0] !== "6b351031147173527de7aba39b409a2305e951aaced5b0cd24a2a75a1ff791de") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "51815c59f0a0d2254c4c26ae50d4eec1b3c5d5c6fc48e34aec592171d552418e";
+        $[0] = "6b351031147173527de7aba39b409a2305e951aaced5b0cd24a2a75a1ff791de";
     }
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -1925,7 +1927,7 @@ function Home() {
     const handleMenuClose = t2;
     let t3;
     if ($[4] !== isMenuOpen) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             isOpen: isMenuOpen,
             onMenuClose: handleMenuClose
         }, void 0, false, {
@@ -1941,7 +1943,7 @@ function Home() {
     let t4;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuBtn,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuBtn,
             onClick: handleMenuOpen,
             "aria-label": "Abrir men\xFA",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1980,11 +1982,11 @@ function Home() {
     let t6;
     if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].page} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].pageScroll}`,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].page} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].pageScroll}`,
             children: [
                 t5,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainSnap,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainSnap,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/page.jsx",
@@ -2002,7 +2004,7 @@ function Home() {
                     lineNumber: 76,
                     columnNumber: 69
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
                     lineNumber: 76,
                     columnNumber: 143
@@ -2041,7 +2043,7 @@ function _HomeUseEffect() {
         rootMargin: "0px 0px -100px 0px"
     };
     const observer = new IntersectionObserver(_temp, observerOptions);
-    const fadeElements = document.querySelectorAll(`.${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`);
+    const fadeElements = document.querySelectorAll(`.${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement}`);
     fadeElements.forEach({
         "Home[useEffect() > fadeElements.forEach()]": (element)=>observer.observe(element)
     }["Home[useEffect() > fadeElements.forEach()]"]);
@@ -2054,9 +2056,9 @@ function _temp(entries) {
 }
 function _HomeUseEffectAnonymousEntriesForEach(entry) {
     if (entry.isIntersecting) {
-        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.add(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     } else {
-        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
+        entry.target.classList.remove(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].visible);
     }
 }
 var _c;
@@ -2067,4 +2069,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_6beac7c7._.js.map
+//# sourceMappingURL=src_12e4afed._.js.map

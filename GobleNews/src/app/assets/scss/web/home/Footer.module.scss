@@ -1,5 +1,5 @@
-@use "Variables.module" as *;
-@use "Mixins.module" as *;
+@use "../Variables.module" as *;
+@use "../Mixins.module" as *;
 
 .footer {
     font-size: 18px;
@@ -84,9 +84,13 @@
         padding-bottom: 20px;
 
         @include responsive(small) {
+            margin-top: 60px;
             flex-direction: column;
-            gap: 40px;
+            gap: 20px;
             text-align: center;
+        }
+        .copyright {
+            color: white;
         }
 
         .socialLinks {

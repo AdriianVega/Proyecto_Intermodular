@@ -1,0 +1,40 @@
+@use "../Variables.module" as *;
+@use "../Mixins.module" as *;
+
+.headerContainer {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    pointer-events: none;
+    text-align: right;
+
+    top: 80px;
+    right: 120px;
+    left: auto;
+
+    @include responsive(medium) {
+        top: 40px;
+        right: 80px;
+        left: auto;
+    }
+
+    @include responsive(small) {
+        top: 20px;
+        right: 40px;
+        left: auto;
+    }
+
+    @include animation(efecto-neon, 5s, ease-in-out, infinite);
+
+    * {
+        pointer-events: auto;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+        transform: translate(0, 21px);
+    }
+}

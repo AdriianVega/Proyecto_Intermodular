@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Header from "../components/home/Header"
-import Aside from "../components/Aside"
+import Aside from "../components/home/Aside"
 import TarjetaPrincipal from "../components/home/TarjetaPrincipal";
 import BentoGrid from "../components/home/BentoGrid"
-import Footer from "../components/Footer";
-import styles from '../app/assets/scss/web/Estilo.module.scss';
+import Footer from "../components/home/Footer";
+import styles from '../app/assets/scss/web/home/Estilo.module.scss';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

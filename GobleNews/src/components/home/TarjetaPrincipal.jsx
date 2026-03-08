@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FastAverageColor } from 'fast-average-color';
-import styles from '@/app/assets/scss/web/Estilo.module.scss';
+import styles from '@/app/assets/scss/web/home/Estilo.module.scss';
 
 function tiempoTranscurrido(fecha) {
     if (!fecha) return 'Error: fecha es undefined'; 
@@ -124,7 +124,7 @@ export default function TarjetaPrincipal() {
                 onMouseLeave={handleMouseLeave}
             >
                 
-                <Link href={`/noticia/${noticia.id}`} className={styles.content}>
+                <Link href={`/noticia?id=${noticia.id}`} className={styles.content}>
                     <p className={styles.category}>
                         <span>{noticia.bandera}</span> {noticia.nombre_pais.toUpperCase()}
                     </p>

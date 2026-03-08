@@ -204,7 +204,7 @@ __turbopack_context__.v({
   "overlayVisible": "Aside-module-scss-module__9p2PNW__overlayVisible",
 });
 }),
-"[project]/src/components/Aside.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/components/home/Aside.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -351,7 +351,7 @@ function Aside(t0) {
             className: t4,
             onClick: onMenuClose
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 113,
             columnNumber: 10
         }, this);
@@ -370,7 +370,7 @@ function Aside(t0) {
             "aria-label": "Cerrar men\xFA",
             children: "✕"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 123,
             columnNumber: 10
         }, this);
@@ -386,7 +386,7 @@ function Aside(t0) {
             htmlFor: "search",
             children: "Buscar"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 132,
             columnNumber: 10
         }, this);
@@ -396,7 +396,7 @@ function Aside(t0) {
             name: "search",
             placeholder: "Buscar"
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 133,
             columnNumber: 10
         }, this);
@@ -422,28 +422,28 @@ function Aside(t0) {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
                                 href: "img/web/sprites.svg#btn-buscador"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 142,
                                 columnNumber: 116
                             }, this)
                         }, void 0, false, {
-                            fileName: "[project]/src/components/Aside.jsx",
+                            fileName: "[project]/src/components/home/Aside.jsx",
                             lineNumber: 142,
                             columnNumber: 111
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Aside.jsx",
+                        fileName: "[project]/src/components/home/Aside.jsx",
                         lineNumber: 142,
                         columnNumber: 89
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 142,
                 columnNumber: 43
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 142,
             columnNumber: 11
         }, this);
@@ -467,7 +467,7 @@ function Aside(t0) {
                                 }["Aside[lista.map() > <span>.onClick]"],
                                 children: item.name
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 153,
                                 columnNumber: 105
                             }, this),
@@ -484,18 +484,18 @@ function Aside(t0) {
                                                 }["Aside[lista.map() > hasDropdown.map() > <Link>.onClick]"],
                                                 children: sub.name
                                             }, void 0, false, {
-                                                fileName: "[project]/src/components/Aside.jsx",
+                                                fileName: "[project]/src/components/home/Aside.jsx",
                                                 lineNumber: 156,
                                                 columnNumber: 83
                                             }, this)
                                         }, sub.id, false, {
-                                            fileName: "[project]/src/components/Aside.jsx",
+                                            fileName: "[project]/src/components/home/Aside.jsx",
                                             lineNumber: 156,
                                             columnNumber: 66
                                         }, this)
                                 }["Aside[lista.map() > hasDropdown.map()]"])
                             }, void 0, false, {
-                                fileName: "[project]/src/components/Aside.jsx",
+                                fileName: "[project]/src/components/home/Aside.jsx",
                                 lineNumber: 155,
                                 columnNumber: 73
                             }, this)
@@ -505,12 +505,12 @@ function Aside(t0) {
                         onClick: onMenuClose,
                         children: item.name
                     }, void 0, false, {
-                        fileName: "[project]/src/components/Aside.jsx",
+                        fileName: "[project]/src/components/home/Aside.jsx",
                         lineNumber: 162,
                         columnNumber: 71
                     }, this)
                 }, item.id, false, {
-                    fileName: "[project]/src/components/Aside.jsx",
+                    fileName: "[project]/src/components/home/Aside.jsx",
                     lineNumber: 153,
                     columnNumber: 16
                 }, this);
@@ -531,12 +531,12 @@ function Aside(t0) {
                 onClick: onMenuClose,
                 children: "Panel de Control"
             }, void 0, false, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 173,
                 columnNumber: 47
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 173,
             columnNumber: 11
         }, this);
@@ -555,12 +555,12 @@ function Aside(t0) {
                     t12
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/components/Aside.jsx",
+                fileName: "[project]/src/components/home/Aside.jsx",
                 lineNumber: 181,
                 columnNumber: 16
             }, this)
         }, void 0, false, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 181,
             columnNumber: 11
         }, this);
@@ -580,7 +580,7 @@ function Aside(t0) {
                 t13
             ]
         }, void 0, true, {
-            fileName: "[project]/src/components/Aside.jsx",
+            fileName: "[project]/src/components/home/Aside.jsx",
             lineNumber: 190,
             columnNumber: 11
         }, this);
@@ -1865,7 +1865,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Header.jsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Aside.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/Aside.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$TarjetaPrincipal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/TarjetaPrincipal.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$BentoGrid$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/home/BentoGrid.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Footer.jsx [app-client] (ecmascript)");
@@ -1884,11 +1884,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "51815c59f0a0d2254c4c26ae50d4eec1b3c5d5c6fc48e34aec592171d552418e") {
+    if ($[0] !== "12c917f083034f59fde1ef37968981ac3d6e23b11ea3b6e4f6656d9c49e90045") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "51815c59f0a0d2254c4c26ae50d4eec1b3c5d5c6fc48e34aec592171d552418e";
+        $[0] = "12c917f083034f59fde1ef37968981ac3d6e23b11ea3b6e4f6656d9c49e90045";
     }
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -1925,7 +1925,7 @@ function Home() {
     const handleMenuClose = t2;
     let t3;
     if ($[4] !== isMenuOpen) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$home$2f$Aside$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             isOpen: isMenuOpen,
             onMenuClose: handleMenuClose
         }, void 0, false, {
@@ -2067,4 +2067,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_6beac7c7._.js.map
+//# sourceMappingURL=src_600990cd._.js.map
