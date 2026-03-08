@@ -7,20 +7,48 @@
     min-height: 10vh;
     padding: 50px 50px 0 50px;
 
+    @include responsive(small) {
+        padding: 30px 20px 0 20px;
+    }
+
     .topSection {
         display: flex;
         align-items: flex-start;
         gap: 20px;
 
+        @include responsive(medium) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         .logo {
             position: relative;
             bottom: 10px;
+
+            @include responsive(medium) {
+                bottom: 0;
+            }
         }
 
         .linksWrapper {
             display: flex;
             padding: 5px 0 80px 30px;
             gap: 60px;
+            width: 100%;
+            justify-content: flex-start;
+
+            @include responsive(medium) {
+                padding: 20px 0 40px 0;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            @include responsive(small) {
+                flex-direction: column;
+                gap: 20px;
+            }
 
             .linkColumn {
                 display: flex;
@@ -50,14 +78,27 @@
     .bottomSection {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-family: $fuente-secundaria;
         padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include responsive(small) {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+        }
 
         .socialLinks {
             display: flex;
             gap: 10px;
             position: relative;
             top: -60px;
+            align-items: center;
+
+            @include responsive(small) {
+                top: 0;
+            }
 
             a {
                 text-decoration: none;
@@ -91,13 +132,19 @@
             }
 
             a:nth-child(4) img {
-                
                 transform: translateY(67px) scale(1.2);
-
                 @include transition(transform, 0.3s);
+
+                @include responsive(small) {
+                    transform: translateY(0) scale(1.2);
+                }
 
                 &:hover {
                     transform: translateY(67px) scale(1.4);
+
+                    @include responsive(small) {
+                        transform: translateY(0) scale(1.4);
+                    }
                 }
             }
         }

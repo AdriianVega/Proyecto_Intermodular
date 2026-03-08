@@ -16,3 +16,17 @@
     backdrop-filter: blur($blur);
     -webkit-backdrop-filter: blur($blur);
 }
+
+@mixin responsive($size) {
+    @if $size ==medium {
+        @media (max-width: 1024px) {
+            @content
+        }
+    }
+
+    @else if $size ==small {
+        @media (max-width: 800px) {
+            @content
+        }
+    }
+}

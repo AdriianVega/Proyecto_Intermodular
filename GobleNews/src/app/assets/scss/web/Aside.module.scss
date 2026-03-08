@@ -8,7 +8,6 @@
     opacity: 0;
     pointer-events: none;
     z-index: 1000;
-
     @include transition(opacity, 0.3s);
 
     &.overlayVisible {
@@ -30,6 +29,12 @@
     z-index: 1001;
     padding: 48px 32px;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
+
+    @include responsive(small) {
+        width: 100%;
+        border-left: none;
+        padding: 48px 20px;
+    }
 
     &.menuVisible {
         transform: translateX(0);
@@ -53,6 +58,10 @@
         justify-content: center;
         @include transition(all, 0.3s);
 
+        @include responsive(small) {
+            right: 20px;
+        }
+
         &:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: rotate(90deg);
@@ -60,7 +69,8 @@
     }
 
     nav {
-        margin-top: 80px;
+        margin-top: 60px;
+        height: calc(100vh - 120px);
 
         ul {
             list-style: none;
@@ -70,6 +80,10 @@
                 margin: 32px 0;
                 transform: translateX(0);
                 @include transition(transform, 0.3s);
+
+                @include responsive(small) {
+                    margin: 16px 0;
+                }
 
                 &:hover {
                     transform: translateX(10px);
@@ -128,25 +142,36 @@
                     }
                 }
             }
+
             .controlPanel {
                 position: absolute;
-                bottom: 0;
+                bottom: 20px;
+                width: calc(100% - 64px);
+
+                @include responsive(small) {
+                    position: relative;
+                    bottom: auto;
+                    width: 100%;
+                    margin-top: 40px;
+                }
             }
 
             .buscador {
                 position: relative;
+                width: 100%;
 
                 label {
                     display: none;
                 }
 
                 input {
-                    width: 84%;
-                    padding: 10px;
+                    width: 100%;
+                    padding: 10px 60px 10px 10px;
                     border-radius: 5px;
                     border: 2px solid rgba(255, 255, 255, 0.1);
                     background-color: rgba(255, 255, 255, 0.1);
                     font-family: $fuente-secundaria;
+                    box-sizing: border-box;
 
                     &:focus {
                         outline: none;
@@ -155,14 +180,15 @@
 
                 button {
                     position: absolute;
-                    top: -1px;
+                    top: 0;
                     right: 0;
                     background: black;
                     padding: 0;
-                    height: 45px;
+                    height: 100%;
                     width: 50px;
                     border-radius: 0 5px 5px 0;
                     border: 2px solid rgba(255, 255, 255, 0.1);
+                    border-left: none;
                     cursor: pointer;
                     @include transition(all, 0.3s);
 
@@ -188,6 +214,8 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            overflow-y: auto;
+            padding-bottom: 60px;
         }
     }
 }

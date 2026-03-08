@@ -14,6 +14,21 @@
     gap: 20px;
     padding: 150px;
 
+    @include responsive(medium) {
+        padding: 80px 40px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "noticia1"
+            "noticia2"
+            "noticia3"
+            "noticia4";
+        grid-template-rows: auto;
+    }
+
+    @include responsive(small) {
+        padding: 40px 20px 100px 20px;
+    }
+
     .tarjetaNoticia {
         background-color: $color-fondo-tarjeta-oscuro;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -28,7 +43,7 @@
         cursor: pointer;
         @include transition(transform, 0.3s);
 
-        > * {
+        >* {
             z-index: 2;
         }
 
@@ -37,9 +52,9 @@
         }
 
         p {
-            position: absolute;
-            bottom: 20px;
+            position: relative;
             margin: 0;
+            margin-top: auto;
             width: fit-content;
             padding: 10px;
             color: $color-semitransparente;
@@ -51,6 +66,7 @@
                 padding-right: 10px;
             }
         }
+
         &:hover {
             transform: scale(1.05);
         }
@@ -77,20 +93,28 @@
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 12px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%), var(--bg-noticia);
 
         span {
             color: black;
         }
-
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%), var(--bg-noticia);
     }
 
     .noticia1 {
         grid-area: noticia1;
         padding: 60px 50px;
 
+        @include responsive(small) {
+            padding: 40px 20px;
+            min-height: 300px;
+        }
+
         h3 {
             font-size: 30px;
+
+            @include responsive(small) {
+                font-size: 24px;
+            }
         }
     }
 
@@ -98,8 +122,17 @@
         grid-area: noticia2;
         padding: 30px;
 
+        @include responsive(small) {
+            padding: 20px;
+            min-height: 250px;
+        }
+
         h3 {
             font-size: 25px;
+
+            @include responsive(small) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -107,8 +140,17 @@
         grid-area: noticia3;
         padding: 30px;
 
+        @include responsive(small) {
+            padding: 20px;
+            min-height: 250px;
+        }
+
         h3 {
             font-size: 25px;
+
+            @include responsive(small) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -116,8 +158,17 @@
         grid-area: noticia4;
         padding: 40px;
 
+        @include responsive(small) {
+            padding: 20px;
+            min-height: 300px;
+        }
+
         h3 {
             font-size: 30px;
+
+            @include responsive(small) {
+                font-size: 24px;
+            }
         }
     }
 }

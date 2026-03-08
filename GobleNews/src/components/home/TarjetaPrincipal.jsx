@@ -36,7 +36,6 @@ function tiempoTranscurrido(fecha) {
 export default function TarjetaPrincipal() {
     const [noticia, setNoticia] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [isMuted, setIsMuted] = useState(true);
     const [bgColor, setBgColor] = useState('#D65108');
     
     const videoRef = useRef(null);

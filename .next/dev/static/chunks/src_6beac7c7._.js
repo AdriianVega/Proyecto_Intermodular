@@ -666,16 +666,15 @@ function tiempoTranscurrido(fecha) {
 }
 function TarjetaPrincipal() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(49);
-    if ($[0] !== "77a214040dd340d9e2087fe8a1c5d47615d05af91401548d2d14e23456445e07") {
-        for(let $i = 0; $i < 49; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(48);
+    if ($[0] !== "0a711ab21da5289f9c99bc411b09e21f8775f441d658e1ec19cb4cdd61345011") {
+        for(let $i = 0; $i < 48; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "77a214040dd340d9e2087fe8a1c5d47615d05af91401548d2d14e23456445e07";
+        $[0] = "0a711ab21da5289f9c99bc411b09e21f8775f441d658e1ec19cb4cdd61345011";
     }
     const [noticia, setNoticia] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [isMuted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [bgColor, setBgColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("#D65108");
     const videoRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const sectionRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -811,7 +810,7 @@ function TarjetaPrincipal() {
                 children: "Cargando noticia..."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 164,
+                lineNumber: 163,
                 columnNumber: 12
             }, this);
             $[11] = t8;
@@ -828,7 +827,7 @@ function TarjetaPrincipal() {
                 children: "No se pudo cargar la noticia destacada."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 174,
+                lineNumber: 173,
                 columnNumber: 12
             }, this);
             $[12] = t8;
@@ -855,7 +854,7 @@ function TarjetaPrincipal() {
             children: noticia.bandera
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 195,
+            lineNumber: 194,
             columnNumber: 11
         }, this);
         $[15] = noticia.bandera;
@@ -882,7 +881,7 @@ function TarjetaPrincipal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 211,
+            lineNumber: 210,
             columnNumber: 11
         }, this);
         $[19] = t10;
@@ -897,7 +896,7 @@ function TarjetaPrincipal() {
             children: noticia.titulo
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 220,
+            lineNumber: 219,
             columnNumber: 11
         }, this);
         $[22] = noticia.titulo;
@@ -922,7 +921,7 @@ function TarjetaPrincipal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 236,
+            lineNumber: 235,
             columnNumber: 11
         }, this);
         $[26] = t14;
@@ -942,7 +941,7 @@ function TarjetaPrincipal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 244,
+            lineNumber: 243,
             columnNumber: 11
         }, this);
         $[28] = t12;
@@ -966,7 +965,7 @@ function TarjetaPrincipal() {
             priority: true
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 257,
+            lineNumber: 256,
             columnNumber: 11
         }, this);
         $[33] = t17;
@@ -976,7 +975,7 @@ function TarjetaPrincipal() {
         t19 = $[35];
     }
     let t20;
-    if ($[36] !== isMuted || $[37] !== noticia.id || $[38] !== videoSrc) {
+    if ($[36] !== noticia.id || $[37] !== videoSrc) {
         t20 = videoSrc ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                 ref: videoRef,
@@ -991,12 +990,12 @@ function TarjetaPrincipal() {
                     type: "video/mp4"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 266,
+                    lineNumber: 265,
                     columnNumber: 175
                 }, this)
             }, noticia.id, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 266,
+                lineNumber: 265,
                 columnNumber: 24
             }, this)
         }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1006,31 +1005,30 @@ function TarjetaPrincipal() {
                     children: "Error: 404"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 266,
+                    lineNumber: 265,
                     columnNumber: 263
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     children: "No hay video disponible"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 266,
+                    lineNumber: 265,
                     columnNumber: 282
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 266,
+            lineNumber: 265,
             columnNumber: 231
         }, this);
-        $[36] = isMuted;
-        $[37] = noticia.id;
-        $[38] = videoSrc;
-        $[39] = t20;
+        $[36] = noticia.id;
+        $[37] = videoSrc;
+        $[38] = t20;
     } else {
-        t20 = $[39];
+        t20 = $[38];
     }
     let t21;
-    if ($[40] !== t19 || $[41] !== t20) {
+    if ($[39] !== t19 || $[40] !== t20) {
         t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mediaContainer,
             children: [
@@ -1039,17 +1037,17 @@ function TarjetaPrincipal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 276,
+            lineNumber: 274,
             columnNumber: 11
         }, this);
-        $[40] = t19;
-        $[41] = t20;
-        $[42] = t21;
+        $[39] = t19;
+        $[40] = t20;
+        $[41] = t21;
     } else {
-        t21 = $[42];
+        t21 = $[41];
     }
     let t22;
-    if ($[43] !== t16 || $[44] !== t21) {
+    if ($[42] !== t16 || $[43] !== t21) {
         t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noticiaDestacada,
             onMouseEnter: handleMouseEnter,
@@ -1060,17 +1058,17 @@ function TarjetaPrincipal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 285,
+            lineNumber: 283,
             columnNumber: 11
         }, this);
-        $[43] = t16;
-        $[44] = t21;
-        $[45] = t22;
+        $[42] = t16;
+        $[43] = t21;
+        $[44] = t22;
     } else {
-        t22 = $[45];
+        t22 = $[44];
     }
     let t23;
-    if ($[46] !== t22 || $[47] !== t8) {
+    if ($[45] !== t22 || $[46] !== t8) {
         t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             ref: sectionRef,
             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].seccionDestacada} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement} `,
@@ -1078,18 +1076,18 @@ function TarjetaPrincipal() {
             children: t22
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 294,
+            lineNumber: 292,
             columnNumber: 11
         }, this);
-        $[46] = t22;
-        $[47] = t8;
-        $[48] = t23;
+        $[45] = t22;
+        $[46] = t8;
+        $[47] = t23;
     } else {
-        t23 = $[48];
+        t23 = $[47];
     }
     return t23;
 }
-_s(TarjetaPrincipal, "/7rySCdfxMzNX7WJsGZA3KIoZns=");
+_s(TarjetaPrincipal, "MDPkbT+hZz8LqnEkJqtzBDEbbhI=");
 _c = TarjetaPrincipal;
 function _TarjetaPrincipalHandleMouseEnterPCatch() {}
 function _temp(t0) {

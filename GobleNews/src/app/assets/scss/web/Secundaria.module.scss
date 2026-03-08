@@ -18,8 +18,15 @@ body {
     min-height: 100vh;
     overflow: hidden;
     position: relative;
-
     padding: 80px;
+
+    @include responsive(medium) {
+        padding: 40px;
+    }
+
+    @include responsive(small) {
+        padding: 20px;
+    }
 
     @include animation(fadeIn, 1s, ease-in-out, 1, forwards);
 
@@ -38,32 +45,64 @@ body {
         pointer-events: none;
         z-index: 1;
     }
+
     .page-scroll {
         height: 100vh;
         overflow-y: auto;
         background-color: $color-fondo-tarjeta-oscuro;
         border-radius: 20px;
     }
+
     header {
         position: fixed;
         top: 80px;
         left: 80px;
+        right: 80px;
         z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        pointer-events: none;
+
+        @include responsive(medium) {
+            top: 40px;
+            left: 40px;
+            right: 40px;
+        }
+
+        @include responsive(small) {
+            top: 20px;
+            left: 20px;
+            right: 20px;
+        }
 
         @include animation(efecto-neon, 5s, ease-in-out, infinite);
+
+        div {
+            pointer-events: auto;
+        }
 
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
+
+            @include responsive(small) {
+                font-size: 32px;
+            }
         }
 
         h3 {
             font-family: $fuente-secundaria;
             margin-top: 15px;
+
+            @include responsive(small) {
+                font-size: 16px;
+            }
         }
+
         .logo {
             position: relative;
-            left: 1540px;
+            pointer-events: auto;
         }
     }
 
@@ -74,6 +113,18 @@ body {
         background: transparent;
         border: 0;
         cursor: pointer;
+        z-index: 101;
+
+        @include responsive(medium) {
+            top: 40px;
+            left: auto;
+            right: 40px;
+        }
+
+        @include responsive(small) {
+            top: 20px;
+            right: 20px;
+        }
 
         svg {
             width: 32px;
@@ -81,43 +132,62 @@ body {
             display: block;
         }
     }
+
     main {
         display: flex;
         flex-direction: column;
+        margin-top: 150px;
 
         article {
-            padding: 100px 150px;
+            padding: 40px 150px;
             line-height: 2;
+
+            @include responsive(medium) {
+                padding: 40px 80px;
+            }
+
+            @include responsive(small) {
+                padding: 40px 20px;
+            }
 
             h1 {
                 text-align: center;
             }
+
             img {
-                max-width: 800px;
+                max-width: 100%;
+                width: 800px;
                 display: block;
                 margin: 40px auto;
+                height: auto;
             }
         }
 
         video {
-            max-width: 800px;
+            max-width: 100%;
+            width: 800px;
             display: block;
             margin: 40px auto;
         }
+
         .navegador {
             display: flex;
             justify-content: center;
             margin: 40px 150px;
             gap: 20px;
 
+            @include responsive(small) {
+                margin: 40px 20px;
+                flex-wrap: wrap;
+            }
+
             button {
                 background-color: transparent;
                 border: 0;
                 border-radius: 5px;
                 padding: 10px;
-        
                 cursor: pointer;
-        
+
                 svg {
                     width: 24px;
                     height: 24px;
@@ -127,13 +197,20 @@ body {
                     background-color: darken($color-fondo-tarjeta-claro, 10%);
                 }
             }
+
             span {
                 transform: translateY(6px);
             }
-        }   
+        }
     }
+
     .logo {
         width: 75px;
         height: 75px;
+
+        @include responsive(small) {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
