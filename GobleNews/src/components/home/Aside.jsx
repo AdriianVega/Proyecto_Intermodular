@@ -156,8 +156,6 @@ export default function Aside( { isOpen, onMenuClose } ) {
                                                             <Link
                                                                 href={`/buscador?search=${sub.search}`}
                                                                 onClick={(e) => {
-                                                                    e.preventDefault();
-
                                                                     onMenuClose();
                                                                 }}
                                                             >
@@ -181,7 +179,7 @@ export default function Aside( { isOpen, onMenuClose } ) {
                         })}
                         <li className={styles.controlPanel}>
                             <Link
-                                href="/panel-control"
+                                href="/admin/panel-control"
                                 onClick={onMenuClose}
                             >
                                 Panel de Control

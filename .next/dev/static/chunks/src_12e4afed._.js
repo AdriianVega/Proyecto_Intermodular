@@ -298,11 +298,11 @@ const dropdown = {
 function Aside(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(28);
-    if ($[0] !== "9e6637195988945dce8223ebe269037cfd912f2e530e9710d59d8a9ef6f1756a") {
+    if ($[0] !== "38543d1e02c5b549826c15ed896ab1753b61022a1d0d888c9fea7a99c87f1a2d") {
         for(let $i = 0; $i < 28; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "9e6637195988945dce8223ebe269037cfd912f2e530e9710d59d8a9ef6f1756a";
+        $[0] = "38543d1e02c5b549826c15ed896ab1753b61022a1d0d888c9fea7a99c87f1a2d";
     }
     const { isOpen, onMenuClose } = t0;
     const [nav, setNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -475,7 +475,6 @@ function Aside(t0) {
                                                 href: `/buscador?search=${sub.search}`,
                                                 onClick: {
                                                     "Aside[lista.map() > hasDropdown.map() > <Link>.onClick]": (e_0)=>{
-                                                        e_0.preventDefault();
                                                         onMenuClose();
                                                     }
                                                 }["Aside[lista.map() > hasDropdown.map() > <Link>.onClick]"],
@@ -503,7 +502,7 @@ function Aside(t0) {
                         children: item.name
                     }, void 0, false, {
                         fileName: "[project]/src/components/home/Aside.jsx",
-                        lineNumber: 159,
+                        lineNumber: 158,
                         columnNumber: 71
                     }, this)
                 }, item.id, false, {
@@ -524,17 +523,17 @@ function Aside(t0) {
         t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Aside$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].controlPanel,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/panel-control",
+                href: "/admin/panel-control",
                 onClick: onMenuClose,
                 children: "Panel de Control"
             }, void 0, false, {
                 fileName: "[project]/src/components/home/Aside.jsx",
-                lineNumber: 170,
+                lineNumber: 169,
                 columnNumber: 47
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/home/Aside.jsx",
-            lineNumber: 170,
+            lineNumber: 169,
             columnNumber: 11
         }, this);
         $[16] = onMenuClose;
@@ -553,12 +552,12 @@ function Aside(t0) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/home/Aside.jsx",
-                lineNumber: 178,
+                lineNumber: 177,
                 columnNumber: 16
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/home/Aside.jsx",
-            lineNumber: 178,
+            lineNumber: 177,
             columnNumber: 11
         }, this);
         $[18] = t11;
@@ -578,7 +577,7 @@ function Aside(t0) {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/Aside.jsx",
-            lineNumber: 187,
+            lineNumber: 186,
             columnNumber: 11
         }, this);
         $[21] = t13;
@@ -664,11 +663,11 @@ function tiempoTranscurrido(fecha) {
 function TarjetaPrincipal() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(48);
-    if ($[0] !== "bab53b4e9eb705cd8e5953d4a7707121359b882b057def22bed67d7526fe6579") {
+    if ($[0] !== "7acccfa84cb2ca3c651759d173ce385fa44acf56ffb9157fe0466b801e8a7d4f") {
         for(let $i = 0; $i < 48; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "bab53b4e9eb705cd8e5953d4a7707121359b882b057def22bed67d7526fe6579";
+        $[0] = "7acccfa84cb2ca3c651759d173ce385fa44acf56ffb9157fe0466b801e8a7d4f";
     }
     const [noticia, setNoticia] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
@@ -680,7 +679,7 @@ function TarjetaPrincipal() {
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = ({
             "TarjetaPrincipal[useEffect()]": ()=>{
-                fetch("http://localhost:8000/backend/api/handlers/pagina_principal.php?destacada=true").then(_TarjetaPrincipalUseEffectAnonymous).then({
+                fetch("/backend/api/handlers/pagina_principal.php?destacada=true").then(_TarjetaPrincipalUseEffectAnonymous).then({
                     "TarjetaPrincipal[useEffect() > (anonymous)()]": (data)=>{
                         if (data.success && data.data && data.data.id > 0) {
                             setNoticia(data.data);
@@ -1125,11 +1124,11 @@ var _s = __turbopack_context__.k.signature();
 function BentoGrid() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "07033091619b7fbb3ca1842c5a28b694a21d590f77a5cd86b6954aad4accd95d") {
+    if ($[0] !== "00679e6303bfefca0ff787e094938e2381d85f13dfcec9a883288b0a0c710e93") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "07033091619b7fbb3ca1842c5a28b694a21d590f77a5cd86b6954aad4accd95d";
+        $[0] = "00679e6303bfefca0ff787e094938e2381d85f13dfcec9a883288b0a0c710e93";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1146,7 +1145,7 @@ function BentoGrid() {
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = ({
             "BentoGrid[useEffect()]": ()=>{
-                fetch("http://localhost:8000/backend/api/handlers/pagina_principal.php?bento=true").then(_BentoGridUseEffectAnonymous).then({
+                fetch("/backend/api/handlers/pagina_principal.php?bento=true").then(_BentoGridUseEffectAnonymous).then({
                     "BentoGrid[useEffect() > (anonymous)()]": (res)=>{
                         if (res.success && res.data && res.data.length > 0) {
                             setNoticias(res.data);

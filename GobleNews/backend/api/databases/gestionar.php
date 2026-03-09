@@ -1,4 +1,13 @@
 <?php
+    
+
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+        http_response_code(200);
+        exit();
+    }
+
+    header("Content-Type: application/json");
+
     require_once "db_call.php";
 
     try {
@@ -14,12 +23,12 @@
     } catch (PDOException $e) {
         http_response_code(500);
         echo json_encode([
-            "success" => false, 
+            "success" => false,
             "error" => "Error de base de datos: " . $e->getMessage()
         ]);
     } catch (Exception $e) {
         echo json_encode([
-            "success" => false, 
+            "success" => false,
             "error" => $e->getMessage()
         ]);
     }

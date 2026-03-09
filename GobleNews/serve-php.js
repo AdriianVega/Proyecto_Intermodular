@@ -19,7 +19,7 @@ if (!phpBinary) {
 
 console.log(`Usando binario en: ${phpBinary}`);
 
-const phpServer = spawn(phpBinary, ['-S', 'localhost:8000'], {
+const phpServer = spawn(phpBinary, ['-S', 'localhost:8000', '-t', '.'], {
     stdio: 'inherit',
     shell: false
 });

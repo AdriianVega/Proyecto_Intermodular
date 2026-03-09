@@ -22,7 +22,7 @@
             ?>
                 <small class="badge bg-info"> Empleado </small>
             <?php }
-            ?>
+            ?>c
         </div>
         <div class="list-group pt-3">
             <a href="../clientes/gestion_clientes.php" class="list-group-item list-group-item-action <?php echo ($pagina_activa == "clientes") ? "active" : ""; ?>">👥 Clientes</a>

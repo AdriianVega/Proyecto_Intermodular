@@ -1,5 +1,19 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
+    session_save_path('/tmp');
+
+    session_set_cookie_params([
+        'lifetime' => 86400,
+        'path' => '/',
+        'domain' => 'localhost',
+        'secure' => false,
+        'httponly' => true,
+        'samesite' => 'None'
+    ]);
+    
+    session_start();
+
+    header("Access-Control-Allow-Origin: http://localhost:3000");
+    header("Access-Control-Allow-Credentials: true");
     header("Access-Control-Allow-Methods: POST, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type");
     header("Content-Type: application/json");
@@ -25,16 +39,16 @@
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user && password_verify($password, trim($user['password']))) {
-            session_start();
             $_SESSION["id"] = $user["id"];
             $_SESSION["email"] = $user["email"];
             
             echo json_encode([
                 "success" => true,
-                "user" => [
+                "user_session" => [
                     "id" => $user["id"],
                     "nombre" => $user["nombre"],
-                    "rol" => $user["rol"]
+                    "rol" => $user["rol"],
+                    "icono" => $user["icono"]
                 ]
             ]);
         } else {

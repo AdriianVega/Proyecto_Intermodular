@@ -36,7 +36,7 @@ export default function ContenidoBuscador() {
 
         setLoading(true);
 
-        fetch(`http://localhost:8000/backend/api/handlers/buscador.php?search=${encodeURIComponent(searchRaw)}&page=${pageRaw}`)
+        fetch(`/backend/api/handlers/buscador.php?search=${encodeURIComponent(searchRaw)}&page=${pageRaw}`)
             .then(response => response.json())
             .then(data => {
                 if (data.success && data.data) {

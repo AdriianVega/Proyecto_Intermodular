@@ -8,7 +8,7 @@ export default function BentoGrid() {
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/backend/api/handlers/pagina_principal.php?bento=true')
+        fetch('/backend/api/handlers/pagina_principal.php?bento=true')
             .then(response => response.json())
             .then(res => {
                 if (res.success && res.data && res.data.length > 0) {

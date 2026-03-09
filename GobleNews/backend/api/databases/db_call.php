@@ -1,19 +1,28 @@
 <?php
-    header("Content-Type: application/json");
-    session_start();
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+    header("Access-Control-Allow-Origin: http://localhost:3000");
+    header("Access-Control-Allow-Credentials: true");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
     class InvalidUpdateException extends Exception {}
 
-    if (!isset($_SESSION["email"])) {
+    $json = file_get_contents('php://input');
+    $data = json_decode($json, true);
+
+    $user_id = $data['user_id'] ?? null;
+
+    if (!$user_id) {
         http_response_code(401);
         echo json_encode(["error" => "No autorizado"]);
         exit();
     }
 
     require_once "../../config/db_pdo.inc";
-
-    $json = file_get_contents('php://input');
-    $data = json_decode($json, true);
 
     $entidad = $data['entidad'] ?? '';
     $id = $data['id'] ?? null;

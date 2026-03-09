@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// Variables de la paleta de colores
+$fondo: #1a1a2e;
+$fondo-tarjeta: rgba(11, 20, 42, 0.7);
+$borde-tarjeta: 1px solid rgba(255, 255, 255, 0.1);
+
+$texto-primario: #ffffff;
+$texto-secundario: #b0b0b0;
+$color-primario: #e94560;
+$color-secundario: #0f3460;
+
+// Mixin para animaciones
+@mixin animation($name, $duration, $timing: linear) {
+    -webkit-animation: $name $duration $timing;
+    -moz-animation: $name $duration $timing;
+    -o-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+}
+
+// Mixin para transiciones 
+@mixin transition($prop, $duration, $timing: ease-out) {
+    -webkit-transition: $prop $duration $timing;
+    -moz-transition: $prop $duration $timing;
+    -o-transition: $prop $duration $timing;
+    transition: $prop $duration $timing;
+}
+
+// Mixin para efecto cristal
+@mixin glassefect {
+    background: $fondo-tarjeta;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: $borde-tarjeta;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+// Animación de entrada
+@keyframes animacion_inicial {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    // Ejecutamos la animación al cargar
+    @include animation(animacion_inicial, 0.3s);
+
+    font-family: 'Inter', sans-serif;
+    position: relative;
+
+    // Configuración del fondo fijo
+    &::before {
+        content: "";
+        // Lo fijamos para que no se mueva con el scroll
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        // Lo mandamos al fondo de la pila
+        z-index: -1;
+
+        background-image: url("../img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        // Desenfoque y un ligero zoom para evitar bordes blancos
+        filter: blur(8px);
+        transform: scale(1.1);
+    }
+}
+
+header {
+    // Ajustes del encabezado principal
+    text-align: center;
+    padding-top: 50px;
+    color: $texto-primario;
+
+    img {
+        // Estilo para la imagen de perfil/logo
+        border-radius: 16px;
+        width: 10%;
+    }
+}
+
+main {
+    // Contenedor flexible para distribuir las tarjetas
+    display: flex;
+    flex-wrap: wrap; // Permite que bajen a la siguiente línea si no caben
+    justify-content: center;
+    gap: 2rem; // Separación uniforme entre elementos
+    padding: 100px;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+
+        // Calculamos el ancho para que entren 3 tarjetas por fila aprox
+        flex: 0 1 30%;
+
+        article {
+            // Aplicamos el estilo visual de cristal
+            @include glassefect();
+
+            text-align: center;
+            color: $texto-primario;
+            border-radius: 16px;
+
+            @include transition(all, 0.3s, ease-out);
+
+            // Comportamiento al pasar el ratón
+            &:hover {
+                // Elevamos la tarjeta y cambiamos el borde al color de acento
+                transform: translateY(-5px);
+                border-color: $color-primario;
+                // Añadimos un resplandor para destacar
+                box-shadow: 0 0 15px rgba(233, 69, 96, 0.4);
+            }
+
+            img {
+                // Invertimos colores (negro a blanco) para contraste
+                filter: invert(1);
+                width: 13%;
+                padding: 30px 0;
+            }
+
+            h3 {
+                // Ajuste de márgenes del título
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ export default function Login() {
         setError('');
 
         try {
-            const res = await fetch('http://localhost:8000/backend/api/handlers/login.php', {
+            const res = await fetch('/backend/api/auth/login.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
@@ -23,6 +23,8 @@ export default function Login() {
             const data = await res.json();
 
             if (data.success) {
+                localStorage.setItem('user_session', JSON.stringify(data.user_session));
+
                 router.push('/admin/dashboard');
             } else {
                 setError(data.message);

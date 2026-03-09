@@ -1,0 +1,113 @@
+@use "../web/Variables.module" as *;
+@use "../web/Mixins.module" as *;
+
+@keyframes animacion_inicial {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboardContainer {
+    min-height: 100vh;
+    animation: animacion_inicial 0.5s ease-out;
+    position: relative;
+    background-color: $color-fondo;
+    background-image: url("/img/admin/fondo.jpg");
+    background-size: 110%;
+    background-position: center;
+
+    .header {
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+
+        img {
+            border-radius: 16px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid $color-borde-tarjeta;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-family: $fuente-principal;
+            font-weight: 900;
+        }
+
+        .badgeWrapper {
+            margin-top: 10px;
+
+            .badgeAdmin {
+                background: #ff4d4d;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+
+            .badgeUser {
+                background: $color-fondo-tarjeta-claro;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .mainGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 80px 10%;
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .enlace {
+            text-decoration: none;
+            flex: 0 1 300px;
+
+            .tarjeta {
+                background: $color-fondo-tarjeta-oscuro;
+                backdrop-filter: blur(12px);
+                border: 1px solid $color-borde-tarjeta;
+                text-align: center;
+                border-radius: 20px;
+                padding: 40px 20px;
+                @include transition(all, 0.3s);
+
+                &:hover {
+                    transform: translateY(-8px);
+                    border-color: white;
+                    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+
+                    img {
+                        transform: scale(1.1);
+                        filter: invert(1)
+                    }
+                }
+
+                img {
+                    filter: invert(1);
+                    width: 60px;
+                    margin-bottom: 20px;
+                    @include transition(all, 0.3s);
+                }
+
+                h3 {
+                    color: white;
+                    font-family: $fuente-principal;
+                    font-size: 1.25rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

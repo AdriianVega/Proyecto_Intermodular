@@ -42,7 +42,7 @@ export default function TarjetaPrincipal() {
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/backend/api/handlers/pagina_principal.php?destacada=true')
+        fetch('/backend/api/handlers/pagina_principal.php?destacada=true')
             .then(res => res.json())
             .then(data => {
                 if (data.success && data.data && data.data.id > 0) {

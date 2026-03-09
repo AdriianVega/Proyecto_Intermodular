@@ -1,11 +1,11 @@
 /* [project]/src/app/assets/scss/web/home/Estilo.module.scss.module.css [app-client] (css) */
 @keyframes Estilo-module-scss-module__GGnB2q__efecto-neon {
   0%, 100% {
-    text-shadow: 0 0 3px #0cc, 0 0 3px #0cc, 0 0 5px #0cc, 0 0 10px #0ff, 0 0 20px #0ff;
+    text-shadow: 0 0 3px #0cc, 0 0 3px #0cc, 0 0 5px #0cc, 0 0 10px #1094b1, 0 0 20px #1094b1;
   }
 
   50% {
-    text-shadow: 0 0 20px #0cc, 0 0 40px #0cc, 0 0 40px #0ff, 0 0 40px #0ff;
+    text-shadow: 0 0 20px #0cc, 0 0 40px #0cc, 0 0 40px #1094b1, 0 0 40px #1094b1;
   }
 }
 

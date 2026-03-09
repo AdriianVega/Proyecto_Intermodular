@@ -1,0 +1,145 @@
+@use "../web/Variables.module" as *;
+@use "../web/Mixins.module" as *;
+
+.layoutContainer {
+    display: flex;
+    height: 100vh;
+    background-color: $color-fondo;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background-image: url("/img/admin/fondo.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        transform: scale(1.1);
+    }
+
+    .sidebar {
+        width: 280px;
+        background: $color-fondo-tarjeta-oscuro;
+        backdrop-filter: blur(15px);
+        border-right: 1px solid $color-borde-tarjeta;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        z-index: 2;
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid $color-neon-cyan;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                color: white;
+                font-family: $fuente-principal;
+                font-size: 1.1rem;
+                margin: 0 0 10px 0;
+            }
+
+            .badgeAdmin {
+                background: $color-logout;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .badgeUser {
+                background: $color-fondo-tarjeta-claro;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .menuNav {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            flex: 1;
+
+            .navLink {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 12px 20px;
+                border-radius: 10px;
+                color: $color-semitransparente;
+                text-decoration: none;
+                font-family: $fuente-principal;
+                
+                @include transition(all, 0.3s);
+
+                img {
+                    width: 20px;
+                    filter: invert(1);
+                    opacity: 0.7;
+                }
+
+                &:hover {
+                    background: $color-fondo-tarjeta-claro;
+                    color: $color-neon-cyan;
+                    border-left: 3px solid $color-neon-cyan;
+
+                    img {
+                        opacity: 1;
+                        filter: invert(1)
+                    }
+                }
+
+                &:last-child {
+                    margin-top: auto;
+                    color: #ff8585;
+
+                    &:hover {
+                        background: rgba(220, 53, 69, 0.1);
+                        border-left-color: $color-logout;
+                        color: $color-logout;
+
+                        img {
+                            filter: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainContent {
+        flex: 1;
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $color-neon-cyan;
+            border-radius: 4px;
+        }
+    }
+}

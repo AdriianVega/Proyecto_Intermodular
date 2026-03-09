@@ -47,7 +47,7 @@ export default function ContenidoNoticia() {
             return; 
         }
 
-        fetch(`http://localhost:8000/backend/api/handlers/noticia.php?id=${id}`)
+        fetch(`/backend/api/handlers/noticia.php?id=${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data.success && data.data) {

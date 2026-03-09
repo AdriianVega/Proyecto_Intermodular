@@ -1,0 +1,135 @@
+@use "../web/Variables.module" as *;
+@use "../web/Mixins.module" as *;
+
+.tablaContenedor {
+    padding: 2rem;
+    width: 100%;
+    color: white;
+
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-family: $fuente-principal;
+            font-weight: 900;
+            color: white;
+            margin: 0;
+        }
+
+        .btnNuevo {
+            background: linear-gradient(135deg, #0b3672a0 0%, #0e1769 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            @include transition(transform, 0.3s);
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(14, 83, 180, 0.4);
+            }
+        }
+    }
+
+    .alertError {
+        background: rgba(220, 53, 69, 0.2);
+        border: 1px solid $error-border;
+        color: $error-texto;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .cardTabla {
+        background: $color-fondo-tarjeta-oscuro;
+        backdrop-filter: blur(15px);
+        border: 1px solid $color-borde-tarjeta;
+        border-radius: 12px;
+        overflow: hidden;
+
+        .loading,
+        .sinDatos {
+            padding: 40px;
+            text-align: center;
+            color: $color-semitransparente;
+        }
+
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: 15px 20px;
+                text-align: left;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            thead th {
+                background: linear-gradient(135deg, #0f172a, #1e293b);
+                color: $color-neon-cyan;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-bottom: 2px solid $color-borde-tarjeta;
+            }
+
+            tbody tr {
+                @include transition(background-color, 0.2s);
+
+                &:hover {
+                    background-color: rgba(0, 255, 255, 0.05);
+                }
+
+                td {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+            }
+
+            .acciones {
+                text-align: right;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+
+                .btnEditar {
+                    background: transparent;
+                    border: 1px solid #ffca28;
+                    color: #ffca28;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    @include transition(all, 0.3s);
+
+                    &:hover {
+                        background: #ffca28;
+                        color: black;
+                        box-shadow: 0 0 10px #ffca28;
+                    }
+                }
+
+                .btnEliminar {
+                    background: transparent;
+                    border: 1px solid #ff1744;
+                    color: #ff1744;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 0.9rem;
+                    @include transition(all, 0.3s);
+
+                    &:hover {
+                        background: #ff1744;
+                        color: white;
+                        box-shadow: 0 0 10px #ff1744;
+                    }
+                }
+            }
+        }
+    }
+}
