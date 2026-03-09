@@ -1,0 +1,102 @@
+@use "../web/Variables.module" as *;
+@use "../web/Mixins.module" as *;
+
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-fondo;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/img/admin/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+
+    .loginCard {
+        background: $color-login-card;
+        backdrop-filter: blur(15px);
+        border: 1px solid $color-borde-tarjeta;
+        padding: 50px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 450px;
+        z-index: 2;
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+
+            img {
+                width: 80px;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-family: $fuente-principal;
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                color: white;
+            }
+        }
+
+        .errorAlert {
+            background: $error-bg;
+            border: 1px solid $error-border;
+            color: $error-texto;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+            font-family: $fuente-principal;
+        }
+
+        .inputGroup {
+            margin-bottom: 25px;
+
+            label {
+                display: block;
+                font-family: $fuente-principal;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $color-semitransparente;
+                margin-bottom: 8px;
+            }
+
+            input {
+                width: 100%;
+                background: $color-login-input;
+                border: 1px solid $color-borde-tarjeta;
+                padding: 12px;
+                border-radius: 8px;
+                color: white;
+                font-family: $fuente-principal;
+                outline: none;
+
+                &:focus {
+                    border-color: white;
+                }
+            }
+        }
+
+        .loginBtn {
+            width: 100%;
+            background: $gradiente-login-boton;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            font-family: $fuente-principal;
+            font-weight: 900;
+            cursor: pointer;
+            @include transition(transform, 0.2s);
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

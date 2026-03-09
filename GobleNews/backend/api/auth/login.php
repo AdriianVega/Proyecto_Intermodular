@@ -1,39 +1,45 @@
 <?php
-    session_start();
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: POST, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type");
     header("Content-Type: application/json");
-    
-    include "../../config/db.inc";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $json = file_get_contents('php://input');
-        $data = json_decode($json, true);
+    require_once "../../config/db_pdo.inc";
 
-        $email = $data["email"] ?? '';
-        $password = $data["password"] ?? '';
-
-        if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($password)) {
-            
-            
-            $check = $conn->prepare("SELECT * FROM administrador WHERE email = ?");
-            $check->bind_param("s", $email);
-            $check->execute();
-            $res = $check->get_result();
-            $datos = $res->fetch_assoc();
-
-            if ($datos && password_verify($password, trim($datos["password"]))) {
-                
-                $_SESSION["id"]     = $datos["id"];
-                $_SESSION["nombre"] = $datos["nombre"];
-                $_SESSION["email"]  = $datos["email"];
-                $_SESSION["rol"]    = $datos["rol"];
-                
-                echo json_encode(["success" => true, "user" => $datos["nombre"]]);
-            } else {
-                echo json_encode(["success" => false, "message" => "Email o contraseña incorrectos"]);
-            }
-        } else {
-            echo json_encode(["success" => false, "message" => "Datos inválidos"]);
-        }
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
         exit;
     }
-?>
+
+    $input = json_decode(file_get_contents("php://input"), true);
+    $email = $input['email'] ?? '';
+    $password = $input['password'] ?? '';
+
+    if (empty($email) || empty($password)) {
+        echo json_encode(["success" => false, "message" => "Campos incompletos"]);
+        exit;
+    }
+
+    try {
+        $stmt = $pdo->prepare("SELECT id, nombre, email, rol, icono, password FROM administrador WHERE email = ?");
+        $stmt->execute([$email]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($password, trim($user['password']))) {
+            session_start();
+            $_SESSION["id"] = $user["id"];
+            $_SESSION["email"] = $user["email"];
+            
+            echo json_encode([
+                "success" => true,
+                "user" => [
+                    "id" => $user["id"],
+                    "nombre" => $user["nombre"],
+                    "rol" => $user["rol"]
+                ]
+            ]);
+        } else {
+            echo json_encode(["success" => false, "message" => "Credenciales incorrectas"]);
+        }
+    } catch (PDOException $e) {
+        echo json_encode(["success" => false, "message" => "Error de base de datos"]);
+}

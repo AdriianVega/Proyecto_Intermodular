@@ -152,10 +152,6 @@ export default function Footer() {
                     <div>
                         <Link href={`/`}>Últimas Noticias</Link>
                     </div>
-                    
-                    <div>
-                        <Link href={`/cookies`}>Cookies</Link>
-                    </div>
                 </div>
             </section>
 

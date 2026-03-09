@@ -14,10 +14,6 @@ const lista = [
     {
         id: 3,
         name: "Sobre Nosotros"
-    },
-    {
-        id: 4,
-        name: "Cookies"
     }
 ]
 
@@ -185,7 +181,7 @@ export default function Aside( { isOpen, onMenuClose } ) {
                         })}
                         <li className={styles.controlPanel}>
                             <Link
-                                href="/panel-de-control"
+                                href="/panel-control"
                                 onClick={onMenuClose}
                             >
                                 Panel de Control

@@ -1,0 +1,74 @@
+@use "../Variables.module" as *;
+@use "../Mixins.module" as *;
+
+.mainSobreNosotros {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heroSection {
+        text-align: center;
+        padding: 60px 20px;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-family: $fuente-secundaria;
+            color: $color-semitransparente;
+            font-size: 1.2rem;
+        }
+    }
+
+    .gridInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1000px;
+        padding: 0 20px;
+
+        @include responsive(small) {
+            grid-template-columns: 1fr;
+        }
+
+        .cardInfo {
+            background: $color-fondo-tarjeta-claro;
+            border: 1px solid $color-borde-tarjeta;
+            @include desenfoque(10px);
+            padding: 40px;
+            border-radius: 20px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-family: $fuente-secundaria;
+            }
+
+            p {
+                line-height: 1.6;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .contactoDirecto {
+        margin-top: 80px;
+        text-align: center;
+        background: $color-fondo-tarjeta-oscuro;
+        padding: 40px 60px;
+        border-radius: 20px;
+        border: 1px solid $color-borde-tarjeta;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .datosContacto p {
+            margin: 10px 0;
+            font-weight: 400;
+        }
+    }
+}
