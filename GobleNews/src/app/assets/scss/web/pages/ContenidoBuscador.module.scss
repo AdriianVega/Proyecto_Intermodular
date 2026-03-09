@@ -1,0 +1,155 @@
+@use "../Variables.module" as *;
+@use "../Mixins.module" as *;
+
+.mensajeEstado {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mainBuscador {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 0 150px;
+
+    @include responsive(medium) {
+        padding: 0 80px;
+    }
+
+    @include responsive(small) {
+        padding: 0 20px;
+        margin-top: 100px;
+    }
+
+    .seccionResultados {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .cabecera {
+            text-align: center;
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 18px;
+                color: $color-semitransparente;
+                font-weight: 400;
+            }
+        }
+
+        .listaTarjetas {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .tarjetaNoticia {
+                background-color: $color-fondo-tarjeta-oscuro;
+                border: 1px solid $color-borde-tarjeta;
+                border-radius: 12px;
+                position: relative;
+                height: 250px;
+                overflow: hidden;
+                cursor: pointer;
+                @include transition(transform, 0.3s);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%), var(--bg-noticia);
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(0, 0, 0, 0.2);
+                    pointer-events: none;
+                    z-index: 1;
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    text-decoration: none;
+                    color: white;
+                    z-index: 2;
+                    position: relative;
+
+                    @include responsive(small) {
+                        padding: 20px;
+                    }
+
+                    h3 {
+                        font-size: 26px;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+                        @include responsive(small) {
+                            font-size: 15px;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        margin-top: 10px;
+                        width: fit-content;
+                        padding: 8px 15px;
+                        color: $color-semitransparente;
+                        font-family: $fuente-secundaria;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        border: 1px solid $color-borde-tarjeta;
+                        border-radius: 5px;
+
+                        span {
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navegador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+            gap: 20px;
+
+            span {
+                font-family: $fuente-secundaria;
+                font-size: 16px;
+            }
+
+            .btnNav {
+                background-color: $color-fondo-tarjeta-claro;
+                border: 1px solid $color-borde-tarjeta;
+                border-radius: 8px;
+                padding: 10px 15px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include transition(background-color, 0.3s);
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: white;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+}

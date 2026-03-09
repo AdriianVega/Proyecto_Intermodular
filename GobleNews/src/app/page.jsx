@@ -47,6 +47,7 @@ export default function Home() {
   return (
     <>
       <Aside isOpen={isMenuOpen} onMenuClose={handleMenuClose} />
+      
       <button 
           className={styles.menuBtn} 
           onClick={handleMenuOpen}

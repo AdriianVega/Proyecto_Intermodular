@@ -226,7 +226,7 @@ var _s = __turbopack_context__.k.signature();
 const lista = [
     {
         id: 1,
-        name: "Países"
+        name: "Continentes"
     },
     {
         id: 2,
@@ -296,17 +296,17 @@ const categorias = [
     }
 ];
 const dropdown = {
-    "Países": continentes,
+    "Continentes": continentes,
     "Categorías": categorias
 };
 function Aside(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(28);
-    if ($[0] !== "53dedd078ec6142a015591142c05b8c583907b716f1d18ca1f6dc476f3882bfe") {
+    if ($[0] !== "bfa74ba173c26e7856edd4c326f94ac4ae3d7e4254074209f3b28545ca4543f6") {
         for(let $i = 0; $i < 28; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "53dedd078ec6142a015591142c05b8c583907b716f1d18ca1f6dc476f3882bfe";
+        $[0] = "bfa74ba173c26e7856edd4c326f94ac4ae3d7e4254074209f3b28545ca4543f6";
     }
     const { isOpen, onMenuClose } = t0;
     const [nav, setNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -1886,11 +1886,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "6b351031147173527de7aba39b409a2305e951aaced5b0cd24a2a75a1ff791de") {
+    if ($[0] !== "d68c62de29ef44a4c2c47e4237a5d738904084a79900ffe481e71258e421de93") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6b351031147173527de7aba39b409a2305e951aaced5b0cd24a2a75a1ff791de";
+        $[0] = "d68c62de29ef44a4c2c47e4237a5d738904084a79900ffe481e71258e421de93";
     }
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;

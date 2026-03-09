@@ -15,14 +15,14 @@
     left: auto;
 
     @include responsive(medium) {
-        top: 40px;
-        right: 80px;
+        position: relative;
+        top: -120px;
+        right: 40px;
         left: auto;
     }
 
     @include responsive(small) {
-        top: 20px;
-        right: 40px;
+        position: relative;
         left: auto;
     }
 

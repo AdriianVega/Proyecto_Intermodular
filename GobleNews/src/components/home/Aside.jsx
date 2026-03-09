@@ -5,7 +5,7 @@ import styles from '@/app/assets/scss/web/home/Aside.module.scss';
 const lista = [
     {
         id: 1,
-        name: "Países"
+        name: "Continentes"
     },
     {
         id: 2,
@@ -78,7 +78,7 @@ const categorias = [
 ]
 
 const dropdown = {
-    "Países": continentes,
+    "Continentes": continentes,
     "Categorías": categorias
 }
 
