@@ -663,16 +663,17 @@ function tiempoTranscurrido(fecha) {
 }
 function TarjetaPrincipal() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(48);
-    if ($[0] !== "7acccfa84cb2ca3c651759d173ce385fa44acf56ffb9157fe0466b801e8a7d4f") {
-        for(let $i = 0; $i < 48; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(50);
+    if ($[0] !== "d43d6be1e3acf9c96e894c69d5e0a25aaf19b9e5bfe01703396145966c661504") {
+        for(let $i = 0; $i < 50; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7acccfa84cb2ca3c651759d173ce385fa44acf56ffb9157fe0466b801e8a7d4f";
+        $[0] = "d43d6be1e3acf9c96e894c69d5e0a25aaf19b9e5bfe01703396145966c661504";
     }
     const [noticia, setNoticia] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [bgColor, setBgColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("#D65108");
+    const [isMuted, setIsMuted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const videoRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const sectionRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
@@ -792,6 +793,7 @@ function TarjetaPrincipal() {
                 }
                 videoRef.current.pause();
                 videoRef.current.currentTime = 0;
+                setIsMuted(true);
             }
         })["TarjetaPrincipal[handleMouseLeave]"];
         $[10] = t7;
@@ -799,186 +801,199 @@ function TarjetaPrincipal() {
         t7 = $[10];
     }
     const handleMouseLeave = t7;
+    let t8;
+    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = ({
+            "TarjetaPrincipal[toggleMuted]": ()=>{
+                setIsMuted(_TarjetaPrincipalToggleMutedSetIsMuted);
+            }
+        })["TarjetaPrincipal[toggleMuted]"];
+        $[11] = t8;
+    } else {
+        t8 = $[11];
+    }
+    const toggleMuted = t8;
     if (loading) {
-        let t8;
-        if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-            t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        let t9;
+        if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+            t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
                 children: "Cargando noticia..."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 163,
+                lineNumber: 177,
                 columnNumber: 12
             }, this);
-            $[11] = t8;
+            $[12] = t9;
         } else {
-            t8 = $[11];
+            t9 = $[12];
         }
-        return t8;
+        return t9;
     }
     if (!noticia) {
-        let t8;
-        if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-            t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        let t9;
+        if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+            t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
                 children: "No se pudo cargar la noticia destacada."
             }, void 0, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 173,
+                lineNumber: 187,
                 columnNumber: 12
             }, this);
-            $[12] = t8;
+            $[13] = t9;
         } else {
-            t8 = $[12];
+            t9 = $[13];
         }
-        return t8;
+        return t9;
     }
     const videoSrc = noticia?.path ? `/video/web/${noticia.path}/video_${noticia.path}.mp4` : null;
-    let t8;
-    if ($[13] !== bgColor) {
-        t8 = {
+    let t9;
+    if ($[14] !== bgColor) {
+        t9 = {
             "--color-dominante": bgColor
         };
-        $[13] = bgColor;
-        $[14] = t8;
+        $[14] = bgColor;
+        $[15] = t9;
     } else {
-        t8 = $[14];
+        t9 = $[15];
     }
-    const t9 = `/noticia?id=${noticia.id}`;
-    let t10;
-    if ($[15] !== noticia.bandera) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+    const t10 = `/noticia?id=${noticia.id}`;
+    let t11;
+    if ($[16] !== noticia.bandera) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             children: noticia.bandera
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 194,
+            lineNumber: 208,
             columnNumber: 11
         }, this);
-        $[15] = noticia.bandera;
-        $[16] = t10;
+        $[16] = noticia.bandera;
+        $[17] = t11;
     } else {
-        t10 = $[16];
-    }
-    let t11;
-    if ($[17] !== noticia.nombre_pais) {
-        t11 = noticia.nombre_pais.toUpperCase();
-        $[17] = noticia.nombre_pais;
-        $[18] = t11;
-    } else {
-        t11 = $[18];
+        t11 = $[17];
     }
     let t12;
-    if ($[19] !== t10 || $[20] !== t11) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    if ($[18] !== noticia.nombre_pais) {
+        t12 = noticia.nombre_pais.toUpperCase();
+        $[18] = noticia.nombre_pais;
+        $[19] = t12;
+    } else {
+        t12 = $[19];
+    }
+    let t13;
+    if ($[20] !== t11 || $[21] !== t12) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].category,
             children: [
-                t10,
+                t11,
                 " ",
-                t11
+                t12
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 210,
+            lineNumber: 224,
             columnNumber: 11
         }, this);
-        $[19] = t10;
         $[20] = t11;
         $[21] = t12;
+        $[22] = t13;
     } else {
-        t12 = $[21];
+        t13 = $[22];
     }
-    let t13;
-    if ($[22] !== noticia.titulo) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+    let t14;
+    if ($[23] !== noticia.titulo) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
             children: noticia.titulo
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 219,
+            lineNumber: 233,
             columnNumber: 11
         }, this);
-        $[22] = noticia.titulo;
-        $[23] = t13;
+        $[23] = noticia.titulo;
+        $[24] = t14;
     } else {
-        t13 = $[23];
-    }
-    let t14;
-    if ($[24] !== noticia.create_time) {
-        t14 = tiempoTranscurrido(noticia.create_time);
-        $[24] = noticia.create_time;
-        $[25] = t14;
-    } else {
-        t14 = $[25];
+        t14 = $[24];
     }
     let t15;
-    if ($[26] !== t14) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-            children: [
-                "Novedad - ",
-                t14
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 235,
-            columnNumber: 11
-        }, this);
-        $[26] = t14;
-        $[27] = t15;
+    if ($[25] !== noticia.create_time) {
+        t15 = tiempoTranscurrido(noticia.create_time);
+        $[25] = noticia.create_time;
+        $[26] = t15;
     } else {
-        t15 = $[27];
+        t15 = $[26];
     }
     let t16;
-    if ($[28] !== t12 || $[29] !== t13 || $[30] !== t15 || $[31] !== t9) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: t9,
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
+    if ($[27] !== t15) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
             children: [
-                t12,
-                t13,
+                "Novedad - ",
                 t15
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 243,
+            lineNumber: 249,
             columnNumber: 11
         }, this);
-        $[28] = t12;
-        $[29] = t13;
-        $[30] = t15;
-        $[31] = t9;
-        $[32] = t16;
+        $[27] = t15;
+        $[28] = t16;
     } else {
-        t16 = $[32];
+        t16 = $[28];
     }
-    const t17 = noticia.path ? `/img/web/${noticia.path}/img_${noticia.path}.png` : "/img/web/logo_tierra.png";
-    const t18 = noticia.titulo || "Noticia destacada";
-    let t19;
-    if ($[33] !== t17 || $[34] !== t18) {
-        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            src: t17,
-            alt: t18,
+    let t17;
+    if ($[29] !== t10 || $[30] !== t13 || $[31] !== t14 || $[32] !== t16) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: t10,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
+            children: [
+                t13,
+                t14,
+                t16
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
+            lineNumber: 257,
+            columnNumber: 11
+        }, this);
+        $[29] = t10;
+        $[30] = t13;
+        $[31] = t14;
+        $[32] = t16;
+        $[33] = t17;
+    } else {
+        t17 = $[33];
+    }
+    const t18 = noticia.path ? `/img/web/noticias/${noticia.path}` : "/img/web/logo_tierra.png";
+    const t19 = noticia.titulo || "Noticia destacada";
+    let t20;
+    if ($[34] !== t18 || $[35] !== t19) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            src: t18,
+            alt: t19,
             width: 600,
             height: 400,
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mainImage,
             priority: true
         }, void 0, false, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 256,
+            lineNumber: 270,
             columnNumber: 11
         }, this);
-        $[33] = t17;
         $[34] = t18;
         $[35] = t19;
+        $[36] = t20;
     } else {
-        t19 = $[35];
+        t20 = $[36];
     }
-    let t20;
-    if ($[36] !== noticia.id || $[37] !== videoSrc) {
-        t20 = videoSrc ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+    let t21;
+    if ($[37] !== isMuted || $[38] !== noticia.id || $[39] !== videoSrc) {
+        t21 = videoSrc ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                 ref: videoRef,
                 controls: true,
                 loop: true,
                 muted: isMuted,
+                onClick: toggleMuted,
                 playsInline: true,
                 preload: "metadata",
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].videoLayer,
@@ -987,12 +1002,12 @@ function TarjetaPrincipal() {
                     type: "video/mp4"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 265,
-                    columnNumber: 175
+                    lineNumber: 279,
+                    columnNumber: 197
                 }, this)
             }, noticia.id, false, {
                 fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                lineNumber: 265,
+                lineNumber: 279,
                 columnNumber: 24
             }, this)
         }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1002,90 +1017,94 @@ function TarjetaPrincipal() {
                     children: "Error: 404"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 265,
-                    columnNumber: 263
+                    lineNumber: 279,
+                    columnNumber: 285
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     children: "No hay video disponible"
                 }, void 0, false, {
                     fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-                    lineNumber: 265,
-                    columnNumber: 282
+                    lineNumber: 279,
+                    columnNumber: 304
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 265,
-            columnNumber: 231
+            lineNumber: 279,
+            columnNumber: 253
         }, this);
-        $[36] = noticia.id;
-        $[37] = videoSrc;
-        $[38] = t20;
+        $[37] = isMuted;
+        $[38] = noticia.id;
+        $[39] = videoSrc;
+        $[40] = t21;
     } else {
-        t20 = $[38];
-    }
-    let t21;
-    if ($[39] !== t19 || $[40] !== t20) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mediaContainer,
-            children: [
-                t19,
-                t20
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 274,
-            columnNumber: 11
-        }, this);
-        $[39] = t19;
-        $[40] = t20;
-        $[41] = t21;
-    } else {
-        t21 = $[41];
+        t21 = $[40];
     }
     let t22;
-    if ($[42] !== t16 || $[43] !== t21) {
-        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noticiaDestacada,
-            onMouseEnter: handleMouseEnter,
-            onMouseLeave: handleMouseLeave,
+    if ($[41] !== t20 || $[42] !== t21) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mediaContainer,
             children: [
-                t16,
+                t20,
                 t21
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 283,
+            lineNumber: 289,
             columnNumber: 11
         }, this);
-        $[42] = t16;
-        $[43] = t21;
-        $[44] = t22;
+        $[41] = t20;
+        $[42] = t21;
+        $[43] = t22;
     } else {
-        t22 = $[44];
+        t22 = $[43];
     }
     let t23;
-    if ($[45] !== t22 || $[46] !== t8) {
-        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            ref: sectionRef,
-            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].seccionDestacada} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement} `,
-            style: t8,
-            children: t22
-        }, void 0, false, {
+    if ($[44] !== t17 || $[45] !== t22) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].noticiaDestacada,
+            onMouseEnter: handleMouseEnter,
+            onMouseLeave: handleMouseLeave,
+            children: [
+                t17,
+                t22
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
-            lineNumber: 292,
+            lineNumber: 298,
             columnNumber: 11
         }, this);
+        $[44] = t17;
         $[45] = t22;
-        $[46] = t8;
-        $[47] = t23;
+        $[46] = t23;
     } else {
-        t23 = $[47];
+        t23 = $[46];
     }
-    return t23;
+    let t24;
+    if ($[47] !== t23 || $[48] !== t9) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            ref: sectionRef,
+            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].seccionDestacada} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].fadeInElement} `,
+            style: t9,
+            children: t23
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/TarjetaPrincipal.jsx",
+            lineNumber: 307,
+            columnNumber: 11
+        }, this);
+        $[47] = t23;
+        $[48] = t9;
+        $[49] = t24;
+    } else {
+        t24 = $[49];
+    }
+    return t24;
 }
-_s(TarjetaPrincipal, "MDPkbT+hZz8LqnEkJqtzBDEbbhI=");
+_s(TarjetaPrincipal, "563AcwzGaB1n+qXu8AfZ5d+nbwc=");
 _c = TarjetaPrincipal;
+function _TarjetaPrincipalToggleMutedSetIsMuted(prev) {
+    return !prev;
+}
 function _TarjetaPrincipalHandleMouseEnterPCatch() {}
 function _temp(t0) {
     const [entry] = t0;
@@ -1125,11 +1144,11 @@ var _s = __turbopack_context__.k.signature();
 function BentoGrid() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "00679e6303bfefca0ff787e094938e2381d85f13dfcec9a883288b0a0c710e93") {
+    if ($[0] !== "86719a01fd3afa6d431159841c3fdadc8feccb65361d8126a19df9968b9b9edc") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "00679e6303bfefca0ff787e094938e2381d85f13dfcec9a883288b0a0c710e93";
+        $[0] = "86719a01fd3afa6d431159841c3fdadc8feccb65361d8126a19df9968b9b9edc";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1258,7 +1277,7 @@ function BentoGrid() {
 _s(BentoGrid, "z4aOPPjLNSvswNdwth23L+KsqAc=");
 _c = BentoGrid;
 function _BentoGridAnonymous(noticia, index) {
-    const imageUrl = noticia.path ? `/img/web/${noticia.path}/img_${noticia.path}.png` : "/img/web/logo_tierra.png";
+    const imageUrl = noticia.path ? `/img/web/noticias/${noticia.path}` : "/img/web/logo_tierra.png";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
         className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"][`noticia${index + 1}`]} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$assets$2f$scss$2f$web$2f$home$2f$Estilo$2e$module$2e$scss__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tarjetaNoticia}`,
         style: {

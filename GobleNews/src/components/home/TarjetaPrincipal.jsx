@@ -37,7 +37,8 @@ export default function TarjetaPrincipal() {
     const [noticia, setNoticia] = useState(null);
     const [loading, setLoading] = useState(true);
     const [bgColor, setBgColor] = useState('#D65108');
-    
+    const [isMuted, setIsMuted] = useState(true);
+
     const videoRef = useRef(null);
     const sectionRef = useRef(null);
 
@@ -104,6 +105,11 @@ export default function TarjetaPrincipal() {
         if (!videoRef.current) return;
         videoRef.current.pause();
         videoRef.current.currentTime = 0;
+        setIsMuted(true);
+    };
+
+    const toggleMuted = () => {
+        setIsMuted((prev) => !prev);
     };
 
     if (loading) return <div className={styles.loading}>Cargando noticia...</div>;
@@ -136,8 +142,8 @@ export default function TarjetaPrincipal() {
 
                 <div className={styles.mediaContainer}>
                     <Image
-                        src={noticia.path ? `/img/web/${noticia.path}/img_${noticia.path}.png` : '/img/web/logo_tierra.png'}
-                        alt={noticia.titulo || 'Noticia destacada'}
+                        src={noticia.path ? `/img/web/noticias/${noticia.path}` : '/img/web/logo_tierra.png'}
+                        alt={noticia.titulo|| 'Noticia destacada'}
                         width={600}
                         height={400}
                         className={styles.mainImage}
@@ -152,6 +158,7 @@ export default function TarjetaPrincipal() {
                                 controls
                                 loop
                                 muted={isMuted}
+                                onClick={toggleMuted}
                                 playsInline
                                 preload="metadata"
                                 className={styles.videoLayer}

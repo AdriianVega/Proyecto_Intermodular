@@ -44,7 +44,7 @@ export default function BentoGrid() {
         <section ref={sectionRef} className={`${styles.bentoGrid} ${styles.fadeInElement}`}>
                 {noticias.slice(0, 4).map((noticia, index) => {
                     const imageUrl = noticia.path 
-                    ? `/img/web/${noticia.path}/img_${noticia.path}.png` 
+                    ? `/img/web/noticias/${noticia.path}` 
                     : '/img/web/logo_tierra.png';
 
                     return (

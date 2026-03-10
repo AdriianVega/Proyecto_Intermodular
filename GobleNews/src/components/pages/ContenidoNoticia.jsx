@@ -77,7 +77,7 @@ export default function ContenidoNoticia() {
                 
                     <Image 
                         src={noticia.path 
-                        ? `/img/web/${noticia.path}/img_${noticia.path}.png` 
+                        ? `/img/web/noticias/${noticia.path}` 
                         : '/img/web/logo_tierra.png'} 
                         alt={noticia.titulo} 
                         className={styles.fadeInElement} 

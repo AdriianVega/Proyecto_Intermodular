@@ -91,7 +91,7 @@ export default function ContenidoBuscador() {
                 <div className={styles.listaTarjetas}>
                     {resultados.map((noticia) => {
                         const imageUrl = noticia.path 
-                            ? `/img/web/${noticia.path}/img_${noticia.path}.png` 
+                            ? `/img/web/noticias/${noticia.path}` 
                             : '/img/web/logo_tierra.png';
 
                         return (
