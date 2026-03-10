@@ -149,6 +149,39 @@
                     }
                 }
             }
+            
+        }
+    }
+    .paginacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .paginaInfo {
+            color: $color-semitransparente;
+            font-size: 0.9rem;
+        }
+
+        .btnPagina {
+            background: transparent;
+            border: 1px solid $color-borde-tarjeta;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            @include transition(all, 0.3s);
+
+            &:hover:not(:disabled) {
+                border-color: $color-neon-cyan;
+                color: $color-neon-cyan;
+            }
+
+            &:disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
         }
     }
 }

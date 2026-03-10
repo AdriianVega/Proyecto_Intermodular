@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from '@/app/assets/scss/admin/Login.module.scss';
 
@@ -9,6 +9,13 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const router = useRouter();
+
+    useEffect(() => {
+        const userData = localStorage.getItem('user_session');
+        if (userData) {
+            router.push('/admin/dashboard');
+        }
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
