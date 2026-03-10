@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import styles from '@/app/assets/scss/admin/Login.module.scss';
 
 export default function Login() {
@@ -45,7 +46,13 @@ export default function Login() {
         <div className={styles.loginContainer}>
             <div className={styles.loginCard}>
                 <div className={styles.header}>
-                    <img src="/img/web/logo_tierra.png" alt="Logo" />
+                    <Link
+                        href="/"
+                        className={styles.logoLink}
+                    >
+                        <img src="/img/web/logo_tierra.png" alt="GobleNews Logo" className={styles.logo} />
+                    </Link>
+                    
                     <h1>PANEL DE CONTROL</h1>
                 </div>
 

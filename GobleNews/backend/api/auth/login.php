@@ -1,11 +1,12 @@
 <?php
-    session_save_path('/tmp');
+    $tmp = sys_get_temp_dir();
+    session_save_path($tmp);
 
     session_set_cookie_params([
         'lifetime' => 86400,
         'path' => '/',
         'domain' => 'localhost',
-        'secure' => false,
+        'secure' => true,
         'httponly' => true,
         'samesite' => 'None'
     ]);

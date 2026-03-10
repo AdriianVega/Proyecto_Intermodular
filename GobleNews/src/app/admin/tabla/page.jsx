@@ -44,7 +44,7 @@ const tablas = [
             { key: 'texto_traducido', label: 'Texto Traducido', render: (fila) => fila.texto_traducido?.slice(0, 100) + (fila.texto_traducido?.length > 100 ? '...' : '') },
             { key: 'nombre_pais', label: 'País', },
             { key: 'nombre_medio', label: 'Medio' },
-            { key: 'path', label: 'Portada', render: (fila) => fila.path ? <Image src={`/img/web/noticias/img_${fila.path}`} alt={fila.path || 'null'} width={50} height={50}/> : 'Sin imagen' }
+            { key: 'path', label: 'Portada', render: (fila) => fila.path ? <Image src={`/img/web/noticias/${fila.path}`} alt={fila.path || 'null'} width={140} height={140}/> : 'Sin imagen' }
         ]
     },
     {
