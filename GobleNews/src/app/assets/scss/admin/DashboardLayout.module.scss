@@ -8,6 +8,12 @@
     position: relative;
     overflow: hidden;
 
+    @include responsive(medium) {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -30,9 +36,39 @@
         padding: 30px 20px;
         z-index: 2;
 
+        @include responsive(medium) {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid $color-borde-tarjeta;
+            padding: 20px;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @include responsive(small) {
+            flex-direction: column;
+            padding: 15px;
+        }
+
         .profile {
             text-align: center;
             margin-bottom: 40px;
+
+            @include responsive(medium) {
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-align: left;
+                flex-shrink: 0;
+            }
+
+            @include responsive(small) {
+                margin-bottom: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
 
             img {
                 width: 90px;
@@ -41,6 +77,18 @@
                 object-fit: cover;
                 border: 2px solid $color-neon-cyan;
                 margin-bottom: 15px;
+
+                @include responsive(medium) {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 0;
+                }
+
+                @include responsive(small) {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 10px;
+                }
             }
 
             h3 {
@@ -48,6 +96,11 @@
                 font-family: $fuente-principal;
                 font-size: 1.1rem;
                 margin: 0 0 10px 0;
+
+                @include responsive(medium) {
+                    font-size: 0.95rem;
+                    margin: 0 0 4px 0;
+                }
             }
 
             .badgeAdmin {
@@ -76,6 +129,13 @@
             gap: 5px;
             flex: 1;
 
+            @include responsive(medium) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4px;
+                overflow-x: auto;
+            }
+
             .navLink {
                 display: flex;
                 align-items: center;
@@ -85,13 +145,38 @@
                 color: $color-semitransparente;
                 text-decoration: none;
                 font-family: $fuente-principal;
-                
                 @include transition(all, 0.3s);
+
+                @include responsive(medium) {
+                    padding: 8px 12px;
+                    gap: 8px;
+                    font-size: 0.85rem;
+                    border-radius: 8px;
+                }
+
+                @include responsive(small) {
+                    padding: 10px 12px;
+                    font-size: 0.9rem;
+                }
 
                 img {
                     width: 20px;
                     filter: invert(1);
                     opacity: 0.7;
+
+                    @include responsive(medium) {
+                        width: 16px;
+                    }
+                }
+
+                span {
+                    @include responsive(medium) {
+                        display: none;
+                    }
+
+                    @include responsive(small) {
+                        display: inline;
+                    }
                 }
 
                 &:hover {
@@ -101,13 +186,17 @@
 
                     img {
                         opacity: 1;
-                        filter: invert(1)
+                        filter: invert(1);
                     }
                 }
 
                 &:last-child {
                     margin-top: auto;
                     color: #ff8585;
+
+                    @include responsive(medium) {
+                        margin-top: 0;
+                    }
 
                     &:hover {
                         background: rgba(220, 53, 69, 0.1);

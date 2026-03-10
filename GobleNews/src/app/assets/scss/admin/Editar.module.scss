@@ -6,16 +6,35 @@
     padding: 2rem;
     color: white;
 
+    @include responsive(medium) {
+        padding: 1.5rem;
+    }
+
+    @include responsive(small) {
+        padding: 1rem;
+    }
+
     .cabecera {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2rem;
 
+        @include responsive(small) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
         h2 {
             font-family: $fuente-principal;
             font-weight: 900;
             margin: 0;
+
+            @include responsive(small) {
+                font-size: 1.3rem;
+            }
         }
 
         .btnVolver {
@@ -25,6 +44,7 @@
             padding: 8px 16px;
             border-radius: 8px;
             cursor: pointer;
+            white-space: nowrap;
             @include transition(all, 0.3s);
 
             &:hover {
@@ -67,12 +87,26 @@
         padding: 2rem;
         max-width: 700px;
         margin: 0 auto;
+
+        @include responsive(medium) {
+            padding: 1.5rem;
+            max-width: 100%;
+        }
+
+        @include responsive(small) {
+            padding: 1rem;
+            border-radius: 8px;
+        }
     }
 
     .formulario {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
+        @include responsive(small) {
+            gap: 1rem;
+        }
 
         .inputGroup {
             display: flex;
@@ -88,7 +122,8 @@
             }
 
             input,
-            textarea {
+            textarea,
+            select {
                 background: rgba(255, 255, 255, 0.05);
                 border: 1px solid $color-borde-tarjeta;
                 border-radius: 8px;
@@ -98,10 +133,19 @@
                 @include transition(border-color, 0.3s);
                 resize: vertical;
 
+                @include responsive(small) {
+                    padding: 10px;
+                    font-size: 0.9rem;
+                }
+
                 &:focus {
                     outline: none;
                     border-color: $color-neon-cyan;
                     box-shadow: 0 0 10px rgba(16, 148, 177, 0.2);
+                }
+
+                option {
+                    background: #0C0A30;
                 }
             }
         }
@@ -110,6 +154,11 @@
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
+
+            @include responsive(small) {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
 
             .btnGuardar {
                 background: linear-gradient(135deg, #0b3672a0 0%, #0e1769 100%);
@@ -120,6 +169,11 @@
                 cursor: pointer;
                 font-weight: bold;
                 @include transition(transform, 0.3s);
+
+                @include responsive(small) {
+                    width: 100%;
+                    padding: 12px;
+                }
 
                 &:hover:not(:disabled) {
                     transform: translateY(-2px);
@@ -140,6 +194,11 @@
                 border-radius: 8px;
                 cursor: pointer;
                 @include transition(all, 0.3s);
+
+                @include responsive(small) {
+                    width: 100%;
+                    padding: 12px;
+                }
 
                 &:hover {
                     border-color: $error-border;
