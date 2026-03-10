@@ -9,6 +9,7 @@
         foreach ($valores as $columna => $valor) {
 
             if (in_array($columna, $tablas[$entidad])) {
+
                 $columnasSQL[] = "$columna = ?";
                 $parametros[] = $valor;
             }
@@ -34,12 +35,12 @@
     }  catch (PDOException $e) {
         http_response_code(500);
         echo json_encode([
-            "success" => false, 
+            "success" => false,
             "error" => "Error de base de datos: " . $e->getMessage()
         ]);
     } catch (Exception $e) {
         echo json_encode([
-            "success" => false, 
+            "success" => false,
             "error" => $e->getMessage()
         ]);
     }

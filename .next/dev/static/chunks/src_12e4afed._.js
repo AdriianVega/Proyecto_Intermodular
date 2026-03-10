@@ -16,6 +16,7 @@ __turbopack_context__.v({
   "efecto-neon": "Estilo-module-scss-module__GGnB2q__efecto-neon",
   "fadeIn": "Estilo-module-scss-module__GGnB2q__fadeIn",
   "fadeInElement": "Estilo-module-scss-module__GGnB2q__fadeInElement",
+  "fadeOut": "Estilo-module-scss-module__GGnB2q__fadeOut",
   "footer": "Estilo-module-scss-module__GGnB2q__footer",
   "headerContainer": "Estilo-module-scss-module__GGnB2q__headerContainer",
   "linkColumn": "Estilo-module-scss-module__GGnB2q__linkColumn",

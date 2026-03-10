@@ -18,7 +18,7 @@ export default function DashboardLayout({ children }) {
         { titulo: "Medios", imagen: `${pathImg}medio.svg`, ruta: "medio", table: true},
         { titulo: "Categorías", imagen: `${pathImg}lista.svg`, ruta: "categoria", table: true},
         { titulo: "Usuarios", imagen: `${pathImg}usuario.svg`, ruta: "usuario", table: true},
-        { titulo: "Configuración", imagen: `${pathImg}ajuste.svg`, ruta: "configuracion", table: false},
+        { titulo: "Operadores", imagen: `${pathImg}admin.svg`, ruta: "administrador", table: true},
         { titulo: "Inicio", imagen: `${pathImg}web.svg`, ruta: "/", table: false},
         { titulo: "Cerrar Sesión", imagen: `${pathImg}logout.svg`, ruta: "logout", table: false}
     ];
@@ -49,7 +49,9 @@ export default function DashboardLayout({ children }) {
 
     if (!user) return null;
 
-    const rutaPerfil = user.icono ? `/img/admin/usuarios/${user.icono}` : '/img/admin/usuarios/default.png';
+    const rutaPerfil = user.icono 
+    ? `/img/admin/administradores/img_${user.icono}` 
+    : '/img/admin/administradores/default.png';
 
     return (
         <div className={styles.layoutContainer}>
@@ -69,7 +71,10 @@ export default function DashboardLayout({ children }) {
                 </div>
 
                 <nav className={styles.menuNav}>
-                    {secciones.map((seccion, index) => (
+                    {secciones.filter(seccion => {
+                        if (seccion.ruta === 'administrador' && user.rol != 1) return false;
+                        return true;
+                    }).map((seccion, index) => (
                         <Link 
                             key={index} 
                             href={seccion.table === false ? `${seccion.ruta}` : `tabla?table=${seccion.ruta}`} 

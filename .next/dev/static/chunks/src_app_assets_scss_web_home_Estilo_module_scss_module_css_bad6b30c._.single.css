@@ -36,6 +36,24 @@
   }
 }
 
+@keyframes Estilo-module-scss-module__GGnB2q__fadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .Estilo-module-scss-module__GGnB2q__headerContainer {
   z-index: 2;
   justify-content: flex-start;

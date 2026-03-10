@@ -26,6 +26,7 @@
         text-align: center;
         padding-top: 60px;
         color: white;
+        
 
         img {
             border-radius: 16px;
@@ -36,9 +37,12 @@
         }
 
         h1 {
-            margin-top: 20px;
             font-family: $fuente-principal;
+            background-color: rgba(0, 0, 0, 0.525);
             font-weight: 900;
+            width: fit-content;
+            border-radius: 4px;
+            margin: 20px auto;
         }
 
         .badgeWrapper {
@@ -53,10 +57,11 @@
             }
 
             .badgeUser {
-                background: $color-fondo-tarjeta-claro;
-                padding: 5px 15px;
-                border-radius: 20px;
-                font-size: 0.8rem;
+                background: $color-fondo-tarjeta-oscuro;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 0.75rem;
             }
         }
     }

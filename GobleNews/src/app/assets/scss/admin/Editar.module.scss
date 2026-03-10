@@ -1,0 +1,151 @@
+@use "../web/Variables.module" as *;
+@use "../web/Mixins.module" as *;
+@use "../web/Keyframes.module" as *;
+
+.contenedor {
+    padding: 2rem;
+    color: white;
+
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-family: $fuente-principal;
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .btnVolver {
+            background: transparent;
+            border: 1px solid $color-semitransparente;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            @include transition(all, 0.3s);
+
+            &:hover {
+                border-color: $color-neon-cyan;
+                color: $color-neon-cyan;
+            }
+        }
+    }
+
+    .alertError {
+        background: rgba(220, 53, 69, 0.2);
+        border: 1px solid $error-border;
+        color: $error-texto;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .alertExito {
+        background-color: #1a472a;
+        color: #69db7c;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border: 1px solid #69db7c;
+        margin-bottom: 20px;
+        @include animation(fadeOut, 3s, ease-in-out, 1, forwards);
+    }
+
+    .loading {
+        text-align: center;
+        color: $color-semitransparente;
+        padding: 40px;
+    }
+
+    .card {
+        background: $color-fondo-tarjeta-oscuro;
+        backdrop-filter: blur(15px);
+        border: 1px solid $color-borde-tarjeta;
+        border-radius: 12px;
+        padding: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .inputGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $color-semitransparente;
+                font-family: $fuente-principal;
+            }
+
+            input,
+            textarea {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid $color-borde-tarjeta;
+                border-radius: 8px;
+                padding: 12px;
+                color: white;
+                font-family: $fuente-principal;
+                @include transition(border-color, 0.3s);
+                resize: vertical;
+
+                &:focus {
+                    outline: none;
+                    border-color: $color-neon-cyan;
+                    box-shadow: 0 0 10px rgba(16, 148, 177, 0.2);
+                }
+            }
+        }
+
+        .botones {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            .btnGuardar {
+                background: linear-gradient(135deg, #0b3672a0 0%, #0e1769 100%);
+                border: none;
+                color: white;
+                padding: 12px 30px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                @include transition(transform, 0.3s);
+
+                &:hover:not(:disabled) {
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(14, 83, 180, 0.4);
+                }
+
+                &:disabled {
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                }
+            }
+
+            .btnCancelar {
+                background: transparent;
+                border: 1px solid $color-semitransparente;
+                color: white;
+                padding: 12px 30px;
+                border-radius: 8px;
+                cursor: pointer;
+                @include transition(all, 0.3s);
+
+                &:hover {
+                    border-color: $error-border;
+                    color: $error-texto;
+                }
+            }
+        }
+    }
+}

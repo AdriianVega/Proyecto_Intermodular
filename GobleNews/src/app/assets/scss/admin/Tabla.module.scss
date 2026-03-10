@@ -1,5 +1,6 @@
 @use "../web/Variables.module" as *;
 @use "../web/Mixins.module" as *;
+@use "../web/Keyframes.module" as *;
 
 .tablaContenedor {
     padding: 2rem;
@@ -43,6 +44,16 @@
         border-radius: 8px;
         margin-bottom: 20px;
     }
+    .alertSuccess {
+        background-color: #1a472a;
+        color: #69db7c;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border: 1px solid #69db7c;
+        margin-bottom: 10px;
+
+        @include animation(fadeOut, 10s, ease-in-out, 1, forwards);
+    }
 
     .cardTabla {
         background: $color-fondo-tarjeta-oscuro;
@@ -67,6 +78,7 @@
                 padding: 15px 20px;
                 text-align: left;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                vertical-align: middle;
             }
 
             thead th {
@@ -91,10 +103,17 @@
             }
 
             .acciones {
-                text-align: right;
-                display: flex;
-                justify-content: flex-end;
-                gap: 10px;
+                vertical-align: middle;
+                
+                .accionesInner {
+                    text-align: left;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    vertical-align: middle;
+                    gap: 10px;
+                }
+                
 
                 .btnEditar {
                     background: transparent;

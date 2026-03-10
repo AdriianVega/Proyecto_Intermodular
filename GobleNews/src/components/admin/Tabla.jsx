@@ -8,12 +8,16 @@ export default function Tabla({
     titulo, 
     entidad, 
     columnas, 
-    rutaNuevo, 
+    rutaInsertar, 
     rutaEditar 
 }) {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
+
+    const userData = JSON.parse(localStorage.getItem('user_session') || 'null');
+    const esAdmin = userData?.rol == 1;
 
 
     useEffect(() => {
@@ -34,7 +38,7 @@ export default function Tabla({
             body: JSON.stringify(bodyData)
             });
             const resData = await response.json();
-            setData(resData);
+            setData(resData.data);
         } catch (err) {
             setError('Error de conexión con el servidor');
         } finally {
@@ -46,7 +50,7 @@ export default function Tabla({
         if (!window.confirm(`¿Estás seguro de eliminar este registro de ${titulo}?`)) return;
 
         try {
-            const response = await fetch('/backend/api/handlers/eliminar.php', {
+            const response = await fetch('/backend/api/databases/eliminar.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 credentials: 'include',
@@ -55,6 +59,8 @@ export default function Tabla({
             const resData = await response.json();
 
             if (resData.success) {
+                setSuccess('Registro eliminado correctamente');
+                setTimeout(() => setSuccess(''), 10000);
                 cargarDatos();
             } else {
                 alert(resData.error || 'Error al eliminar');
@@ -68,13 +74,13 @@ export default function Tabla({
         <div className={styles.tablaContenedor}>
             <div className={styles.cabecera}>
                 <h2>{titulo}</h2>
-                <Link href={rutaNuevo} className={styles.btnNuevo}>
+                <Link href={rutaInsertar} className={styles.btnNuevo}>
                     + Nuevo Registro
                 </Link>
             </div>
 
             {error && <div className={styles.alertError}>{error}</div>}
-
+            {success && <div className={styles.alertSuccess}>{success}</div>}
             <div className={styles.cardTabla}>
                 {loading ? (
                     <p className={styles.loading}>Cargando datos...</p>
@@ -98,15 +104,21 @@ export default function Tabla({
                                             </td>
                                         ))}
                                         <td className={styles.acciones}>
-                                            <Link href={`${rutaEditar}?id=${fila.id}`} className={styles.btnEditar}>
-                                                Editar
-                                            </Link>
-                                            <button 
-                                                onClick={() => handleEliminar(fila.id)} 
-                                                className={styles.btnEliminar}
-                                            >
-                                                Borrar
-                                            </button>
+                                            <div className={styles.accionesInner}>
+                                                {esAdmin && (
+                                                    <Link href={`${rutaEditar}&id=${fila.id}`} className={styles.btnEditar}>
+                                                        Editar
+                                                    </Link>
+                                                )}
+                                                {esAdmin && !(entidad === 'administrador' && fila.rol == 1) && (
+                                                    <button 
+                                                        onClick={() => handleEliminar(fila.id)} 
+                                                        className={styles.btnEliminar}
+                                                    >
+                                                        Borrar
+                                                    </button>
+                                                )}
+                                            </div>
                                         </td>
                                     </tr>
                                 ))

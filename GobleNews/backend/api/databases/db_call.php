@@ -29,10 +29,12 @@
     $valores = $data['valores'] ?? [];
 
     $tablas = [
-        'categoria' => ['nombre'],
-        'pais' => ['nombre', 'continente'],
-        'noticia' => ['nombre', 'url', 'texto_original', 'texto_traducido', 'pais_id', 'medio_id'],
-        'usuario' => ['nombre', 'email', 'rol']
+        'categoria'     => ['nombre'],
+        'pais'          => ['nombre', 'continente', 'bandera'],
+        'medio'         => ['nombre', 'url'],
+        'noticia'       => ['titulo', 'url', 'texto_original', 'texto_traducido', 'pais_id', 'medio_id', 'path'],
+        'usuario'       => ['nombre', 'email', 'password', 'icono'],
+        'administrador' => ['nombre', 'email', 'password', 'rol', 'icono']
     ];
 
     if (!array_key_exists($entidad, $tablas)) {
