@@ -14,8 +14,34 @@ const suezOne = Suez_One({
 });
 
 export const metadata = {
-  title: "GobleNews",
-  description: "GobleNews es un proyecto de periodismo técnico que utiliza inteligencia artificial para generar noticias sobre tecnología, ciencia, salud, deportes y entretenimiento. Nuestro objetivo es ofrecer contenido de calidad y actualizado para nuestros lectores, utilizando las últimas herramientas de IA para analizar datos y generar artículos informativos y atractivos.",
+    title: {
+        default: 'GobleNews — Noticias Internacionales',
+        template: '%s | GobleNews'
+    },
+    description: 'Descubre las noticias más importantes de Europa y el mundo, traducidas automáticamente al español. Filtra por país, categoría o palabra clave.',
+    keywords: ['noticias internacionales', 'noticias Europa', 'noticias traducidas', 'República Checa', 'Estonia', 'Alemania', 'Polonia'],
+    authors: [{ name: 'Adrián Nataniel Vega Pérez' }],
+    creator: 'Adrián Nataniel Vega Pérez',
+    openGraph: {
+        title: 'GobleNews — Noticias Internacionales',
+        description: 'Las noticias más importantes de Europa traducidas al español.',
+        url: 'https://goblenews.com',
+        siteName: 'GobleNews',
+        locale: 'es_ES',
+        type: 'website',
+        images: [
+            {
+                url: '/img/web/logo_tierra.png',
+                width: 800,
+                height: 600,
+                alt: 'GobleNews'
+            }
+        ]
+    },
+    robots: {
+        index: true,
+        follow: true
+    }
 };
 
 export default function RootLayout({ children }) {
